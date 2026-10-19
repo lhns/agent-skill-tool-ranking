@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | x-hermes-godmode | Verdict reason no longer assumes your need; Fit stays 1 until you set it | User: need is the user's call |
 | 2026-10-19 | x-hermes-godmode | Gate failure (Security) to ranked, 27, Skip | User-intended behavior is not a security failure; scored on fit only, effectiveness not assessed |
 | 2026-10-19 | wf-godmode-noobygains | Added, 27, Skip | Hook and SKILL.md read; near-clone of superpowers |
 | 2026-10-19 | x-hermes-godmode | Listed as gate failure (Security) | Jailbreak skill; skills.sh audits fail |
