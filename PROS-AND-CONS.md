@@ -228,6 +228,7 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | build-mcp-tunnels | marketplace | Reach a private MCP via Anthropic tunnel | Routes through Anthropic |  |
 | build-context-eng | 18k | Reference on context, memory, tool design | Prose, not tools |  |
 | build-skill-seekers | 14.9k | Turns docs, repos and PDFs into skills; local mode | Heavy optional deps |  |
+| build-harness2 | 10.3k (3 commits) | Optimizes the harness (prompts, tools, memory, skills) instead of the model via Propose-Probe-Compose, without ground-truth verifiers; paper reports +4.5 to +11.8 points on three benchmarks; Apache-2.0; credential-free demo | Research code, not an official Google product; only OpenCode and Codex executors, no Claude Code; model runs need Vertex AI; Linux only; thousands of rollouts per refinement; executor network unrestricted and Codex sandbox disabled; applying it to your own setup needs a custom adapter; results are the authors' own | skill-creator evals (much lighter); your AGENTS.md as the thing it would tune |
 
 ## Architecture
 

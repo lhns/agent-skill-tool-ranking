@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | build-harness2 | Added, 25, Watch | Repo page, arXiv 2610.14224 abstract, Wavect write-up (not hands-on); 10.3k stars on 3 commits |
 | 2026-10-19 | repo | Ranking tables now generated from `data/entries.toml` by `scripts/build.py`; AGENTS.md re-rank workflow; CI check | Two hand-arithmetic slips in the doc era |
 | 2026-10-19 | lang-scala-direct-style | Added, 54, Queued for Ox projects only | Repo, SKILL.md and chapters read; 69 stars (E1) |
 | 2026-10-19 | safe-tacit | Added, 31, Watch | Repo and paper read; nightly compiler, no Windows path |

@@ -22,6 +22,6 @@ Scores are provisional. Almost all rest on E0 to E1 evidence, so Effectiveness a
 | [Home automation](home-automation.md) | 5 | alexpfau/zigbee2mqtt-mcp | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | oisee/vibing-steampunk | 60 |
 | [Agent safety and harness](agent-safety-and-harness.md) | 18 | NVIDIA/SkillSpector | 69 |
-| [Building skills and MCPs](building-skills-and-mcps.md) | 4 | skill-creator + mcp-builder | 73 |
+| [Building skills and MCPs](building-skills-and-mcps.md) | 5 | skill-creator + mcp-builder | 73 |
 | [Architecture](architecture.md) | 1 | wshobson cqrs, event-store, saga, projection | 58 |
 | [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 14 | | |

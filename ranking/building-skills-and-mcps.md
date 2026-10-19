@@ -8,3 +8,4 @@
 | build-mcp-tunnels | [official mcp-tunnels](https://github.com/anthropics/claude-plugins-official) | plugin | 2 | 2 | 3 | 2 | 3 | 3 | E2 | 58 | Watch (RE bridge) |
 | build-context-eng | [Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | reference skills | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | build-skill-seekers | [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Queued (Scala gap) |
+| build-harness2 | [google-research/harness2](https://github.com/google-research/harness2) | research framework | 1 | 1 | 0 | 1 | 3 | 1 | E1 | 25 | Watch |
