@@ -1,0 +1,2676 @@
+# One record per evaluated skill or tool. Edit here, then run: python scripts/build.py
+
+# Scores 0-4. Score is computed; Effectiveness and Reliability may not exceed the evidence cap.
+
+# ---- workflow-and-process ----
+
+[[entry]]
+id = "wf-agentsmd"
+category = "workflow-and-process"
+name = "Your global AGENTS.md"
+url = "https://github.com/lhns/global-agents-md"
+type = "instructions"
+fit = 4
+effectiveness = 3
+cost = 4
+reliability = 3
+quality = 3
+composability = 4
+evidence = "E3"
+verdict = "Baseline"
+stars = "n/a"
+pros = "Short, tuned to your habits, encodes model delegation and ADRs"
+cons = "Grows by hand; no enforcement beyond the model reading it"
+overlaps = "All workflow entries"
+
+[[entry]]
+id = "wf-mattpocock"
+category = "workflow-and-process"
+name = "mattpocock/skills"
+url = "https://github.com/mattpocock/skills"
+detail = "(grill-with-docs only)"
+type = "skills"
+fit = 3
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 3
+composability = 4
+evidence = "E2"
+verdict = "Trial"
+stars = "~294k"
+pros = "Pick single skills; grill-with-docs writes a glossary and ADRs, matching your setup"
+cons = "grill-me sometimes starts implementing (#240) and bundles several questions per turn (#221); plugin plus `npx skills` installs everything twice"
+overlaps = "superpowers, gsd, turbo"
+
+[[entry]]
+id = "wf-pypict"
+category = "workflow-and-process"
+name = "pypict-claude-skill"
+url = "https://github.com/omkamal/pypict-claude-skill"
+detail = "(pairwise test design)"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Optional"
+stars = "100"
+pros = "Pairwise test design for config matrices"
+cons = "Narrow"
+
+[[entry]]
+id = "wf-karpathy"
+category = "workflow-and-process"
+name = "andrej-karpathy-skills"
+url = "https://github.com/multica-ai/andrej-karpathy-skills"
+type = "guideline"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Skip, AGENTS.md covers it"
+stars = "221k"
+pros = "Tiny, all audits pass"
+cons = "Generic; AGENTS.md covers it"
+
+[[entry]]
+id = "wf-addyosmani"
+category = "workflow-and-process"
+name = "addyosmani/agent-skills"
+url = "https://github.com/addyosmani/agent-skills"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "105.9k"
+pros = "25 lifecycle skills incl. ADRs"
+cons = "Duplicates AGENTS.md"
+
+[[entry]]
+id = "wf-superpowers"
+category = "workflow-and-process"
+name = "obra/superpowers"
+url = "https://github.com/obra/superpowers"
+type = "plugin"
+fit = 1
+effectiveness = 2
+cost = 1
+reliability = 2
+quality = 3
+composability = 1
+evidence = "E2"
+verdict = "Skip"
+stars = "~300k"
+pros = "Most-discussed framework; TDD and worktree isolation built in"
+cons = "About 3x vanilla time in one test; plans over 3,000 lines (#512); mandatory loop competes with your delegation rules; telemetry ping"
+overlaps = "AGENTS.md, gsd, turbo"
+
+[[entry]]
+id = "wf-compound"
+category = "workflow-and-process"
+name = "EveryInc/compound-engineering-plugin"
+url = "https://github.com/EveryInc/compound-engineering-plugin"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "25.6k"
+pros = "Writes lessons to `docs/solutions/`"
+cons = "Another full loop"
+
+[[entry]]
+id = "wf-ponytail"
+category = "workflow-and-process"
+name = "DietrichGebert/ponytail"
+url = "https://github.com/DietrichGebert/ponytail"
+type = "skill"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "165.3k"
+pros = "Minimal-change mode; audits pass"
+cons = "Always in context"
+
+[[entry]]
+id = "wf-tdd-guard"
+category = "workflow-and-process"
+name = "nizos/tdd-guard"
+url = "https://github.com/nizos/tdd-guard"
+type = "hooks"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip, no JVM, maintenance mode"
+stars = "2.3k"
+pros = "Enforces TDD"
+cons = "No JVM; maintenance mode"
+
+[[entry]]
+id = "wf-turbo"
+category = "workflow-and-process"
+name = "tobihagemann/turbo"
+url = "https://github.com/tobihagemann/turbo"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "404"
+pros = "Small; `/finalize` adds a cross-model peer review"
+cons = "Needs Codex installed for review; barely used anywhere"
+overlaps = "AGENTS.md"
+
+[[entry]]
+id = "wf-neckbeard"
+category = "workflow-and-process"
+name = "magnus919 neckbeard"
+url = "https://github.com/magnus919/agent-skills"
+type = "skill bundle"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "123"
+pros = "Evidence ledger per change, ships an eval harness, explicitly not a persona"
+cons = "Built for Hermes first; heavy stage model; small user base"
+overlaps = "AGENTS.md"
+
+[[entry]]
+id = "wf-superclaude"
+category = "workflow-and-process"
+name = "SuperClaude_Framework"
+url = "https://github.com/SuperClaude-Org/SuperClaude_Framework"
+type = "framework"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "23.9k"
+pros = "Many modes and commands"
+cons = "Unverified token claims"
+
+[[entry]]
+id = "wf-ctx-eng-kit"
+category = "workflow-and-process"
+name = "NeoLabHQ/context-engineering-kit"
+url = "https://github.com/NeoLabHQ/context-engineering-kit"
+type = "plugins"
+fit = 1
+effectiveness = 1
+cost = 0
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "1.6k"
+pros = "Modular, documents its own overhead"
+cons = "GPL; 5 to 35x tokens"
+
+[[entry]]
+id = "wf-gsd"
+category = "workflow-and-process"
+name = "open-gsd/gsd-core"
+url = "https://github.com/open-gsd/gsd-core"
+type = "framework"
+fit = 1
+effectiveness = 1
+cost = 0
+reliability = 2
+quality = 2
+composability = 1
+evidence = "E2"
+verdict = "Skip"
+stars = "10.5k"
+pros = "Fresh-context subagents per phase fight context rot; `STATE.md` survives sessions"
+cons = "About 6x the tokens and 5x the time of vanilla in one test; heaviest of all"
+overlaps = "AGENTS.md, superpowers"
+
+[[entry]]
+id = "wf-ecc"
+category = "workflow-and-process"
+name = "affaan-m/ECC"
+url = "https://github.com/affaan-m/ECC"
+type = "plugin bundle"
+fit = 1
+effectiveness = 1
+cost = 0
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E1"
+verdict = "Skip"
+stars = "282.1k"
+pros = "Huge, Windows supported"
+cons = "Heavy always-on rules; paid tier"
+
+# ---- code-intelligence ----
+
+[[entry]]
+id = "ci-codegraph"
+category = "code-intelligence"
+name = "colbymchenry/codegraph"
+url = "https://github.com/colbymchenry/codegraph"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "~74k"
+pros = "Rust kernel; Scala at full support; one MCP tool; auto-syncs on save; 100% local"
+cons = "Author benchmarks only (E0); leaves about 80% more context resident in long sessions (its own measurement); telemetry on until `codegraph telemetry off`"
+overlaps = "graphify, code-review-graph"
+
+[[entry]]
+id = "ci-graphify"
+category = "code-intelligence"
+name = "Graphify-Labs/graphify"
+url = "https://github.com/Graphify-Labs/graphify"
+type = "skill + CLI"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "~128k"
+pros = "Also graphs docs, PDFs and media; no vector store; explains each edge"
+cons = "Docs pass costs model tokens; README pushes the paid cloud; rebuild-on-demand, not live"
+overlaps = "codegraph"
+
+[[entry]]
+id = "ci-crg"
+category = "code-intelligence"
+name = "tirth8205/code-review-graph"
+url = "https://github.com/tirth8205/code-review-graph"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "~32k"
+pros = "Risk-scored PR reviews, GitHub Action, blast radius"
+cons = "30 MCP tools by default (filterable); Scala support less explicit"
+overlaps = "codegraph"
+
+# ---- language-and-library-docs ----
+
+[[entry]]
+id = "lang-metals-mcp"
+category = "language-and-library-docs"
+name = "Metals MCP"
+url = "https://scalameta.org/metals/docs/features/mcp/"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Trial"
+stars = "~2.3k (Metals)"
+pros = "Real compiler diagnostics, symbols, tests and deps for Scala; official"
+cons = "Needs a working Metals build per project; tool output can be large"
+overlaps = "codegraph (partly)"
+
+[[entry]]
+id = "docs-context7"
+category = "language-and-library-docs"
+name = "upstash/context7"
+url = "https://github.com/upstash/context7"
+type = "MCP or CLI + skill"
+fit = 2
+effectiveness = 2
+cost = 3
+reliability = 2
+quality = 3
+composability = 4
+evidence = "E2"
+verdict = "Trial (non-Scala)"
+stars = "~63k"
+pros = "Fresh library docs on demand; CLI plus skill mode keeps context small"
+cons = "Closed backend; community docs with no accuracy guarantee; rate limits unpublished"
+overlaps = "none"
+
+# ---- reverse-engineering ----
+
+[[entry]]
+id = "re-pyghidra"
+category = "reverse-engineering"
+name = "clearbluejar/pyghidra-mcp"
+url = "https://github.com/clearbluejar/pyghidra-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate (leaner)"
+stars = "426"
+pros = "Official Docker image, HTTP by default, 18 tools, whole-project analysis"
+cons = "No auth; beta; small community"
+overlaps = "bethington"
+
+[[entry]]
+id = "re-wshobson"
+category = "reverse-engineering"
+name = "wshobson binary-analysis + protocol-RE patterns"
+url = "https://github.com/wshobson/agents"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued (method knowledge)"
+stars = "41k (repo)"
+pros = "Method knowledge that complements the MCPs"
+cons = "protocol-RE has a Socket warning"
+
+[[entry]]
+id = "re-android"
+category = "reverse-engineering"
+name = "android-reverse-engineering-skill"
+url = "https://github.com/SimoneAvogadro/android-reverse-engineering-skill"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "~8.2k"
+pros = "jadx-based APK/XAPK/JAR decompile; pulls out HTTP APIs and auth; recovers R8 names"
+cons = "PowerShell scripts experimental; needs JDK 17+ and jadx installed"
+overlaps = "REA (JADX backend)"
+
+[[entry]]
+id = "re-ghidra-bethington"
+category = "reverse-engineering"
+name = "bethington/ghidra-mcp"
+url = "https://github.com/bethington/ghidra-mcp"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Trial (your pick)"
+stars = "~4.5k"
+pros = "Headless server; Bearer token auth; refuses non-loopback binds without a token; scripts off by default; file-root sandbox; lazy tool groups"
+cons = "209 tools if you load everything; pinned to Ghidra 12.1.3; Docker setup not fully documented"
+overlaps = "REA, pyghidra"
+
+[[entry]]
+id = "re-rea"
+category = "reverse-engineering"
+name = "morluto/rea"
+url = "https://github.com/morluto/rea"
+type = "MCP orchestrator"
+fit = 4
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E0"
+verdict = "Gate pending: security"
+stars = "~320k (anomalous)"
+pros = "One orchestrator over Ghidra, IDA, Hopper, JADX, binwalk, unblob, Rizin, GDB, TShark"
+cons = "Star count implausible (52k in a day); README warns copies are not official, so install only `rea-agents` from npm; transport undocumented; drives Ghidra 12.1.4 itself, not via ghidra-mcp"
+overlaps = "ghidra-mcp, Android RE"
+
+[[entry]]
+id = "re-sickn33"
+category = "reverse-engineering"
+name = "sickn33 reverse-engineer"
+url = "https://github.com/sickn33/agentic-awesome-skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Skip"
+stars = "47.9k (repo)"
+pros = "Authorization gate before acting"
+cons = "Generic"
+
+[[entry]]
+id = "re-ghidra-laurie"
+category = "reverse-engineering"
+name = "LaurieWired/GhidraMCP"
+url = "https://github.com/LaurieWired/GhidraMCP"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "~11.3k"
+pros = "Most popular Ghidra bridge; headless via PyGhidra"
+cons = "No auth; few commits; 38 open PRs"
+overlaps = "bethington, pyghidra"
+
+# ---- security-review ----
+
+[[entry]]
+id = "sec-official"
+category = "security-review"
+name = "official security-guidance + claude-security"
+url = "https://github.com/anthropics/claude-plugins-official"
+type = "plugins"
+fit = 3
+effectiveness = 2
+cost = 3
+reliability = 2
+quality = 4
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "marketplace"
+pros = "Edit-time warnings plus verified-finding scans"
+cons = "Anthropic-only perspective"
+
+[[entry]]
+id = "rev-official"
+category = "security-review"
+name = "official code-review + pr-review-toolkit"
+url = "https://github.com/anthropics/claude-plugins-official"
+type = "plugins"
+fit = 3
+effectiveness = 2
+cost = 3
+reliability = 2
+quality = 4
+composability = 4
+evidence = "E2"
+verdict = "Optional (overlaps your adversarial review)"
+stars = "marketplace"
+pros = "Multi-agent PR review with confidence scores"
+cons = "Overlaps your milestone review"
+
+[[entry]]
+id = "sec-trailofbits"
+category = "security-review"
+name = "trailofbits/skills"
+url = "https://github.com/trailofbits/skills"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Alternate (deep audits)"
+stars = "~7.6k"
+pros = "Expert-written code-audit skills: variant analysis, Semgrep rules, differential review, supply-chain risk"
+cons = "Narrow; little for ops or cloud security"
+overlaps = "mukul975"
+
+[[entry]]
+id = "sec-getsentry"
+category = "security-review"
+name = "getsentry/skills"
+url = "https://github.com/getsentry/skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "1.1k"
+pros = "skill-scanner, GHA security review"
+cons = "Much is Sentry-specific"
+
+[[entry]]
+id = "sec-mukul"
+category = "security-review"
+name = "Anthropic-Cybersecurity-Skills"
+url = "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 1
+composability = 2
+evidence = "E1"
+verdict = "Skip"
+stars = "~33.7k"
+pros = "Very broad SOC and threat-hunting coverage, ATT&CK mapping"
+cons = "Not affiliated with Anthropic; about 817 template-like skills; contradictory counts; promotes its own platform"
+overlaps = "trailofbits"
+
+# ---- kubernetes-and-infrastructure ----
+
+[[entry]]
+id = "k8s-containers"
+category = "kubernetes-and-infrastructure"
+name = "containers/kubernetes-mcp-server"
+url = "https://github.com/containers/kubernetes-mcp-server"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued (read-only)"
+stars = "~2.2k"
+pros = "Single Go binary; talks to the API directly; `read_only` mode"
+cons = "Helm support limited to install, list, uninstall"
+overlaps = "Flux159"
+
+[[entry]]
+id = "k8s-flux159"
+category = "kubernetes-and-infrastructure"
+name = "Flux159/mcp-server-kubernetes"
+url = "https://github.com/Flux159/mcp-server-kubernetes"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "~1.6k"
+pros = "kubectl and Helm, diagnose prompt"
+cons = "\"Non-destructive\" mode still allows apply, patch, scale"
+overlaps = "containers"
+
+[[entry]]
+id = "infra-neckbeard-bealesh"
+category = "kubernetes-and-infrastructure"
+name = "bealesh/neckbeard"
+url = "https://github.com/bealesh/neckbeard"
+type = "plugin + CLI"
+fit = 0
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "6"
+pros = "Deterministic Go CLI plus versioned module catalog; cost estimates"
+cons = "Pre-alpha; targets AWS, GCP, Azure, not self-hosted"
+overlaps = "none"
+
+# ---- web-frontend-and-testing ----
+
+[[entry]]
+id = "fe-frontend-design"
+category = "web-frontend-and-testing"
+name = "anthropics frontend-design"
+url = "https://github.com/anthropics/skills"
+type = "skill"
+fit = 3
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 4
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "~180k (repo)"
+pros = "Most-installed skill; avoids generic AI look; official"
+cons = "Aesthetics only, no testing"
+overlaps = "impeccable"
+
+[[entry]]
+id = "fe-webapp-testing"
+category = "web-frontend-and-testing"
+name = "anthropics webapp-testing"
+url = "https://github.com/anthropics/skills"
+type = "skill"
+fit = 3
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 3
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "180k"
+pros = "Official Playwright testing of local apps"
+cons = "Demonstration quality"
+
+[[entry]]
+id = "fe-playwright-cli"
+category = "web-frontend-and-testing"
+name = "microsoft/playwright-cli"
+url = "https://github.com/microsoft/playwright-cli"
+type = "CLI + skills"
+fit = 4
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Alternate (tie)"
+stars = "~13k"
+pros = "Microsoft's recommended agent path; fewer tokens than Playwright MCP"
+cons = "Vendor recommendation, not independent"
+overlaps = "webapp-testing"
+
+[[entry]]
+id = "fe-vercel-wdg"
+category = "web-frontend-and-testing"
+name = "vercel web-design-guidelines"
+url = "https://github.com/vercel-labs/agent-skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional (accessibility audit)"
+stars = "32.6k"
+pros = "100+ accessibility and UX rules"
+cons = "React bias"
+
+[[entry]]
+id = "fe-impeccable"
+category = "web-frontend-and-testing"
+name = "pbakaus/impeccable"
+url = "https://github.com/pbakaus/impeccable"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "~83k"
+pros = "Critique, audit, polish commands; 61 detector rules run without an LLM"
+cons = "24 commands to learn"
+overlaps = "frontend-design"
+
+[[entry]]
+id = "fe-cf-web-perf"
+category = "web-frontend-and-testing"
+name = "cloudflare web-perf"
+url = "https://github.com/cloudflare/skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Optional"
+stars = "2.8k"
+pros = "Core Web Vitals audit"
+cons = "Cloudflare-centric repo"
+
+[[entry]]
+id = "fe-web-assets"
+category = "web-frontend-and-testing"
+name = "alonw0/web-asset-generator"
+url = "https://github.com/alonw0/web-asset-generator"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E0"
+verdict = "Optional"
+stars = "490"
+pros = "Favicons, OG images, only Pillow"
+cons = "Narrow"
+
+[[entry]]
+id = "fe-agent-browser"
+category = "web-frontend-and-testing"
+name = "vercel-labs/agent-browser"
+url = "https://github.com/vercel-labs/agent-browser"
+type = "CLI"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "41.1k"
+pros = "Rust browser CLI"
+cons = "Snyk medium risk"
+
+[[entry]]
+id = "fe-playwright-skill"
+category = "web-frontend-and-testing"
+name = "lackeyjb/playwright-skill"
+url = "https://github.com/lackeyjb/playwright-skill"
+type = "plugin"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "3.0k"
+pros = "Simple"
+cons = "Installs its own Chromium"
+
+[[entry]]
+id = "fe-slides"
+category = "web-frontend-and-testing"
+name = "zarazhangrui/frontend-slides"
+url = "https://github.com/zarazhangrui/frontend-slides"
+type = "skill"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Skip"
+stars = "28.6k"
+pros = "Single-file HTML decks"
+cons = "Off-profile"
+
+[[entry]]
+id = "fe-ccworkflows"
+category = "web-frontend-and-testing"
+name = "OneRedOak/claude-code-workflows"
+url = "https://github.com/OneRedOak/claude-code-workflows"
+type = "workflows"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "~3.9k"
+pros = "Code, security and design review workflows with GitHub Actions"
+cons = "Only three workflows; design review depends on Playwright MCP"
+overlaps = "trailofbits, playwright"
+
+[[entry]]
+id = "fe-design-taste"
+category = "web-frontend-and-testing"
+name = "leonxlnx/taste-skill"
+url = "https://github.com/leonxlnx/taste-skill"
+type = "skill"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "98.4k"
+pros = "Art direction references"
+cons = "Overlaps frontend-design"
+
+[[entry]]
+id = "fe-uiuxpromax"
+category = "web-frontend-and-testing"
+name = "ui-ux-pro-max-skill"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 1
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "~137k"
+pros = "Big style database"
+cons = "Unverified claims, paid upsell, install friction"
+overlaps = "frontend-design"
+
+# ---- writing-and-research ----
+
+[[entry]]
+id = "wr-humanizer"
+category = "writing-and-research"
+name = "blader/humanizer"
+url = "https://github.com/blader/humanizer"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued (writing projects)"
+stars = "~58k"
+pros = "Removes 26 AI-writing patterns, keeps meaning; fits your no-em-dash rule"
+cons = "Self-reported blind test; can over-edit on weak patterns"
+overlaps = "none"
+
+[[entry]]
+id = "wr-doc-coauthoring"
+category = "writing-and-research"
+name = "anthropics doc-coauthoring"
+url = "https://github.com/anthropics/skills"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "~180k (repo)"
+pros = "Three-stage spec and proposal workflow; official"
+cons = "Generic; not tuned to RFC-style writing"
+overlaps = "AGENTS.md writing rules"
+
+[[entry]]
+id = "wr-vercel-writing"
+category = "writing-and-research"
+name = "vercel writing-guidelines"
+url = "https://github.com/vercel-labs/agent-skills"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate (tie with humanizer)"
+stars = "32.6k"
+pros = "80+ prose rules from Vercel's handbook"
+cons = "Overlaps humanizer"
+
+[[entry]]
+id = "rs-searxng"
+category = "writing-and-research"
+name = "ihor-sokoliuk/mcp-searxng"
+url = "https://github.com/ihor-sokoliuk/mcp-searxng"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued (self-hosted search)"
+stars = "1.2k"
+pros = "Self-hosted search, blocks private URLs, PDF reading"
+cons = "Needs SearXNG"
+
+[[entry]]
+id = "rs-arxiv"
+category = "writing-and-research"
+name = "blazickjp/arxiv-mcp-server"
+url = "https://github.com/blazickjp/arxiv-mcp-server"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "~3.1k"
+pros = "Reads LaTeX source section by section; BibTeX export"
+cons = "arXiv only"
+overlaps = "academic-research"
+
+[[entry]]
+id = "rs-kagi"
+category = "writing-and-research"
+name = "kagisearch/kagimcp"
+url = "https://github.com/kagisearch/kagimcp"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate (paid)"
+stars = "458"
+pros = "Official, 2 tools"
+cons = "Paid"
+
+[[entry]]
+id = "rs-academic"
+category = "writing-and-research"
+name = "academic-research-skills"
+url = "https://github.com/Imbad0202/academic-research-skills"
+type = "skill suite"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued"
+stars = "~48k"
+pros = "Full pipeline: research, write, review, integrity checks"
+cons = "CC-BY-NC; reviewer scores uncalibrated; about $4 to 6 per 15k-word paper; hooks only in Claude Code"
+overlaps = "K-Dense"
+
+[[entry]]
+id = "nt-obsidian"
+category = "writing-and-research"
+name = "kepano/obsidian-skills"
+url = "https://github.com/kepano/obsidian-skills"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Only if you use Obsidian"
+stars = "~50k"
+pros = "Written by Obsidian's CEO; `defuddle` turns web pages into clean Markdown"
+cons = "Useless without Obsidian; slow updates"
+overlaps = "none"
+
+[[entry]]
+id = "wr-hand-drawn"
+category = "writing-and-research"
+name = "muthuishere/hand-drawn-diagrams"
+url = "https://github.com/muthuishere/hand-drawn-diagrams"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Optional"
+stars = "75"
+pros = "Excalidraw diagrams for docs"
+cons = "Hosted editor by default"
+
+[[entry]]
+id = "rs-tapestry"
+category = "writing-and-research"
+name = "tapestry-skills"
+url = "https://github.com/michalparkola/tapestry-skills-for-claude-code"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "560"
+pros = "Article and YouTube transcript ingestion"
+cons = "Learning skills are fluff"
+
+[[entry]]
+id = "rs-waza"
+category = "writing-and-research"
+name = "tw93/Waza"
+url = "https://github.com/tw93/Waza"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "7.3k"
+pros = "URL or PDF to Markdown"
+cons = "Audits unverified"
+
+[[entry]]
+id = "rs-firecrawl"
+category = "writing-and-research"
+name = "firecrawl/cli"
+url = "https://github.com/firecrawl/cli"
+type = "CLI + skills"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip unless self-hosted"
+stars = "630"
+pros = "Self-hostable scraping"
+cons = "Credits otherwise; no license shown"
+
+[[entry]]
+id = "rs-nature"
+category = "writing-and-research"
+name = "Yuan1z0825/nature-skills"
+url = "https://github.com/Yuan1z0825/nature-skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip (Socket warning)"
+stars = "48.2k"
+pros = "Figures, reference checks"
+cons = "Socket warning"
+
+[[entry]]
+id = "wr-visual-docs"
+category = "writing-and-research"
+name = "mhattingpete/claude-skills-marketplace"
+url = "https://github.com/mhattingpete/claude-skills-marketplace"
+type = "plugins"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "666"
+pros = "HTML architecture diagrams"
+cons = "22 commits"
+
+[[entry]]
+id = "rs-last30days"
+category = "writing-and-research"
+name = "mvanhorn/last30days-skill"
+url = "https://github.com/mvanhorn/last30days-skill"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip (paid keys)"
+stars = "64.5k"
+pros = "Multi-source recent research"
+cons = "Paid keys"
+
+[[entry]]
+id = "rs-kdense"
+category = "writing-and-research"
+name = "K-Dense scientific skills"
+url = "https://github.com/K-Dense-AI/claude-scientific-skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E1"
+verdict = "Skip"
+stars = "~53k"
+pros = "177 skills incl. database lookups across sciences"
+cons = "Dependency conflicts; weak LaTeX; promotional README"
+overlaps = "academic-research"
+
+# ---- electronics-cad-and-3d-printing ----
+
+[[entry]]
+id = "ee-kicad-happy"
+category = "electronics-cad-and-3d-printing"
+name = "aklofas/kicad-happy"
+url = "https://github.com/aklofas/kicad-happy"
+detail = "(review, EMC, SPICE, BOM)"
+type = "skills + scripts"
+fit = 4
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "1.1k"
+pros = "Review, EMC, SPICE, BOM, fab prep for KiCad 5 to 10; 729 commits"
+cons = "Distributor keys for sourcing"
+
+[[entry]]
+id = "ee-mcu-skills"
+category = "electronics-cad-and-3d-printing"
+name = "alexex1993/mcu-skills"
+url = "https://github.com/alexex1993/mcu-skills"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Queued"
+stars = "17"
+pros = "Pin maps and HAL pitfalls per board"
+cons = "Small; no ESPHome"
+
+[[entry]]
+id = "ee-kicad-mixelpixx"
+category = "electronics-cad-and-3d-printing"
+name = "mixelpixx/KiCAD-MCP-Server"
+url = "https://github.com/mixelpixx/KiCAD-MCP-Server"
+detail = "(editing)"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued"
+stars = "~2.8k"
+pros = "KiCad 9+: schematics, placement, routing, DRC/ERC, Freerouting, JLCPCB parts"
+cons = "Development moving to an AGPL Rust rewrite for KiCad 10"
+overlaps = "kicad-mcp-pro"
+
+[[entry]]
+id = "cad-build123d"
+category = "electronics-cad-and-3d-printing"
+name = "pzfreo/build123d-mcp"
+url = "https://github.com/pzfreo/build123d-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "59"
+pros = "Exact solids, STEP export, previews"
+cons = "Very small project"
+overlaps = "openscad-mcp"
+
+[[entry]]
+id = "ee-kicad-pro"
+category = "electronics-cad-and-3d-printing"
+name = "oaslananka/kicad-mcp-pro"
+url = "https://github.com/oaslananka/kicad-mcp-pro"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "136"
+pros = "Read-only default profile; human approval on release steps; DFM and BOM checks"
+cons = "SI and EMC checks are rough estimates; small"
+overlaps = "mixelpixx"
+
+[[entry]]
+id = "cad-openscad"
+category = "electronics-cad-and-3d-printing"
+name = "RobertCoop/openscad-mcp"
+url = "https://github.com/RobertCoop/openscad-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "134"
+pros = "Printability and clearance checks"
+cons = "Mesh output only, no STEP"
+overlaps = "build123d"
+
+[[entry]]
+id = "print-3dprinter"
+category = "electronics-cad-and-3d-printing"
+name = "mcp-3D-printer-server"
+url = "https://github.com/DMontgomery40/mcp-3D-printer-server"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Queued (no auto-start)"
+stars = "233"
+pros = "OctoPrint, Klipper, Bambu, Prusa, Duet; STL edits and slicing"
+cons = "Can start prints on real hardware; Bambu is the only mature backend"
+overlaps = "none"
+
+[[entry]]
+id = "ee-spicebridge"
+category = "electronics-cad-and-3d-printing"
+name = "clanker-lover/spicebridge"
+url = "https://github.com/clanker-lover/spicebridge"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Alternate (kicad-happy covers SPICE)"
+stars = "28"
+pros = "ngspice, templates, spec checks, KiCad export"
+cons = "Very young"
+overlaps = "ltspice-mcp"
+
+[[entry]]
+id = "ee-ltspice-mcp"
+category = "electronics-cad-and-3d-printing"
+name = "cognitohazard/ltspice-mcp"
+url = "https://github.com/cognitohazard/ltspice-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Alternate"
+stars = "37"
+pros = "ngspice support, Monte Carlo, sweeps"
+cons = "README warns of breaking changes"
+overlaps = "spicebridge"
+
+# ---- language-servers-and-language-skills ----
+
+[[entry]]
+id = "lang-lsp-official"
+category = "language-servers-and-language-skills"
+name = "Official LSP plugins"
+url = "https://github.com/anthropics/claude-plugins-official"
+detail = "(rust-analyzer-lsp, gopls-lsp, pyright-lsp)"
+type = "plugins"
+fit = 4
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 4
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "40k (marketplace)"
+pros = "Official; real compiler diagnostics and references for Rust, Go, Python"
+cons = "You install the language servers; no Scala plugin exists"
+
+[[entry]]
+id = "lang-rust-async"
+category = "language-servers-and-language-skills"
+name = "wshobson rust-async-patterns"
+url = "https://github.com/wshobson/agents"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "41k (repo)"
+pros = "Tokio JoinSet, select!, cancellation, tracing in one file; audits pass"
+cons = "Part of a huge mixed-quality repo"
+
+[[entry]]
+id = "lang-go-samber"
+category = "language-servers-and-language-skills"
+name = "samber/cc-skills-golang"
+url = "https://github.com/samber/cc-skills-golang"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "3.3k"
+pros = "Strongest Go set; write, review and audit modes"
+cons = "Audit mode spawns up to 5 subagents"
+
+[[entry]]
+id = "lang-serena"
+category = "language-servers-and-language-skills"
+name = "oraios/serena"
+url = "https://github.com/oraios/serena"
+type = "MCP"
+fit = 3
+effectiveness = 2
+cost = 1
+reliability = 2
+quality = 3
+composability = 2
+evidence = "E2"
+verdict = "Alternate (Scala)"
+stars = "27.9k"
+pros = "LSP-backed editing in 40+ languages incl. Scala and Nix"
+cons = "Many tools; includes shell execution"
+
+[[entry]]
+id = "lang-gopls-mcp"
+category = "language-servers-and-language-skills"
+name = "gopls built-in MCP"
+url = "https://go.dev/gopls/features/mcp"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate"
+stars = "n/a (gopls)"
+pros = "Official Go team, attaches to the live session"
+cons = "Experimental; overlaps the LSP plugin"
+
+[[entry]]
+id = "lang-rust-apollo"
+category = "language-servers-and-language-skills"
+name = "apollographql rust-best-practices"
+url = "https://github.com/apollographql/skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Alternate"
+stars = "101"
+pros = "Apollo's internal Rust handbook"
+cons = "Marked experimental"
+
+[[entry]]
+id = "lang-bash-defensive"
+category = "language-servers-and-language-skills"
+name = "wshobson bash-defensive-patterns"
+url = "https://github.com/wshobson/agents"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "41k (repo)"
+pros = "Production Bash patterns; audits pass"
+cons = "Generic"
+
+[[entry]]
+id = "lang-warp-fix-errors"
+category = "language-servers-and-language-skills"
+name = "warpdotdev/common-skills"
+url = "https://github.com/warpdotdev/common-skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Skip"
+stars = "540"
+pros = "Fixes Rust compile and Clippy errors; skill-doctor grades skills"
+cons = "Audits unverified"
+
+[[entry]]
+id = "lang-go-eduardo"
+category = "language-servers-and-language-skills"
+name = "go-agent-skills"
+url = "https://github.com/eduardo-sl/go-agent-skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Skip"
+stars = "76"
+pros = "Declares allowed-tools; review skills can't write"
+cons = "Low adoption"
+
+[[entry]]
+id = "lang-mcp-lsp-bridge"
+category = "language-servers-and-language-skills"
+name = "isaacphi/mcp-language-server"
+url = "https://github.com/isaacphi/mcp-language-server"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "1.6k"
+pros = "Any stdio LSP over MCP"
+cons = "Beta; Windows not mentioned"
+
+[[entry]]
+id = "lang-rust-actionbook"
+category = "language-servers-and-language-skills"
+name = "actionbook/rust-skills"
+url = "https://github.com/actionbook/rust-skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E1"
+verdict = "Skip"
+stars = "1.5k"
+pros = "Layered Rust reasoning"
+cons = "Needs its own MCP server"
+
+[[entry]]
+id = "lang-agent-lsp"
+category = "language-servers-and-language-skills"
+name = "agent-lsp"
+url = "https://github.com/blackwell-systems/agent-lsp"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "98"
+pros = "Speculative edits, 30 languages incl. Scala"
+cons = "65 tools; one maintainer"
+
+# ---- self-hosted-infrastructure ----
+
+[[entry]]
+id = "infra-mcp-nixos"
+category = "self-hosted-infrastructure"
+name = "utensils/mcp-nixos"
+url = "https://github.com/utensils/mcp-nixos"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "823"
+pros = "Packages, options, Home Manager; works on Windows; read-only; ~1k tokens"
+cons = "Store and flake actions need Nix"
+
+[[entry]]
+id = "infra-cc-devops"
+category = "self-hosted-infrastructure"
+name = "akin-ozer/cc-devops-skills"
+url = "https://github.com/akin-ozer/cc-devops-skills"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Queued"
+stars = "306"
+pros = "Validators actually lint and dry-run: k8s, Helm, Dockerfile, PromQL"
+cons = "Runs local scripts; 24 commits"
+
+[[entry]]
+id = "infra-wshobson"
+category = "self-hosted-infrastructure"
+name = "wshobson infra skills"
+url = "https://github.com/wshobson/agents"
+detail = "(helm, k8s-manifest, gitops)"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate"
+stars = "41k (repo)"
+pros = "Helm, manifests, GitOps, Grafana dashboards"
+cons = "Audits only verified for grafana-dashboards"
+
+[[entry]]
+id = "infra-gateway-radumalica"
+category = "self-hosted-infrastructure"
+name = "infrastructure-mcp"
+url = "https://github.com/radumalica/infrastructure-mcp"
+detail = "(Proxmox, Docker, k8s)"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Watch, 5 stars"
+stars = "5"
+pros = "One safe gateway: read-only default, dry-run, token on HTTP"
+cons = "Unproven"
+
+[[entry]]
+id = "infra-docker-ckreiling"
+category = "self-hosted-infrastructure"
+name = "ckreiling/mcp-server-docker"
+url = "https://github.com/ckreiling/mcp-server-docker"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Queued"
+stars = "736"
+pros = "Works with `DOCKER_HOST=ssh://`"
+cons = "No read-only mode; no Swarm"
+
+[[entry]]
+id = "infra-docker-expert"
+category = "self-hosted-infrastructure"
+name = "sickn33 docker-expert"
+url = "https://github.com/sickn33/agentic-awesome-skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Skip"
+stars = "47.9k (repo)"
+pros = "Inspects before acting; audits pass"
+cons = "Aggregator repo of 2,700 skills"
+
+[[entry]]
+id = "infra-docker-l337"
+category = "self-hosted-infrastructure"
+name = "L337-org/docker-mcp"
+url = "https://github.com/L337-org/docker-mcp"
+detail = "(Swarm)"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Alternate (Swarm)"
+stars = "9"
+pros = "Only real Swarm coverage; read-only and no-destructive modes"
+cons = "Python 3.14+; 150+ tools"
+
+[[entry]]
+id = "infra-github-mcp"
+category = "self-hosted-infrastructure"
+name = "github/github-mcp-server"
+url = "https://github.com/github/github-mcp-server"
+type = "MCP"
+fit = 2
+effectiveness = 2
+cost = 1
+reliability = 2
+quality = 4
+composability = 3
+evidence = "E2"
+verdict = "Skip, `gh` CLI is cheaper"
+stars = "32.2k"
+pros = "Official; toolsets and read-only flag"
+cons = "`gh` CLI is cheaper in tokens"
+
+[[entry]]
+id = "infra-hashicorp"
+category = "self-hosted-infrastructure"
+name = "hashicorp/agent-skills"
+url = "https://github.com/hashicorp/agent-skills"
+type = "skills"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Skip unless Terraform"
+stars = "761"
+pros = "Official Terraform and Packer"
+cons = "You don't use Terraform"
+
+[[entry]]
+id = "infra-mcp-gateway"
+category = "self-hosted-infrastructure"
+name = "docker/mcp-gateway"
+url = "https://github.com/docker/mcp-gateway"
+type = "MCP host"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Watch (for the RE bridge)"
+stars = "1.5k"
+pros = "Runs MCP servers in isolated containers"
+cons = "Built around Docker Desktop"
+
+[[entry]]
+id = "infra-mirrord"
+category = "self-hosted-infrastructure"
+name = "metalbear-co/skills"
+url = "https://github.com/metalbear-co/skills"
+type = "skills"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "21"
+pros = "Runs local code inside a live cluster"
+cons = "Tied to mirrord"
+
+[[entry]]
+id = "infra-proximo"
+category = "self-hosted-infrastructure"
+name = "Proximo"
+url = "https://github.com/john-broadway/proximo"
+detail = "(Proxmox)"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 0
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E0"
+verdict = "Skip, 924 tools"
+stars = "54"
+pros = "Read-only default, plan-then-confirm, audit log"
+cons = "924 tools"
+
+[[entry]]
+id = "infra-mcp-proxmox"
+category = "self-hosted-infrastructure"
+name = "antonio-mello-ai/mcp-proxmox"
+url = "https://github.com/antonio-mello-ai/mcp-proxmox"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E0"
+verdict = "Skip, no read-only"
+stars = "16"
+pros = "Two-step confirm on destructive ops"
+cons = "No read-only mode"
+
+[[entry]]
+id = "infra-portainer"
+category = "self-hosted-infrastructure"
+name = "portainer/portainer-mcp"
+url = "https://github.com/portainer/portainer-mcp"
+type = "MCP"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Only with Portainer"
+stars = "225"
+pros = "Official, read-only option"
+cons = "Needs Portainer"
+
+# ---- observability ----
+
+[[entry]]
+id = "obs-otel-skills"
+category = "observability"
+name = "ollygarden/opentelemetry-agent-skills"
+url = "https://github.com/ollygarden/opentelemetry-agent-skills"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Queued"
+stars = "83"
+pros = "Vendor-neutral Collector, OTTL, semconv; 211 commits"
+cons = "No Rust or Scala SDK skill"
+
+[[entry]]
+id = "obs-victoriametrics"
+category = "observability"
+name = "mcp-victoriametrics"
+url = "https://github.com/VictoriaMetrics-Community/mcp-victoriametrics"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued"
+stars = "238"
+pros = "Covers almost all read-only VM APIs, relabel and rules debuggers"
+cons = "No client auth; embedded docs DB costs resources"
+
+[[entry]]
+id = "obs-prometheus"
+category = "observability"
+name = "pab1it0/prometheus-mcp-server"
+url = "https://github.com/pab1it0/prometheus-mcp-server"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Alternate"
+stars = "515"
+pros = "6 tools, mTLS"
+cons = "VictoriaMetrics compatibility unstated"
+
+[[entry]]
+id = "obs-otelcol-doctor"
+category = "observability"
+name = "otelcol-doctor"
+url = "https://github.com/s3onghyun/otelcol-doctor"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "8"
+pros = "Validates via `otelcol validate`"
+cons = "Tiny"
+
+[[entry]]
+id = "obs-grafana"
+category = "observability"
+name = "grafana/mcp-grafana"
+url = "https://github.com/grafana/mcp-grafana"
+type = "MCP"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Only with Grafana"
+stars = "3.3k"
+pros = "Official, `--disable-write`"
+cons = "Large tool surface"
+
+# ---- data-and-databases ----
+
+[[entry]]
+id = "data-duckdb"
+category = "data-and-databases"
+name = "duckdb/duckdb-skills"
+url = "https://github.com/duckdb/duckdb-skills"
+type = "skills"
+fit = 4
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 3
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "572"
+pros = "Official; Parquet local or remote; DuckDB docs search"
+cons = "Windows not fully supported"
+
+[[entry]]
+id = "data-postgres-pro"
+category = "data-and-databases"
+name = "crystaldba/postgres-mcp"
+url = "https://github.com/crystaldba/postgres-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued (restricted mode)"
+stars = "3.2k"
+pros = "Restricted read-only mode, EXPLAIN, index advice"
+cons = "Slow maintenance"
+
+[[entry]]
+id = "data-motherduck"
+category = "data-and-databases"
+name = "motherduckdb/mcp-server-motherduck"
+url = "https://github.com/motherduckdb/mcp-server-motherduck"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "519"
+pros = "Read-only default, 5 tools"
+cons = "MotherDuck cloud bias"
+
+[[entry]]
+id = "data-supabase-pg"
+category = "data-and-databases"
+name = "supabase-postgres-best-practices"
+url = "https://github.com/supabase/agent-skills"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "2.4k"
+pros = "Generic Postgres performance rules"
+cons = "Second skill is Supabase-only"
+
+[[entry]]
+id = "data-sanjay-pg"
+category = "data-and-databases"
+name = "sanjay3290/ai-skills"
+url = "https://github.com/sanjay3290/ai-skills"
+detail = "read-only postgres"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "422"
+pros = "Read-only query skill"
+cons = "Mixed quality repo"
+
+# ---- home-automation ----
+
+[[entry]]
+id = "ha-zigbee2mqtt"
+category = "home-automation"
+name = "alexpfau/zigbee2mqtt-mcp"
+url = "https://github.com/alexpfau/zigbee2mqtt-mcp"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Queued (safe tier)"
+stars = "5"
+pros = "Mesh map, binding, OTA; three write tiers"
+cons = "5 stars; safe tier still actuates locks"
+
+[[entry]]
+id = "ha-official"
+category = "home-automation"
+name = "Home Assistant MCP Server integration"
+url = "https://www.home-assistant.io/integrations/mcp_server/"
+type = "MCP (core)"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "core"
+pros = "Official, OAuth with PKCE, exposed entities only"
+cons = "Assist-level only; no automation editing"
+
+[[entry]]
+id = "ha-skill-komal"
+category = "home-automation"
+name = "claude-skill-homeassistant"
+url = "https://github.com/komal-SkyNET/claude-skill-homeassistant"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Alternate (config work)"
+stars = "947"
+pros = "Validate, deploy, debug automations, dashboards"
+cons = "Root SSH and long-lived token in examples"
+
+[[entry]]
+id = "ha-hass-mcp"
+category = "home-automation"
+name = "voska/hass-mcp"
+url = "https://github.com/voska/hass-mcp"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "343"
+pros = "Dry-run on dashboard edits; tests"
+cons = "No auth on HTTP; includes restart"
+
+[[entry]]
+id = "ha-mcp"
+category = "home-automation"
+name = "homeassistant-ai/ha-mcp"
+url = "https://github.com/homeassistant-ai/ha-mcp"
+type = "MCP"
+fit = 4
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Alternate (power use)"
+stars = "4.6k"
+pros = "87 tools incl. automations, backups, HACS"
+cons = "Unofficial; broad write access"
+
+# ---- sap-and-abap ----
+
+[[entry]]
+id = "sap-vsp"
+category = "sap-and-abap"
+name = "oisee/vibing-steampunk"
+url = "https://github.com/oisee/vibing-steampunk"
+type = "MCP (ADT)"
+fit = 4
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued (read-only)"
+stars = "454"
+pros = "~200-token focused mode; read-only plus allowlists"
+cons = "Expert mode ~40k tokens"
+
+[[entry]]
+id = "sap-adt-mario"
+category = "sap-and-abap"
+name = "mario-andreschak/mcp-abap-adt"
+url = "https://github.com/mario-andreschak/mcp-abap-adt"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Alternate"
+stars = "172"
+pros = "Read-only by design"
+cons = "Basic auth via env vars"
+
+[[entry]]
+id = "sap-adt-fr0ster"
+category = "sap-and-abap"
+name = "fr0ster/mcp-abap-adt"
+url = "https://github.com/fr0ster/mcp-abap-adt"
+type = "MCP"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "78"
+pros = "Many auth methods incl. BTP"
+cons = "Writes to live systems"
+
+# ---- agent-safety-and-harness ----
+
+[[entry]]
+id = "safe-skillspector"
+category = "agent-safety-and-harness"
+name = "NVIDIA/SkillSpector"
+url = "https://github.com/NVIDIA/SkillSpector"
+type = "scanner CLI"
+fit = 4
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Queued (install gate)"
+stars = "19.3k"
+pros = "Scans skills for injection and exfiltration; `--no-llm` mode"
+cons = "Default LLM is NVIDIA's; OSV.dev lookups"
+
+[[entry]]
+id = "harness-hookify"
+category = "agent-safety-and-harness"
+name = "official hookify"
+url = "https://github.com/anthropics/claude-plugins-official"
+type = "plugin"
+fit = 2
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 3
+composability = 4
+evidence = "E2"
+verdict = "Optional"
+stars = "marketplace"
+pros = "Official; turns repeated corrections into hooks"
+cons = "Easy to accumulate hooks"
+
+[[entry]]
+id = "safe-safety-net"
+category = "agent-safety-and-harness"
+name = "kenryu42/claude-code-safety-net"
+url = "https://github.com/kenryu42/claude-code-safety-net"
+type = "hooks"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Queued"
+stars = "1.7k"
+pros = "Blocks destructive git and rm, also inside `bash -c`; Windows support"
+cons = "`npx @latest` install"
+
+[[entry]]
+id = "safe-agnix"
+category = "agent-safety-and-harness"
+name = "agent-sh/agnix"
+url = "https://github.com/agent-sh/agnix"
+type = "linter + LSP"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Queued"
+stars = "455"
+pros = "702 rules for AGENTS.md, SKILL.md, hooks, MCP configs"
+cons = "Telemetry unverified"
+
+[[entry]]
+id = "harness-herdr"
+category = "agent-safety-and-harness"
+name = "herdrdev/herdr"
+url = "https://github.com/herdrdev/herdr"
+type = "terminal multiplexer"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Optional"
+stars = "43.9k"
+pros = "Persistent agent multiplexer across SSH hosts"
+cons = "Windows beta"
+
+[[entry]]
+id = "safe-dippy"
+category = "agent-safety-and-harness"
+name = "ldayton/Dippy"
+url = "https://github.com/ldayton/Dippy"
+type = "hook"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Alternate"
+stars = "243"
+pros = "AST-parses bash, auto-approves only safe commands"
+cons = "No Windows mention"
+
+[[entry]]
+id = "harness-claude-hud"
+category = "agent-safety-and-harness"
+name = "jarrodwatts/claude-hud"
+url = "https://github.com/jarrodwatts/claude-hud"
+type = "status line"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "28.2k"
+pros = "Context and usage in the status line; no network"
+cons = "Cosmetic"
+
+[[entry]]
+id = "harness-ccusage"
+category = "agent-safety-and-harness"
+name = "ccusage/ccusage"
+url = "https://github.com/ccusage/ccusage"
+type = "CLI"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "19.1k"
+pros = "Token and cost reports from local logs"
+cons = "Fetches prices unless offline"
+
+[[entry]]
+id = "harness-mcp-cli"
+category = "agent-safety-and-harness"
+name = "obra/superpowers-lab"
+url = "https://github.com/obra/superpowers-lab"
+detail = "mcp-cli"
+type = "skill"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E0"
+verdict = "Watch"
+stars = "423"
+pros = "Calls MCP servers without loading them into context"
+cons = "Experimental"
+
+[[entry]]
+id = "harness-claude-squad"
+category = "agent-safety-and-harness"
+name = "smtg-ai/claude-squad"
+url = "https://github.com/smtg-ai/claude-squad"
+type = "TUI"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "8.3k"
+pros = "Parallel agents in tmux and worktrees"
+cons = "AGPL; tmux"
+
+[[entry]]
+id = "safe-container-use"
+category = "agent-safety-and-harness"
+name = "dagger/container-use"
+url = "https://github.com/dagger/container-use"
+type = "MCP + CLI"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Watch"
+stars = "4.0k"
+pros = "Container plus branch per agent"
+cons = "Experimental; remote DOCKER_HOST unverified"
+
+[[entry]]
+id = "safe-coi"
+category = "agent-safety-and-harness"
+name = "code-on-incus"
+url = "https://github.com/mensfeld/code-on-incus"
+type = "sandbox"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Watch"
+stars = "755"
+pros = "Incus containers with kernel monitoring"
+cons = "Needs Incus"
+
+[[entry]]
+id = "harness-lean-ctx"
+category = "agent-safety-and-harness"
+name = "yvgude/lean-ctx"
+url = "https://github.com/yvgude/lean-ctx"
+type = "MCP + proxy"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E0"
+verdict = "Skip"
+stars = "3.8k"
+pros = "Local compression and caching, no telemetry by default"
+cons = "Proxy in the request path"
+
+[[entry]]
+id = "safe-parry-guard"
+category = "agent-safety-and-harness"
+name = "vaporif/parry-guard"
+url = "https://github.com/vaporif/parry-guard"
+type = "hook"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Skip"
+stars = "45"
+pros = "Local prompt-injection scanner"
+cons = "Gated HuggingFace models"
+
+[[entry]]
+id = "mem-agentmemory"
+category = "agent-safety-and-harness"
+name = "rohitg00/agentmemory"
+url = "https://github.com/rohitg00/agentmemory"
+type = "hooks + MCP"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "29.3k"
+pros = "Local SQLite memory across agents"
+cons = "Background hooks"
+
+[[entry]]
+id = "out-caveman"
+category = "agent-safety-and-harness"
+name = "JuliusBrussee/caveman"
+url = "https://github.com/JuliusBrussee/caveman"
+type = "skill + proxy"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E1"
+verdict = "Skip"
+stars = "~103k"
+pros = "Cuts output tokens"
+cons = "Adds 1 to 1.5k input tokens per turn; possible reasoning loss on multi-step work; telemetry on by default"
+
+# ---- building-skills-and-mcps ----
+
+[[entry]]
+id = "build-official"
+category = "building-skills-and-mcps"
+name = "skill-creator + mcp-builder"
+url = "https://github.com/anthropics/skills"
+detail = "(+ plugin-dev, mcp-server-dev)"
+type = "skills"
+fit = 3
+effectiveness = 2
+cost = 4
+reliability = 2
+quality = 4
+composability = 4
+evidence = "E2"
+verdict = "Queued"
+stars = "180k"
+pros = "Official; skill evals and benchmarking"
+cons = "Demonstration quality"
+
+[[entry]]
+id = "build-skill-seekers"
+category = "building-skills-and-mcps"
+name = "yusufkaraaslan/Skill_Seekers"
+url = "https://github.com/yusufkaraaslan/Skill_Seekers"
+type = "CLI + MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued (Scala gap)"
+stars = "14.9k"
+pros = "Turns docs, repos and PDFs into skills; local mode"
+cons = "Heavy optional deps"
+
+[[entry]]
+id = "build-context-eng"
+category = "building-skills-and-mcps"
+name = "Agent-Skills-for-Context-Engineering"
+url = "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+type = "reference skills"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "18k"
+pros = "Reference on context, memory, tool design"
+cons = "Prose, not tools"
+
+[[entry]]
+id = "build-mcp-tunnels"
+category = "building-skills-and-mcps"
+name = "official mcp-tunnels"
+url = "https://github.com/anthropics/claude-plugins-official"
+type = "plugin"
+fit = 2
+effectiveness = 2
+cost = 3
+reliability = 2
+quality = 3
+composability = 3
+evidence = "E2"
+verdict = "Watch (RE bridge)"
+stars = "marketplace"
+pros = "Reach a private MCP via Anthropic tunnel"
+cons = "Routes through Anthropic"
+
+# ---- architecture ----
+
+[[entry]]
+id = "arch-wshobson-es"
+category = "architecture"
+name = "wshobson cqrs, event-store, saga, projection"
+url = "https://github.com/wshobson/agents"
+type = "skills"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 4
+evidence = "E1"
+verdict = "Optional"
+stars = "41k (repo)"
+pros = "CQRS, event store, saga, projections"
+cons = "Depth unverified"
+
+# ---- listed, not ranked (gate failure) ----
+
+[[entry]]
+id = "mem-claude-mem"
+name = "thedotmack/claude-mem"
+url = "https://github.com/thedotmack/claude-mem"
+gate = "Security"
+gate_reason = "Unauthenticated local worker API reported to expose files and credentials (#3861)"
+stars = "~102k"
+pros = "Cross-session memory with search"
+cons = "Unauthenticated worker API (#3861); prompt erased when worker dies (#3871); Windows console flashes (#3873); crypto token in README"
+
+[[entry]]
+id = "rt-ccrouter"
+name = "musistudio/claude-code-router"
+url = "https://github.com/musistudio/claude-code-router"
+gate = "Security (Docker)"
+gate_reason = "Management token exposed in Docker setup; only useful for non-Anthropic models"
+stars = "~37k"
+pros = "Routes Claude Code to many providers with fallbacks"
+cons = "940+ open issues; fallback regressions in v3.1.x; Docker auth token exposed"
+
+[[entry]]
+id = "wf-gstack"
+name = "garrytan/gstack"
+url = "https://github.com/garrytan/gstack"
+gate = "Security"
+gate_reason = "Registers hooks that bypass permissions; design tool sends data to OpenAI by default; edits CLAUDE.md"
+
+[[entry]]
+id = "fe-design-mobile"
+name = "designed-by-ai/skills design-mobile-apps"
+gate = "Security"
+gate_reason = "Snyk High Risk; front end for a paid service; 0 stars against 895k installs"
+
+[[entry]]
+id = "x-101-superpowers"
+name = "101-skills/superpowers"
+gate = "Security"
+gate_reason = "Borrows obra's name; 0 stars; needs an inference.sh account"
+
+[[entry]]
+id = "x-reddit-automation"
+name = "flowkit-labs reddit-automation"
+gate = "Security"
+gate_reason = "Install command points at a different owner; 0 stars against 992k installs"
+
+[[entry]]
+id = "wf-loki-mode"
+name = "asklokesh/claudeskill-loki-mode"
+url = "https://github.com/asklokesh/claudeskill-loki-mode"
+gate = "License"
+gate_reason = "Business Source License 1.1, not open source until 2030"
+
+[[entry]]
+id = "harness-ykdojo-dx"
+name = "ykdojo/claude-code-tips"
+url = "https://github.com/ykdojo/claude-code-tips"
+gate = "License"
+gate_reason = "No license stated"
+
+[[entry]]
+id = "wf-get-shit-done"
+name = "gsd-build/get-shit-done"
+url = "https://github.com/gsd-build/get-shit-done"
+gate = "Maintenance"
+gate_reason = "Archived June 2026; moved to gsd-core"
+
+[[entry]]
+id = "rs-notebooklm"
+name = "PleasePrompto/notebooklm-skill"
+url = "https://github.com/PleasePrompto/notebooklm-skill"
+gate = "Maintenance"
+gate_reason = "Archived September 2026"
+
+[[entry]]
+id = "ci-dsp"
+name = "data-structure-protocol"
+url = "https://github.com/k-kolomeitsev/data-structure-protocol"
+gate = "Maintenance"
+gate_reason = "Deprecated by its author"
+
+[[entry]]
+id = "sec-ffuf"
+name = "jthack/ffuf_claude_skill"
+url = "https://github.com/jthack/ffuf_claude_skill"
+gate = "Maintenance"
+gate_reason = "2 commits, effectively abandoned"
+
+[[entry]]
+id = "rs-rigorpilot"
+name = "RigorPilot-Skills"
+url = "https://github.com/lllllllama/RigorPilot-Skills"
+gate = "Gate pending"
+gate_reason = "321k installs against 481 stars"
+
+[[entry]]
+id = "infra-ceph-aiops"
+name = "AIops-tools/Ceph-AIops"
+url = "https://github.com/AIops-tools/Ceph-AIops"
+gate = "Gate pending"
+gate_reason = "0 stars, inconsistent tool counts, part of a family that looks generated"

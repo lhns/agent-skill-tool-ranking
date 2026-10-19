@@ -53,9 +53,10 @@ One pick per job. Only your AGENTS.md, one interview skill and a safety hook loa
 
 ## Index
 
-- [How to use this doc](HOW-TO-USE.md)
+- [How to use this repo](HOW-TO-USE.md)
+- [Agent instructions](AGENTS.md): how agents add, score and re-rank entries
 - [Rubric](RUBRIC.md): gates, criteria, evidence levels, statuses, consistency rules, re-rank protocol, pitfalls
-- [Ranking](ranking/README.md)
+- [Ranking](ranking/README.md) (generated from `data/`)
   - [Workflow and process](ranking/workflow-and-process.md)
   - [Code intelligence](ranking/code-intelligence.md)
   - [Language and library docs](ranking/language-and-library-docs.md)
@@ -75,11 +76,11 @@ One pick per job. Only your AGENTS.md, one interview skill and a safety hook loa
   - [Agent safety and harness](ranking/agent-safety-and-harness.md)
   - [Building skills and MCPs](ranking/building-skills-and-mcps.md)
   - [Architecture](ranking/architecture.md)
-- [Pros and cons](PROS-AND-CONS.md)
-- [Second pass: entries from the 10 discovery sources](SECOND-PASS.md)
+- [Pros and cons](PROS-AND-CONS.md) (generated)
+- Data: [entries](data/entries.toml), [categories](data/categories.toml); build with `python scripts/build.py`
 - [Experience log](EXPERIENCE-LOG.md)
 - [Discovery sources](DISCOVERY-SOURCES.md)
 - [Inbox and watchlist](INBOX-AND-WATCHLIST.md)
 - [Changelog](CHANGELOG.md)
 
-Exported from the [Claude Doc "Agent Skill & Tool Ranking"](https://claude.ai/artifact/RGeG2iQ57S3Y5471XzwWus) on 2026-10-19.
+Originally exported from the [Claude Doc "Agent Skill & Tool Ranking"](https://claude.ai/artifact/RGeG2iQ57S3Y5471XzwWus) on 2026-10-19. This repo is now the source of truth; the Claude Doc is no longer updated.

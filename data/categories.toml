@@ -1,0 +1,75 @@
+# Categories, in display order. Edit titles and notes here.
+
+[[category]]
+id = "workflow-and-process"
+title = "Workflow and process"
+
+[[category]]
+id = "code-intelligence"
+title = "Code intelligence"
+
+[[category]]
+id = "language-and-library-docs"
+title = "Language and library docs"
+
+[[category]]
+id = "reverse-engineering"
+title = "Reverse engineering"
+
+[[category]]
+id = "security-review"
+title = "Security review"
+
+[[category]]
+id = "kubernetes-and-infrastructure"
+title = "Kubernetes and infrastructure"
+
+[[category]]
+id = "web-frontend-and-testing"
+title = "Web frontend and testing"
+
+[[category]]
+id = "writing-and-research"
+title = "Writing and research"
+
+[[category]]
+id = "electronics-cad-and-3d-printing"
+title = "Electronics, CAD and 3D printing"
+
+[[category]]
+id = "language-servers-and-language-skills"
+title = "Language servers and language skills"
+note = "No Scala, cats-effect, fs2, http4s or Ox skill exists on any of the 10 sources; the only Scala hit (sickn33 `scala-pro`) covers Akka and Spark. Generate your own with Skill_Seekers (below)."
+
+[[category]]
+id = "self-hosted-infrastructure"
+title = "Self-hosted infrastructure"
+
+[[category]]
+id = "observability"
+title = "Observability"
+
+[[category]]
+id = "data-and-databases"
+title = "Data and databases"
+note = "No usable generic S3/MinIO server was found; DuckDB's httpfs reads Parquet from S3 and likely covers the need (unverified)."
+
+[[category]]
+id = "home-automation"
+title = "Home automation"
+
+[[category]]
+id = "sap-and-abap"
+title = "SAP and ABAP"
+
+[[category]]
+id = "agent-safety-and-harness"
+title = "Agent safety and harness"
+
+[[category]]
+id = "building-skills-and-mcps"
+title = "Building skills and MCPs"
+
+[[category]]
+id = "architecture"
+title = "Architecture"
