@@ -2,6 +2,10 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | repo | Ranking tables now generated from `data/entries.toml` by `scripts/build.py`; AGENTS.md re-rank workflow; CI check | Two hand-arithmetic slips in the doc era |
+| 2026-10-19 | lang-scala-direct-style | Added, 54, Queued for Ox projects only | Repo, SKILL.md and chapters read; 69 stars (E1) |
+| 2026-10-19 | safe-tacit | Added, 31, Watch | Repo and paper read; nightly compiler, no Windows path |
+| 2026-10-19 | harness-atc | Added, 27, Skip | Standalone agent, not a component; one author, two months old |
 | 2026-10-19 | all | Second pass: about 90 entries added from 10 discovery sources; 9 new categories | Source pages, repo pages, skills.sh audit badges (E0 to E2) |
 | 2026-10-19 | stack | New picks: SkillSpector, official LSP plugins, Skill\_Seekers, mcp-nixos, duckdb-skills, kicad-happy, vibing-steampunk, HA official MCP, zigbee2mqtt-mcp, and others | Highest score per job |
 | 2026-10-19 | sec-official | Replaces trailofbits as security pick (69 vs 58) | Reviewed official marketplace = E2 |

@@ -2674,3 +2674,63 @@ name = "AIops-tools/Ceph-AIops"
 url = "https://github.com/AIops-tools/Ceph-AIops"
 gate = "Gate pending"
 gate_reason = "0 stars, inconsistent tool counts, part of a family that looks generated"
+
+# ---- added 2026-10-19: Scala repos ----
+
+[[entry]]
+id = "lang-scala-direct-style"
+category = "language-servers-and-language-skills"
+name = "VirtusLab/scala-skill"
+url = "https://github.com/VirtusLab/scala-skill"
+detail = "(direct-style-scala)"
+type = "skill"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Queued (Ox projects only)"
+stars = "69"
+pros = "By Adam Warski; Ox, Magnum, Tapir/sttp sync, jsoniter, OTel recipes in 24 on-demand chapters; ~2.5k-token core; active (14 commits in 30 days)"
+cons = "Auto-loads for any Scala task and pushes Ox, braceless syntax and sbt 2 into cats-effect repos; no cats-effect, fs2, http4s or Circe; fetches chapters from mutable master; Apache-2.0 only in manifests, no LICENSE file"
+overlaps = "Skill_Seekers-generated Ox skills; complements Metals MCP"
+
+[[entry]]
+id = "safe-tacit"
+category = "agent-safety-and-harness"
+name = "lampepfl/tacit"
+url = "https://github.com/lampepfl/tacit"
+type = "MCP server"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E1"
+verdict = "Watch"
+stars = "85"
+pros = "Capability-safe sandbox: agent writes capture-checked Scala 3 run against a file, process and network capability library; peer-reviewed (CAIS 26 Best Paper); jars SHA-256 verified"
+cons = "Research prototype on a Scala 3.10.2 nightly with experimental capture checking; wants the agent's own Bash, Read, Write tools disabled; no Windows instructions; results are the authors' own"
+overlaps = "safety-net, container-use (different approach)"
+
+[[entry]]
+id = "harness-atc"
+category = "agent-safety-and-harness"
+name = "lampepfl/atc"
+url = "https://github.com/lampepfl/atc"
+type = "standalone agent"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 0
+evidence = "E0"
+verdict = "Skip"
+stars = "10"
+pros = "Terminal agent on TACIT: deny-by-default permissions, read-only/local/full modes, Classified type for secrets, many providers"
+cons = "Replaces Claude Code instead of plugging in; one author, started August 2026; allowed commands run outside the sandbox; Windows best effort"
+overlaps = "Claude Code itself"

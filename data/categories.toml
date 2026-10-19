@@ -39,7 +39,7 @@ title = "Electronics, CAD and 3D printing"
 [[category]]
 id = "language-servers-and-language-skills"
 title = "Language servers and language skills"
-note = "No Scala, cats-effect, fs2, http4s or Ox skill exists on any of the 10 sources; the only Scala hit (sickn33 `scala-pro`) covers Akka and Spark. Generate your own with Skill_Seekers (below)."
+note = "The only Scala-specific skill found is VirtusLab/scala-skill, which covers direct style (Ox, Magnum, Tapir) but nothing for cats-effect, fs2, http4s or Circe. Generate those with Skill_Seekers."
 
 [[category]]
 id = "self-hosted-infrastructure"

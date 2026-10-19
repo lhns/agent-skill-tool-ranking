@@ -132,6 +132,7 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | lang-go-samber | 3.3k | Strongest Go set; write, review and audit modes | Audit mode spawns up to 5 subagents |  |
 | lang-gopls-mcp | n/a (gopls) | Official Go team, attaches to the live session | Experimental; overlaps the LSP plugin |  |
 | lang-rust-apollo | 101 | Apollo's internal Rust handbook | Marked experimental |  |
+| lang-scala-direct-style | 69 | By Adam Warski; Ox, Magnum, Tapir/sttp sync, jsoniter, OTel recipes in 24 on-demand chapters; ~2.5k-token core; active (14 commits in 30 days) | Auto-loads for any Scala task and pushes Ox, braceless syntax and sbt 2 into cats-effect repos; no cats-effect, fs2, http4s or Circe; fetches chapters from mutable master; Apache-2.0 only in manifests, no LICENSE file | Skill_Seekers-generated Ox skills; complements Metals MCP |
 | lang-serena | 27.9k | LSP-backed editing in 40+ languages incl. Scala and Nix | Many tools; includes shell execution |  |
 | lang-warp-fix-errors | 540 | Fixes Rust compile and Clippy errors; skill-doctor grades skills | Audits unverified |  |
 | lang-go-eduardo | 76 | Declares allowed-tools; review skills can't write | Low adoption |  |
@@ -216,6 +217,8 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | mem-agentmemory | 29.3k | Local SQLite memory across agents | Background hooks |  |
 | safe-parry-guard | 45 | Local prompt-injection scanner | Gated HuggingFace models |  |
 | out-caveman | ~103k | Cuts output tokens | Adds 1 to 1.5k input tokens per turn; possible reasoning loss on multi-step work; telemetry on by default |  |
+| safe-tacit | 85 | Capability-safe sandbox: agent writes capture-checked Scala 3 run against a file, process and network capability library; peer-reviewed (CAIS 26 Best Paper); jars SHA-256 verified | Research prototype on a Scala 3.10.2 nightly with experimental capture checking; wants the agent's own Bash, Read, Write tools disabled; no Windows instructions; results are the authors' own | safety-net, container-use (different approach) |
+| harness-atc | 10 | Terminal agent on TACIT: deny-by-default permissions, read-only/local/full modes, Classified type for secrets, many providers | Replaces Claude Code instead of plugging in; one author, started August 2026; allowed commands run outside the sandbox; Windows best effort | Claude Code itself |
 
 ## Building skills and MCPs
 

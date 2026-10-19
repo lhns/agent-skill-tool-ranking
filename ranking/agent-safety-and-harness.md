@@ -20,3 +20,5 @@
 | mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |
 | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | hook | 2 | 1 | 2 | 1 | 3 | 3 | E0 | 44 | Skip |
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | skill + proxy | 1 | 1 | 1 | 1 | 2 | 3 | E1 | 31 | Skip |
+| safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | MCP server | 1 | 1 | 1 | 1 | 3 | 2 | E1 | 31 | Watch |
+| harness-atc | [lampepfl/atc](https://github.com/lampepfl/atc) | standalone agent | 1 | 1 | 1 | 1 | 3 | 0 | E0 | 27 | Skip |

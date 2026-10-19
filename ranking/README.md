@@ -15,13 +15,13 @@ Scores are provisional. Almost all rest on E0 to E1 evidence, so Effectiveness a
 | [Web frontend and testing](web-frontend-and-testing.md) | 13 | anthropics frontend-design | 73 |
 | [Writing and research](writing-and-research.md) | 16 | ihor-sokoliuk/mcp-searxng | 60 |
 | [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 9 | aklofas/kicad-happy | 67 |
-| [Language servers and language skills](language-servers-and-language-skills.md) | 12 | Official LSP plugins | 79 |
+| [Language servers and language skills](language-servers-and-language-skills.md) | 13 | Official LSP plugins | 79 |
 | [Self-hosted infrastructure](self-hosted-infrastructure.md) | 14 | utensils/mcp-nixos | 67 |
 | [Observability](observability.md) | 5 | ollygarden/opentelemetry-agent-skills | 60 |
 | [Data and databases](data-and-databases.md) | 5 | duckdb/duckdb-skills | 77 |
 | [Home automation](home-automation.md) | 5 | alexpfau/zigbee2mqtt-mcp | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | oisee/vibing-steampunk | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 16 | NVIDIA/SkillSpector | 69 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 18 | NVIDIA/SkillSpector | 69 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 4 | skill-creator + mcp-builder | 73 |
 | [Architecture](architecture.md) | 1 | wshobson cqrs, event-store, saga, projection | 58 |
 | [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 14 | | |
