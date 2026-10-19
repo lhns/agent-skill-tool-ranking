@@ -2708,7 +2708,19 @@ overlaps = "AGENTS.md, superpowers, gsd"
 
 [[entry]]
 id = "x-hermes-godmode"
+category = "agent-safety-and-harness"
 name = "NousResearch hermes-agent godmode"
 url = "https://skillselion.com/skills/nousresearch/hermes-agent/godmode"
-gate = "Security"
-gate_reason = "Jailbreak toolkit (GODMODE, Parseltongue, ULTRAPLINIAN): obfuscates prompts to evade safety classifiers, fans queries out to many models via OpenRouter, writes persistent jailbreak prefills; fails Snyk and Gen Agent Trust Hub audits"
+type = "skill"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 1
+evidence = "E1"
+verdict = "Skip: little need in your work, terms-of-service risk"
+stars = "~242k (parent repo, hermes-agent); 171 skills.sh installs"
+pros = "MIT; portable SKILL.md (only its auto-setup writes Hermes config); does what you ask it to, no hidden behavior"
+cons = "Jailbreak prompts against Claude or most hosted models break their terms and risk your account; multi-model mode sends each prompt to several paid providers via OpenRouter; writes persistent prefills; skills.sh audits: Snyk and Gen Agent Trust Hub fail, Socket warn. Effectiveness not assessed"
+overlaps = "none"

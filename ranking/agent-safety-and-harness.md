@@ -22,3 +22,4 @@
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | skill + proxy | 1 | 1 | 1 | 1 | 2 | 3 | E1 | 31 | Skip |
 | safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | MCP server | 1 | 1 | 1 | 1 | 3 | 2 | E1 | 31 | Watch |
 | harness-atc | [lampepfl/atc](https://github.com/lampepfl/atc) | standalone agent | 1 | 1 | 1 | 1 | 3 | 0 | E0 | 27 | Skip |
+| x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | skill | 1 | 1 | 1 | 1 | 2 | 1 | E1 | 27 | Skip: little need in your work, terms-of-service risk |

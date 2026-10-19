@@ -23,7 +23,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Data and databases](data-and-databases.md) | 5 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 18 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 19 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 5 | [skill-creator + mcp-builder](https://github.com/anthropics/skills) | 73 |
 | [Architecture](architecture.md) | 1 | [wshobson cqrs, event-store, saga, projection](https://github.com/wshobson/agents) | 58 |
-| [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 15 | | |
+| [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 14 | | |

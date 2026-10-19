@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | x-hermes-godmode | Gate failure (Security) to ranked, 27, Skip | User-intended behavior is not a security failure; scored on fit only, effectiveness not assessed |
 | 2026-10-19 | wf-godmode-noobygains | Added, 27, Skip | Hook and SKILL.md read; near-clone of superpowers |
 | 2026-10-19 | x-hermes-godmode | Listed as gate failure (Security) | Jailbreak skill; skills.sh audits fail |
 | 2026-10-19 | stack | Stack moved to `data/stack.toml` and generated into README with links and scores; statuses renamed (In use, Trying now, Up next, Blocked, Planned); first three picks are Up next, not Trial, since no trial is logged yet | User found the status column confusing |
