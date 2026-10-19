@@ -15,6 +15,7 @@ One pick per job. Only your AGENTS.md, one interview skill and a safety hook loa
 | Skill install gate | NVIDIA SkillSpector | Queued, next | Run before every install | `--no-llm` static mode; note it sends dependency names to OSV.dev | getsentry skill-scanner |
 | Rust, Go, Python language intelligence | Official LSP plugins (rust-analyzer-lsp, gopls-lsp, pyright-lsp) | Queued | Per language | Install the language server binaries yourself | gopls built-in MCP |
 | Scala library knowledge | Skill\_Seekers | Queued | When needed | Local mode, no API key; generate skills for cats-effect, fs2, http4s, Ox, Magnum | Context7 |
+| Scala direct-style conventions | VirtusLab `scala-skill` (direct-style-scala) | Queued | Ox projects only | Install per project, never globally: it auto-loads for any Scala task and would push Ox and sbt 2 into cats-effect repos; pin a local copy, since it fetches chapters from `master` | none |
 | Building skills and MCPs | Official skill-creator + mcp-builder | Queued | When needed | Fits the RE bridge and your own MCPs | none |
 | Multi-tool RE orchestration | REA | Gate pending | RE container | Read the code, pin npm `rea-agents`, no secrets, restricted network; own image if Ghidra pins clash | none |
 | RE method knowledge | wshobson binary-analysis-patterns, protocol-reverse-engineering | Queued | RE container | protocol-RE has a Socket warning; read first | sickn33 reverse-engineer |
@@ -48,14 +49,15 @@ One pick per job. Only your AGENTS.md, one interview skill and a safety hook loa
 | CAD for printing | build123d-mcp | Queued | CAD projects | STEP export | openscad-mcp |
 | Printer control | mcp-3D-printer-server | Queued | Printer projects | Never start a print without confirmation | none |
 
-**Jobs with no pick yet:** Proxmox (only immature servers: infrastructure-mcp has 5 stars, Proximo exposes 924 tools), Ceph (one 0-star server that looks generated), Docker Swarm (one 9-star server), Stalwart and S3/MinIO. Scala ecosystem skills don't exist anywhere; generate them with Skill\_Seekers.
+**Jobs with no pick yet:** Proxmox (only immature servers: infrastructure-mcp has 5 stars, Proximo exposes 924 tools), Ceph (one 0-star server that looks generated), Docker Swarm (one 9-star server), Stalwart and S3/MinIO. No cats-effect, fs2, http4s or Circe skill exists; generate them with Skill\_Seekers. Direct style (Ox, Magnum, Tapir) is covered by VirtusLab's scala-skill.
 
 
 ## Index
 
-- [How to use this doc](HOW-TO-USE.md)
+- [How to use this repo](HOW-TO-USE.md)
+- [Agent instructions](AGENTS.md): how agents add, score and re-rank entries
 - [Rubric](RUBRIC.md): gates, criteria, evidence levels, statuses, consistency rules, re-rank protocol, pitfalls
-- [Ranking](ranking/README.md)
+- [Ranking](ranking/README.md) (generated from `data/`)
   - [Workflow and process](ranking/workflow-and-process.md)
   - [Code intelligence](ranking/code-intelligence.md)
   - [Language and library docs](ranking/language-and-library-docs.md)
@@ -75,11 +77,11 @@ One pick per job. Only your AGENTS.md, one interview skill and a safety hook loa
   - [Agent safety and harness](ranking/agent-safety-and-harness.md)
   - [Building skills and MCPs](ranking/building-skills-and-mcps.md)
   - [Architecture](ranking/architecture.md)
-- [Pros and cons](PROS-AND-CONS.md)
-- [Second pass: entries from the 10 discovery sources](SECOND-PASS.md)
+- [Pros and cons](PROS-AND-CONS.md) (generated)
+- Data: [entries](data/entries.toml), [categories](data/categories.toml); build with `python scripts/build.py`
 - [Experience log](EXPERIENCE-LOG.md)
 - [Discovery sources](DISCOVERY-SOURCES.md)
 - [Inbox and watchlist](INBOX-AND-WATCHLIST.md)
 - [Changelog](CHANGELOG.md)
 
-Exported from the [Claude Doc "Agent Skill & Tool Ranking"](https://claude.ai/artifact/RGeG2iQ57S3Y5471XzwWus) on 2026-10-19.
+Originally exported from the [Claude Doc "Agent Skill & Tool Ranking"](https://claude.ai/artifact/RGeG2iQ57S3Y5471XzwWus) on 2026-10-19. This repo is now the source of truth; the Claude Doc is no longer updated.
