@@ -16,5 +16,6 @@
 | mem-claude-mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Security | Unauthenticated local worker API reported to expose files and credentials (#3861) |
 | wf-gstack | [garrytan/gstack](https://github.com/garrytan/gstack) | Security | Registers hooks that bypass permissions; design tool sends data to OpenAI by default; edits CLAUDE.md |
 | x-101-superpowers | 101-skills/superpowers | Security | Borrows obra's name; 0 stars; needs an inference.sh account |
+| x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | Security | Jailbreak toolkit (GODMODE, Parseltongue, ULTRAPLINIAN): obfuscates prompts to evade safety classifiers, fans queries out to many models via OpenRouter, writes persistent jailbreak prefills; fails Snyk and Gen Agent Trust Hub audits |
 | x-reddit-automation | flowkit-labs reddit-automation | Security | Install command points at a different owner; 0 stars against 992k installs |
 | rt-ccrouter | [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | Security (Docker) | Management token exposed in Docker setup; only useful for non-Anthropic models |

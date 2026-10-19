@@ -22,6 +22,7 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | wf-ctx-eng-kit | [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | 1.6k | Modular, documents its own overhead | GPL; 5 to 35x tokens |  |
 | wf-superclaude | [SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | 23.9k | Many modes and commands | Unverified token claims |  |
 | wf-ecc | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 282.1k | Huge, Windows supported | Heavy always-on rules; paid tier |  |
+| wf-godmode-noobygains | [NoobyGains/godmode](https://github.com/NoobyGains/godmode) | 91 (15 commits) | MIT; Windows-aware hook wrapper; no telemetry seen in the hook; five gated phases (define, plan, execute, review, ship) | SessionStart hook injects a CRITICAL_OVERRIDE block every session and forces a skill call before any reply; 36 always-routed skills; structure and wording copied from superpowers; last commit date unverified | AGENTS.md, superpowers, gsd |
 | wf-gsd | [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) | 10.5k | Fresh-context subagents per phase fight context rot; `STATE.md` survives sessions | About 6x the tokens and 5x the time of vanilla in one test; heaviest of all | AGENTS.md, superpowers |
 
 ## Code intelligence

@@ -8,7 +8,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 
 | Category | Entries | Top entry | Score |
 | --- | --- | --- | --- |
-| [Workflow and process](workflow-and-process.md) | 15 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
+| [Workflow and process](workflow-and-process.md) | 16 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
 | [Code intelligence](code-intelligence.md) | 3 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 65 |
 | [Language and library docs](language-and-library-docs.md) | 2 | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | 63 |
 | [Reverse engineering](reverse-engineering.md) | 7 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
@@ -26,4 +26,4 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Agent safety and harness](agent-safety-and-harness.md) | 18 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 5 | [skill-creator + mcp-builder](https://github.com/anthropics/skills) | 73 |
 | [Architecture](architecture.md) | 1 | [wshobson cqrs, event-store, saga, projection](https://github.com/wshobson/agents) | 58 |
-| [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 14 | | |
+| [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 15 | | |

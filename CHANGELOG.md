@@ -2,6 +2,8 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | wf-godmode-noobygains | Added, 27, Skip | Hook and SKILL.md read; near-clone of superpowers |
+| 2026-10-19 | x-hermes-godmode | Listed as gate failure (Security) | Jailbreak skill; skills.sh audits fail |
 | 2026-10-19 | stack | Stack moved to `data/stack.toml` and generated into README with links and scores; statuses renamed (In use, Trying now, Up next, Blocked, Planned); first three picks are Up next, not Trial, since no trial is logged yet | User found the status column confusing |
 | 2026-10-19 | lang-rust-async | Now the pick for a new job, Rust and Go idioms; lang-go-samber and lang-rust-apollo are its alternates | Had stack-style verdicts without a stack row |
 | 2026-10-19 | all | Non-stack verdicts normalized to Optional, Watch or Skip with an optional reason | Mixed formats |

@@ -2686,3 +2686,29 @@ stars = "10.3k (3 commits)"
 pros = "Optimizes the harness (prompts, tools, memory, skills) instead of the model via Propose-Probe-Compose, without ground-truth verifiers; paper reports +4.5 to +11.8 points on three benchmarks; Apache-2.0; credential-free demo"
 cons = "Research code, not an official Google product; only OpenCode and Codex executors, no Claude Code; model runs need Vertex AI; Linux only; thousands of rollouts per refinement; executor network unrestricted and Codex sandbox disabled; applying it to your own setup needs a custom adapter; results are the authors' own"
 overlaps = "skill-creator evals (much lighter); your AGENTS.md as the thing it would tune"
+
+[[entry]]
+id = "wf-godmode-noobygains"
+category = "workflow-and-process"
+name = "NoobyGains/godmode"
+url = "https://github.com/NoobyGains/godmode"
+type = "plugin"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 1
+evidence = "E1"
+verdict = "Skip: near-clone of superpowers"
+stars = "91 (15 commits)"
+pros = "MIT; Windows-aware hook wrapper; no telemetry seen in the hook; five gated phases (define, plan, execute, review, ship)"
+cons = "SessionStart hook injects a CRITICAL_OVERRIDE block every session and forces a skill call before any reply; 36 always-routed skills; structure and wording copied from superpowers; last commit date unverified"
+overlaps = "AGENTS.md, superpowers, gsd"
+
+[[entry]]
+id = "x-hermes-godmode"
+name = "NousResearch hermes-agent godmode"
+url = "https://skillselion.com/skills/nousresearch/hermes-agent/godmode"
+gate = "Security"
+gate_reason = "Jailbreak toolkit (GODMODE, Parseltongue, ULTRAPLINIAN): obfuscates prompts to evade safety classifiers, fans queries out to many models via OpenRouter, writes persistent jailbreak prefills; fails Snyk and Gen Agent Trust Hub audits"

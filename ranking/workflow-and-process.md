@@ -18,4 +18,5 @@
 | wf-ctx-eng-kit | [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | plugins | 1 | 1 | 0 | 1 | 3 | 3 | E0 | 29 | Skip |
 | wf-superclaude | [SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | framework | 1 | 1 | 1 | 1 | 2 | 2 | E0 | 29 | Skip |
 | wf-ecc | [affaan-m/ECC](https://github.com/affaan-m/ECC) | plugin bundle | 1 | 1 | 0 | 1 | 3 | 2 | E1 | 27 | Skip |
+| wf-godmode-noobygains | [NoobyGains/godmode](https://github.com/NoobyGains/godmode) | plugin | 1 | 1 | 1 | 1 | 2 | 1 | E1 | 27 | Skip: near-clone of superpowers |
 | wf-gsd | [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) | framework | 1 | 1 | 0 | 2 | 2 | 1 | E2 | 27 | Skip |
