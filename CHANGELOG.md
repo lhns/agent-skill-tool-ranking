@@ -1,0 +1,20 @@
+# Changelog
+
+| Date | ID | Change | Evidence |
+| --- | --- | --- | --- |
+| 2026-10-19 | all | Second pass: about 90 entries added from 10 discovery sources; 9 new categories | Source pages, repo pages, skills.sh audit badges (E0 to E2) |
+| 2026-10-19 | stack | New picks: SkillSpector, official LSP plugins, Skill\_Seekers, mcp-nixos, duckdb-skills, kicad-happy, vibing-steampunk, HA official MCP, zigbee2mqtt-mcp, and others | Highest score per job |
+| 2026-10-19 | sec-official | Replaces trailofbits as security pick (69 vs 58) | Reviewed official marketplace = E2 |
+| 2026-10-19 | fe-webapp-testing | Replaces playwright-cli as testing pick (71 vs 69, tie) | Reviewed official marketplace = E2 |
+| 2026-10-19 | ee-kicad-happy | Becomes PCB review and simulation pick; spicebridge drops to alternate | Covers SPICE, EMC, BOM; 729 commits |
+| 2026-10-19 | out-caveman | Moved from gate failure to ranked Skip (31) | New telemetry rule: passes if it can be switched off |
+| 2026-10-19 | wf-gstack, wf-loki-mode, fe-design-mobile, x-101-superpowers, x-reddit-automation, and 6 more | Listed as gate failures | Permission-bypass hooks, BSL license, Snyk High, name squatting, archived repos |
+| 2026-10-19 | all | Reliability now capped by evidence; all E0 to E1 entries re-scored down | Adversarial review: README can't show stability |
+| 2026-10-19 | re-rea | Trial to Gate pending: security | Anomalous stars (about 320k, 52k in a day), undocumented transport, own Ghidra driver |
+| 2026-10-19 | re-ghidra-bethington | Kept as your pick; pyghidra-mcp ties it (60 vs 58) | Bridge already provides auth |
+| 2026-10-19 | wf-agentsmd | Moved to Baseline | Your own reference shouldn't be ranked against others |
+| 2026-10-19 | k8s-containers | Read-only and scoped ServiceAccount required | Write access to a live cluster |
+| 2026-10-19 | docs-context7 | Fit 3 to 2, limited to non-Scala | Metals covers Scala; hosted service sees queries |
+| 2026-10-19 | wf-mattpocock | Reduced to grill-with-docs only | diagnosing-bugs duplicates AGENTS.md |
+| 2026-10-19 | wr-humanizer | Global to per project | Always-on budget |
+| 2026-10-19 | all | Initial provisional ranking of 40 entries | Repo pages, issues, third-party comparisons (E0 to E2) |

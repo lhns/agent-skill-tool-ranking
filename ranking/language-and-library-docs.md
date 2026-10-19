@@ -1,0 +1,6 @@
+## Language and library docs
+
+| ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| lang-metals-mcp | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | MCP | 4 | 1 | 3 | 1 | 3 | 4 | E1 | 63 | Trial |
+| docs-context7 | [upstash/context7](https://github.com/upstash/context7) | MCP or CLI + skill | 2 | 2 | 3 | 2 | 3 | 4 | E2 | 60 | Trial (non-Scala) |

@@ -1,0 +1,19 @@
+## Workflow and process
+
+| ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| wf-agentsmd | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | instructions | 4 | 3 | 4 | 3 | 3 | 4 | E3 | 88 | Baseline |
+| wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | 3 | 2 | 4 | 2 | 3 | 4 | E2 | 71 | Trial |
+| wf-pypict | [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) (pairwise test design) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Optional |
+| wf-karpathy | [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | guideline | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip, AGENTS.md covers it |
+| wf-addyosmani | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | skills | 1 | 1 | 3 | 1 | 3 | 3 | E1 | 42 | Skip |
+| wf-superpowers | [obra/superpowers](https://github.com/obra/superpowers) | plugin | 1 | 2 | 1 | 2 | 3 | 1 | E2 | 40 | Skip |
+| wf-compound | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | skills | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip |
+| wf-ponytail | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | skill | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip |
+| wf-tdd-guard | [nizos/tdd-guard](https://github.com/nizos/tdd-guard) | hooks | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip, no JVM, maintenance mode |
+| wf-turbo | [tobihagemann/turbo](https://github.com/tobihagemann/turbo) | skills | 1 | 1 | 2 | 1 | 2 | 3 | E0 | 35 | Skip |
+| wf-neckbeard | [magnus919 neckbeard](https://github.com/magnus919/agent-skills) | skill bundle | 1 | 1 | 1 | 1 | 3 | 2 | E0 | 31 | Skip |
+| wf-superclaude | [SuperClaude\_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | framework | 1 | 1 | 1 | 1 | 2 | 2 | E0 | 29 | Skip |
+| wf-ctx-eng-kit | [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | plugins | 1 | 1 | 0 | 1 | 3 | 3 | E0 | 29 | Skip |
+| wf-gsd | [open-gsd/gsd-core](https://github.com/open-gsd/gsd-core) | framework | 1 | 1 | 0 | 2 | 2 | 1 | E2 | 27 | Skip |
+| wf-ecc | [affaan-m/ECC](https://github.com/affaan-m/ECC) | plugin bundle | 1 | 1 | 0 | 1 | 3 | 2 | E1 | 27 | Skip |

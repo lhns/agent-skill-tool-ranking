@@ -1,0 +1,17 @@
+## Web frontend and testing
+
+| ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| fe-frontend-design | [anthropics frontend-design](https://github.com/anthropics/skills) | skill | 3 | 2 | 4 | 2 | 4 | 4 | E2 | 73 | Queued |
+| fe-webapp-testing | [anthropics webapp-testing](https://github.com/anthropics/skills) | skill | 3 | 2 | 4 | 2 | 3 | 4 | E2 | 71 | Queued |
+| fe-playwright-cli | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | CLI + skills | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Alternate (tie) |
+| fe-vercel-wdg | [vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional (accessibility audit) |
+| fe-impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | skill | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate |
+| fe-cf-web-perf | [cloudflare web-perf](https://github.com/cloudflare/skills) | skill | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Optional |
+| fe-web-assets | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Optional |
+| fe-agent-browser | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip |
+| fe-playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | plugin | 2 | 1 | 3 | 1 | 2 | 3 | E1 | 46 | Skip |
+| fe-slides | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | skill | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip |
+| fe-ccworkflows | [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) | workflows | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |
+| fe-design-taste | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | skill | 1 | 1 | 4 | 1 | 2 | 3 | E1 | 44 | Skip |
+| fe-uiuxpromax | ui-ux-pro-max-skill | skill | 2 | 1 | 2 | 1 | 1 | 2 | E0 | 38 | Skip |

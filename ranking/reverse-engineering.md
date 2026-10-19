@@ -1,0 +1,11 @@
+## Reverse engineering
+
+| ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| re-pyghidra | [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp) | MCP | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Alternate (leaner) |
+| re-wshobson | [wshobson binary-analysis + protocol-RE patterns](https://github.com/wshobson/agents) | skills | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Queued (method knowledge) |
+| re-android | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Queued |
+| re-ghidra-bethington | [bethington/ghidra-mcp](https://github.com/bethington/ghidra-mcp) | MCP | 4 | 1 | 2 | 1 | 4 | 3 | E1 | 58 | Trial (your pick) |
+| re-rea | [morluto/rea](https://github.com/morluto/rea) | MCP orchestrator | 4 | 1 | 2 | 1 | 3 | 2 | E0 | 54 | Gate pending: security |
+| re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E1 | 52 | Skip |
+| re-ghidra-laurie | [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | MCP | 2 | 1 | 3 | 1 | 2 | 3 | E1 | 46 | Skip |
