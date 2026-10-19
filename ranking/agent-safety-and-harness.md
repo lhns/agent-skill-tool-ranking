@@ -4,14 +4,14 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Queued (install gate) |
+| safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Stack pick (Up next) |
 | harness-hookify | [official hookify](https://github.com/anthropics/claude-plugins-official) | plugin | 2 | 2 | 4 | 2 | 3 | 4 | E2 | 65 | Optional |
-| safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Queued |
-| safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Queued |
+| safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Stack pick (Planned) |
+| safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | harness-herdr | [herdrdev/herdr](https://github.com/herdrdev/herdr) | terminal multiplexer | 3 | 1 | 4 | 1 | 3 | 3 | E1 | 58 | Optional |
 | harness-ccusage | [ccusage/ccusage](https://github.com/ccusage/ccusage) | CLI | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | harness-claude-hud | [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | status line | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
-| safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate |
+| safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Destructive-command guard |
 | harness-claude-squad | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | TUI | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Skip |
 | harness-mcp-cli | [obra/superpowers-lab](https://github.com/obra/superpowers-lab) mcp-cli | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Watch |
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |

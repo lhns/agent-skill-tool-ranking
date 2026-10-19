@@ -4,14 +4,14 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| lang-lsp-official | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) (rust-analyzer-lsp, gopls-lsp, pyright-lsp) | plugins | 4 | 2 | 4 | 2 | 4 | 4 | E2 | 79 | Queued |
-| lang-rust-async | [wshobson rust-async-patterns](https://github.com/wshobson/agents) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Queued |
+| lang-lsp-official | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) (rust-analyzer-lsp, gopls-lsp, pyright-lsp) | plugins | 4 | 2 | 4 | 2 | 4 | 4 | E2 | 79 | Stack pick (Planned) |
+| lang-rust-async | [wshobson rust-async-patterns](https://github.com/wshobson/agents) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | lang-bash-defensive | [wshobson bash-defensive-patterns](https://github.com/wshobson/agents) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
-| lang-go-samber | [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang) | skills | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate |
-| lang-gopls-mcp | [gopls built-in MCP](https://go.dev/gopls/features/mcp) | MCP | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate |
-| lang-rust-apollo | [apollographql rust-best-practices](https://github.com/apollographql/skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate |
-| lang-scala-direct-style | [VirtusLab/scala-skill](https://github.com/VirtusLab/scala-skill) (direct-style-scala) | skill | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Queued (Ox projects only) |
-| lang-serena | [oraios/serena](https://github.com/oraios/serena) | MCP | 3 | 2 | 1 | 2 | 3 | 2 | E2 | 54 | Alternate (Scala) |
+| lang-go-samber | [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang) | skills | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate for Rust and Go idioms |
+| lang-gopls-mcp | [gopls built-in MCP](https://go.dev/gopls/features/mcp) | MCP | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate for Rust, Go, Python language intelligence |
+| lang-rust-apollo | [apollographql rust-best-practices](https://github.com/apollographql/skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Rust and Go idioms |
+| lang-scala-direct-style | [VirtusLab/scala-skill](https://github.com/VirtusLab/scala-skill) (direct-style-scala) | skill | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Stack pick (Planned) |
+| lang-serena | [oraios/serena](https://github.com/oraios/serena) | MCP | 3 | 2 | 1 | 2 | 3 | 2 | E2 | 54 | Alternate for Scala language intelligence |
 | lang-warp-fix-errors | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills) | skills | 2 | 1 | 4 | 1 | 2 | 4 | E1 | 52 | Skip |
 | lang-go-eduardo | [go-agent-skills](https://github.com/eduardo-sl/go-agent-skills) | skills | 2 | 1 | 3 | 1 | 3 | 4 | E0 | 50 | Skip |
 | lang-mcp-lsp-bridge | [isaacphi/mcp-language-server](https://github.com/isaacphi/mcp-language-server) | MCP | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip |

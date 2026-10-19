@@ -1,0 +1,321 @@
+# The Recommended stack: one pick per job. Rendered into README.md by scripts/build.py.
+#
+# status: "In use" | "Trying now" | "Up next" | "Planned" | "Blocked"
+#   In use      adopted after a logged trial (or your own baseline)
+#   Trying now  on a 2-week trial with an exit test; at most 3 at once
+#   Up next     start these first, in table order
+#   Planned     picked for its job; install when you work on that kind of project
+#   Blocked     picked, but a gate check must pass first (see notes)
+# entry and alternates are entry IDs from entries.toml. In notes, {entry-id} renders as a link.
+# The ranking tables show picks as "Stack pick" and alternates as "Alternate"; don't set a verdict on them.
+
+gaps = "Proxmox (only immature servers: {infra-gateway-radumalica} has 5 stars, {infra-proximo} exposes 924 tools), Ceph ({infra-ceph-aiops} has 0 stars and looks generated), Docker Swarm ({infra-docker-l337} has 9 stars), Stalwart and S3/MinIO. No cats-effect, fs2, http4s or Circe skill exists; generate them with {build-skill-seekers}."
+
+[[pick]]
+job = "Workflow"
+entry = "wf-agentsmd"
+status = "In use"
+load = "Global"
+notes = "Your baseline; everything else must beat or complement it"
+
+[[pick]]
+job = "Skill install gate"
+entry = "safe-skillspector"
+status = "Up next"
+load = "Before every install"
+notes = "Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev"
+
+[[pick]]
+job = "Requirements interview"
+entry = "wf-mattpocock"
+status = "Up next"
+load = "Global"
+notes = "Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin"
+
+[[pick]]
+job = "Scala language intelligence"
+entry = "lang-metals-mcp"
+status = "Up next"
+load = "Scala projects"
+notes = "`cs install metals-mcp`, then `metals-mcp --workspace . --client claude`"
+alternates = ["lang-serena"]
+
+[[pick]]
+job = "Ghidra analysis"
+entry = "re-ghidra-bethington"
+status = "Up next"
+load = "RE container"
+notes = "Headless, `--lazy`, scripts off, `GHIDRA_MCP_FILE_ROOT` set; the bridge holds the token; Ghidra 12.1.3. Statistical tie with {re-pyghidra}, which is leaner (18 tools, official Docker image)"
+alternates = ["re-pyghidra"]
+
+[[pick]]
+job = "Multi-tool RE orchestration"
+entry = "re-rea"
+status = "Blocked"
+load = "RE container"
+notes = "Security gate pending: anomalous stars. Read the code, pin npm `rea-agents`, no secrets, restricted network; own image if its Ghidra 12.1.4 clashes with ghidra-mcp"
+
+[[pick]]
+job = "RE method knowledge"
+entry = "re-wshobson"
+status = "Planned"
+load = "RE container"
+notes = "binary-analysis-patterns and protocol-reverse-engineering; the latter has a Socket warning, read it first"
+
+[[pick]]
+job = "Android apps"
+entry = "re-android"
+status = "Planned"
+load = "RE container"
+notes = "JDK 17+ and jadx in the image; Linux side only"
+
+[[pick]]
+job = "Rust, Go, Python language intelligence"
+entry = "lang-lsp-official"
+status = "Planned"
+load = "Per language"
+notes = "rust-analyzer-lsp, gopls-lsp, pyright-lsp; install the language server binaries yourself"
+alternates = ["lang-gopls-mcp"]
+
+[[pick]]
+job = "Rust and Go idioms"
+entry = "lang-rust-async"
+status = "Planned"
+load = "Rust projects"
+notes = "Tokio patterns in one file; add a Go skill set only if you write much Go"
+alternates = ["lang-go-samber", "lang-rust-apollo"]
+
+[[pick]]
+job = "Scala library knowledge"
+entry = "build-skill-seekers"
+status = "Planned"
+load = "When needed"
+notes = "Local mode, no API key; generate skills for cats-effect, fs2, http4s, Ox, Magnum"
+
+[[pick]]
+job = "Scala direct-style conventions"
+entry = "lang-scala-direct-style"
+status = "Planned"
+load = "Ox projects only"
+notes = "Never install globally: it auto-loads for any Scala task and would push Ox and sbt 2 into cats-effect repos. Pin a local copy; it fetches chapters from `master`"
+
+[[pick]]
+job = "Building skills and MCPs"
+entry = "build-official"
+status = "Planned"
+load = "When needed"
+notes = "skill-creator, mcp-builder, plugin-dev, mcp-server-dev; fits the RE bridge and your own MCPs"
+
+[[pick]]
+job = "Security review"
+entry = "sec-official"
+status = "Planned"
+load = "Per project"
+notes = "security-guidance and claude-security from the official marketplace; use {sec-trailofbits} for deep audits"
+alternates = ["sec-trailofbits"]
+
+[[pick]]
+job = "Destructive-command guard"
+entry = "safe-safety-net"
+status = "Planned"
+load = "Global hook"
+notes = "Pin a version instead of `npx @latest`"
+alternates = ["safe-dippy"]
+
+[[pick]]
+job = "Agent config linting"
+entry = "safe-agnix"
+status = "Planned"
+load = "When editing AGENTS.md or skills"
+notes = "Rust binary; lints AGENTS.md, SKILL.md, hooks, MCP configs"
+
+[[pick]]
+job = "Code navigation"
+entry = "ci-codegraph"
+status = "Planned"
+load = "Per project"
+notes = "`codegraph telemetry off`; keep only if it beats the LSP plugins and Metals in a logged test"
+alternates = ["ci-graphify"]
+
+[[pick]]
+job = "Library docs (non-Scala)"
+entry = "docs-context7"
+status = "Planned"
+load = "Web, Python, Go projects"
+notes = "CLI plus skill mode; Metals covers Scala"
+
+[[pick]]
+job = "Nix lookup"
+entry = "infra-mcp-nixos"
+status = "Planned"
+load = "Nix and Steam Frame config"
+notes = "Read-only, about 1k tokens"
+
+[[pick]]
+job = "Infra config generation and validation"
+entry = "infra-cc-devops"
+status = "Planned"
+load = "Infra repos"
+notes = "Review the validator scripts first"
+alternates = ["infra-wshobson"]
+
+[[pick]]
+job = "Docker on the remote host"
+entry = "infra-docker-ckreiling"
+status = "Planned"
+load = "Infra repos"
+notes = "`DOCKER_HOST=ssh://`; no read-only mode, so use a limited user. {infra-docker-l337} for Swarm"
+alternates = ["infra-docker-l337"]
+
+[[pick]]
+job = "Kubernetes"
+entry = "k8s-containers"
+status = "Planned"
+load = "Infra repos"
+notes = "`--read-only`, dedicated ServiceAccount with narrow RBAC"
+alternates = ["k8s-flux159"]
+
+[[pick]]
+job = "Observability config"
+entry = "obs-otel-skills"
+status = "Planned"
+load = "Observability repos"
+notes = "Collector, OTTL, semantic conventions"
+
+[[pick]]
+job = "Metrics queries"
+entry = "obs-victoriametrics"
+status = "Planned"
+load = "Observability repos"
+notes = "Read-only APIs; no client auth, keep it local"
+alternates = ["obs-prometheus"]
+
+[[pick]]
+job = "Parquet and DuckDB"
+entry = "data-duckdb"
+status = "Planned"
+load = "Db2 archive project"
+notes = "Run on the Linux host; Windows not fully supported"
+alternates = ["data-motherduck"]
+
+[[pick]]
+job = "Postgres"
+entry = "data-postgres-pro"
+status = "Planned"
+load = "Scheduler project"
+notes = "Restricted mode (read-only, time limit)"
+alternates = ["data-supabase-pg"]
+
+[[pick]]
+job = "Home Assistant"
+entry = "ha-official"
+status = "Planned"
+load = "Home automation"
+notes = "OAuth, only exposed entities, Assist-level control; {ha-mcp} for power use, {ha-skill-komal} for config work"
+alternates = ["ha-mcp", "ha-skill-komal", "ha-hass-mcp"]
+
+[[pick]]
+job = "Zigbee"
+entry = "ha-zigbee2mqtt"
+status = "Planned"
+load = "Home automation"
+notes = "Use the safe write tier; it can still actuate locks and sirens"
+
+[[pick]]
+job = "ABAP"
+entry = "sap-vsp"
+status = "Planned"
+load = "SAP work"
+notes = "`--read-only` plus package allowlist"
+alternates = ["sap-adt-mario"]
+
+[[pick]]
+job = "Web design"
+entry = "fe-frontend-design"
+status = "Planned"
+load = "Web projects"
+notes = "Official"
+alternates = ["fe-impeccable"]
+
+[[pick]]
+job = "Web testing"
+entry = "fe-webapp-testing"
+status = "Planned"
+load = "Web projects"
+notes = "Official; uses Playwright. Tie with {fe-playwright-cli}"
+alternates = ["fe-playwright-cli"]
+
+[[pick]]
+job = "Technical writing"
+entry = "wr-doc-coauthoring"
+status = "Planned"
+load = "Writing projects"
+notes = "Structure and drafting"
+
+[[pick]]
+job = "Prose cleanup"
+entry = "wr-humanizer"
+status = "Planned"
+load = "Writing projects"
+notes = "Finished docs only"
+alternates = ["wr-vercel-writing"]
+
+[[pick]]
+job = "Web search"
+entry = "rs-searxng"
+status = "Planned"
+load = "Research projects"
+notes = "Needs your own SearXNG; blocks private URLs"
+alternates = ["rs-kagi"]
+
+[[pick]]
+job = "Papers"
+entry = "rs-academic"
+status = "Planned"
+load = "Research projects"
+notes = "CC-BY-NC; about $4 to 6 per long paper"
+
+[[pick]]
+job = "Paper lookup"
+entry = "rs-arxiv"
+status = "Planned"
+load = "Research projects"
+notes = "BibTeX export"
+
+[[pick]]
+job = "PCB review and simulation"
+entry = "ee-kicad-happy"
+status = "Planned"
+load = "KiCad projects"
+notes = "DigiKey and Mouser keys optional; Windows symlinks need Developer Mode"
+alternates = ["ee-spicebridge", "ee-ltspice-mcp"]
+
+[[pick]]
+job = "PCB editing"
+entry = "ee-kicad-mixelpixx"
+status = "Planned"
+load = "KiCad projects"
+notes = "Work on a git-tracked copy"
+alternates = ["ee-kicad-pro"]
+
+[[pick]]
+job = "Firmware boards"
+entry = "ee-mcu-skills"
+status = "Planned"
+load = "Firmware projects"
+notes = "ESP32, STM32, RP2040, nRF, AVR"
+
+[[pick]]
+job = "CAD for printing"
+entry = "cad-build123d"
+status = "Planned"
+load = "CAD projects"
+notes = "STEP export"
+alternates = ["cad-openscad"]
+
+[[pick]]
+job = "Printer control"
+entry = "print-3dprinter"
+status = "Planned"
+load = "Printer projects"
+notes = "Never let it start a print without your confirmation"

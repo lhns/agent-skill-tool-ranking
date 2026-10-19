@@ -28,7 +28,7 @@ Score = weighted sum (max 48), shown as 0 to 100. Sub-scores are always recorded
 
 ## Evidence levels
 
-Effectiveness and Reliability are both capped by the evidence level; nobody can judge stability from a README. An entry at E0 or E1 can enter the stack only with status **Trial**, never **Adopted**.
+Effectiveness and Reliability are both capped by the evidence level; nobody can judge stability from a README. An entry reaches **In use** only after a logged trial (E3); below that it stays Up next, Planned or Trying now.
 
 | Level | Source | Effectiveness cap |
 | --- | --- | --- |
@@ -40,14 +40,25 @@ Effectiveness and Reliability are both capped by the evidence level; nobody can 
 
 Evidence older than 6 months drops one level unless re-confirmed.
 
-## Trials and statuses
+## Statuses and verdicts
 
-- **Adopted:** E3 or better and in daily use.
-- **Trial:** in the stack on probation. At most 3 trials run at once, each time-boxed to 2 weeks with a written exit test (for example "adopt if it cuts exploration tool calls on a Scala repo"). Result goes in the Experience log; then Adopted or dropped.
-- **Queued:** a stack pick waiting for a trial slot.
-- **Alternate:** next in line if the pick fails.
-- **Gate pending:** scored, but blocked until a gate check is done.
-- **Baseline:** your own AGENTS.md; the reference others must beat, not ranked against them.
+Two separate vocabularies, so a word means one thing.
+
+**Stack status** (one per job in `data/stack.toml`, shown in the README):
+
+- **In use:** E3 or better and in daily use, or your own AGENTS.md baseline.
+- **Trying now:** on probation. At most 3 at once, each time-boxed to 2 weeks with a written exit test (for example "adopt if it cuts exploration tool calls on a Scala repo"). Log the result in the Experience log; then In use or dropped.
+- **Up next:** start these first, in table order.
+- **Blocked:** picked, but a gate check must pass first.
+- **Planned:** picked for its job; install when you work on that kind of project.
+
+**Ranking verdict** (one per entry, shown in the category tables):
+
+- **Stack pick** and **Alternate:** set automatically from the stack. An alternate is next in line if the pick fails.
+- **Optional:** fine to add if you want it; not needed for any job.
+- **Watch:** promising but not ready; re-check later.
+- **Skip:** don't use it. A reason after a colon is allowed (`Skip: 924 tools`).
+- Gate failures are listed separately and never scored.
 
 ## Consistency rules
 

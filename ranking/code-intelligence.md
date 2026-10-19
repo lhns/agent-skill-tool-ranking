@@ -4,6 +4,6 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ci-codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | MCP | 4 | 1 | 3 | 1 | 4 | 4 | E1 | 65 | Queued |
-| ci-graphify | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | skill + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Alternate |
+| ci-codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | MCP | 4 | 1 | 3 | 1 | 4 | 4 | E1 | 65 | Stack pick (Planned) |
+| ci-graphify | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | skill + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Alternate for Code navigation |
 | ci-crg | [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | MCP | 2 | 1 | 1 | 1 | 3 | 3 | E1 | 40 | Skip |

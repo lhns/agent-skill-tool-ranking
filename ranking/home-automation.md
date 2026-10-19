@@ -4,8 +4,8 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ha-zigbee2mqtt | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | MCP | 4 | 1 | 3 | 1 | 3 | 3 | E0 | 60 | Queued (safe tier) |
-| ha-official | [Home Assistant MCP Server integration](https://www.home-assistant.io/integrations/mcp_server/) | MCP (core) | 2 | 1 | 4 | 1 | 4 | 4 | E1 | 56 | Queued |
-| ha-skill-komal | [claude-skill-homeassistant](https://github.com/komal-SkyNET/claude-skill-homeassistant) | skill | 3 | 1 | 4 | 1 | 2 | 3 | E1 | 56 | Alternate (config work) |
-| ha-hass-mcp | [voska/hass-mcp](https://github.com/voska/hass-mcp) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate |
-| ha-mcp | [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | MCP | 4 | 1 | 1 | 1 | 3 | 3 | E1 | 52 | Alternate (power use) |
+| ha-zigbee2mqtt | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | MCP | 4 | 1 | 3 | 1 | 3 | 3 | E0 | 60 | Stack pick (Planned) |
+| ha-official | [Home Assistant MCP Server integration](https://www.home-assistant.io/integrations/mcp_server/) | MCP (core) | 2 | 1 | 4 | 1 | 4 | 4 | E1 | 56 | Stack pick (Planned) |
+| ha-skill-komal | [claude-skill-homeassistant](https://github.com/komal-SkyNET/claude-skill-homeassistant) | skill | 3 | 1 | 4 | 1 | 2 | 3 | E1 | 56 | Alternate for Home Assistant |
+| ha-hass-mcp | [voska/hass-mcp](https://github.com/voska/hass-mcp) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate for Home Assistant |
+| ha-mcp | [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | MCP | 4 | 1 | 1 | 1 | 3 | 3 | E1 | 52 | Alternate for Home Assistant |

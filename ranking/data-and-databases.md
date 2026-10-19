@@ -4,10 +4,10 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| data-duckdb | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | skills | 4 | 2 | 4 | 2 | 3 | 4 | E2 | 77 | Queued |
-| data-motherduck | [motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate |
-| data-postgres-pro | [crystaldba/postgres-mcp](https://github.com/crystaldba/postgres-mcp) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Queued (restricted mode) |
-| data-supabase-pg | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
+| data-duckdb | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | skills | 4 | 2 | 4 | 2 | 3 | 4 | E2 | 77 | Stack pick (Planned) |
+| data-motherduck | [motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate for Parquet and DuckDB |
+| data-postgres-pro | [crystaldba/postgres-mcp](https://github.com/crystaldba/postgres-mcp) | MCP | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Stack pick (Planned) |
+| data-supabase-pg | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate for Postgres |
 | data-sanjay-pg | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) read-only postgres | skill | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Skip |
 
 No usable generic S3/MinIO server was found; DuckDB's httpfs reads Parquet from S3 and likely covers the need (unverified).

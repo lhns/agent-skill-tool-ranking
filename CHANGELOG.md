@@ -2,6 +2,9 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | stack | Stack moved to `data/stack.toml` and generated into README with links and scores; statuses renamed (In use, Trying now, Up next, Blocked, Planned); first three picks are Up next, not Trial, since no trial is logged yet | User found the status column confusing |
+| 2026-10-19 | lang-rust-async | Now the pick for a new job, Rust and Go idioms; lang-go-samber and lang-rust-apollo are its alternates | Had stack-style verdicts without a stack row |
+| 2026-10-19 | all | Non-stack verdicts normalized to Optional, Watch or Skip with an optional reason | Mixed formats |
 | 2026-10-19 | build-harness2 | Added, 25, Watch | Repo page, arXiv 2610.14224 abstract, Wavect write-up (not hands-on); 10.3k stars on 3 commits |
 | 2026-10-19 | repo | Ranking tables now generated from `data/entries.toml` by `scripts/build.py`; AGENTS.md re-rank workflow; CI check | Two hand-arithmetic slips in the doc era |
 | 2026-10-19 | lang-scala-direct-style | Added, 54, Queued for Ox projects only | Repo, SKILL.md and chapters read; 69 stars (E1) |
