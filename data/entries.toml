@@ -2380,7 +2380,7 @@ cons = "Gated HuggingFace models"
 
 [[entry]]
 id = "mem-agentmemory"
-category = "agent-safety-and-harness"
+category = "memory-and-context"
 name = "rohitg00/agentmemory"
 url = "https://github.com/rohitg00/agentmemory"
 type = "hooks + MCP"
@@ -2743,3 +2743,32 @@ stars = "1 (your own project)"
 pros = "One binary bundles SSH, an NFS server and the Docker CLI; bind mounts from anywhere are really mounted, not synced; published ports reach localhost; unmodified docker, compose and buildx, so agents just use the CLI with zero MCP context cost; Apache-2.0"
 cons = "README says no Windows machine has run a session end to end yet (unit tested only); file-watch replay off by default and deletions are a known gap; the agent gets the full CLI, so pair it with a destructive-command guard"
 overlaps = "ckreiling/mcp-server-docker, L337-org/docker-mcp (MCP layer on top of the same job)"
+
+[[entry]]
+id = "mem-1ctx"
+category = "memory-and-context"
+name = "stefanprodan/1ctx"
+url = "https://github.com/stefanprodan/1ctx"
+type = "self-hosted server + MCP"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 2
+evidence = "E0"
+verdict = "Watch: alpha, two weeks old"
+stars = "2 (277 commits since 2026-10-04)"
+pros = "By Flux's creator; one Bun binary with web UI, scheduler and sandboxed bash; shared project knowledge base with provenance and rollback; Claude Code and Codex connect over MCP with access keys to claim tasks and read or update knowledge; Helm chart and Flux manifests for k0s; SLSA 2 attestations; Apache-2.0; no telemetry found in the source"
+cons = "Self-declared alpha: API and socket change freely; one author; a whole agent platform (chats, automations, own agents) when you may only want the shared memory; OS service mode is macOS only, so on your side it runs as a container"
+overlaps = "built-in memory, mem-agentmemory, mem-claude-mem"
+
+[[entry]]
+id = "mem-optmem"
+name = "VictorTaelin/OptMem"
+url = "https://github.com/VictorTaelin/OptMem"
+gate = "License"
+gate_reason = "No LICENSE file and no license in the README, so it is all rights reserved by default. Otherwise interesting: append-only memo CLI, merge-tree summaries, ~16k-token wake per session, native Windows"
+stars = "10 (42 commits)"
+pros = "Two text files and a Python CLI, no daemon or API; constant-size wake via a binary merge tree; safe parallel appends; works in any harness; native Windows"
+cons = "No license; memo wake loads about 16k tokens at the start of every session; compression quality depends on your model; append-only rule enforced only by convention"

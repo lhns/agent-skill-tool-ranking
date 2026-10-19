@@ -2,6 +2,9 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | mem-1ctx | Added, 44, Watch | Repo source and docs read; alpha, started 2026-10-04 |
+| 2026-10-19 | mem-optmem | Listed as gate failure (License) | No LICENSE file; README states none |
+| 2026-10-19 | mem-agentmemory | Moved to new category Memory and context; score unchanged | New category |
 | 2026-10-19 | infra-remote-docker | Added, 88, stack pick (In use) for Docker on the remote host | Your own tool, in daily use (E3) |
 | 2026-10-19 | infra-docker-ckreiling | Fit 3 to 1, 52 to 40, pick to Skip | remote-docker plus the docker CLI covers the job without an MCP |
 | 2026-10-19 | x-hermes-godmode | Fit 1 to 3, 27 to 40, Skip to Optional | Fit set by user |

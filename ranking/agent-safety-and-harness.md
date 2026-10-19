@@ -17,7 +17,6 @@
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | MCP + proxy | 2 | 1 | 3 | 1 | 3 | 2 | E0 | 46 | Skip |
-| mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |
 | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | hook | 2 | 1 | 2 | 1 | 3 | 3 | E0 | 44 | Skip |
 | x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | skill | 3 | 1 | 1 | 1 | 2 | 1 | E1 | 40 | Optional |
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | skill + proxy | 1 | 1 | 1 | 1 | 2 | 3 | E1 | 31 | Skip |

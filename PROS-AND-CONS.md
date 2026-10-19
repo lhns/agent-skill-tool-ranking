@@ -216,12 +216,18 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | 755 | Incus containers with kernel monitoring | Needs Incus |  |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | 4.0k | Container plus branch per agent | Experimental; remote DOCKER_HOST unverified |  |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | 3.8k | Local compression and caching, no telemetry by default | Proxy in the request path |  |
-| mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | 29.3k | Local SQLite memory across agents | Background hooks |  |
 | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | 45 | Local prompt-injection scanner | Gated HuggingFace models |  |
 | x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | ~242k (parent repo, hermes-agent); 171 skills.sh installs | MIT; portable SKILL.md (only its auto-setup writes Hermes config); does what you ask it to, no hidden behavior | Jailbreak prompts against Claude or most hosted models break their terms and risk your account; multi-model mode sends each prompt to several paid providers via OpenRouter; writes persistent prefills; skills.sh audits: Snyk and Gen Agent Trust Hub fail, Socket warn. Effectiveness not assessed | none |
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | ~103k | Cuts output tokens | Adds 1 to 1.5k input tokens per turn; possible reasoning loss on multi-step work; telemetry on by default |  |
 | safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | 85 | Capability-safe sandbox: agent writes capture-checked Scala 3 run against a file, process and network capability library; peer-reviewed (CAIS 26 Best Paper); jars SHA-256 verified | Research prototype on a Scala 3.10.2 nightly with experimental capture checking; wants the agent's own Bash, Read, Write tools disabled; no Windows instructions; results are the authors' own | safety-net, container-use (different approach) |
 | harness-atc | [lampepfl/atc](https://github.com/lampepfl/atc) | 10 | Terminal agent on TACIT: deny-by-default permissions, read-only/local/full modes, Classified type for secrets, many providers | Replaces Claude Code instead of plugging in; one author, started August 2026; allowed commands run outside the sandbox; Windows best effort | Claude Code itself |
+
+## Memory and context
+
+| ID | Entry | Stars | Pros | Cons | Overlaps with |
+| --- | --- | --- | --- | --- | --- |
+| mem-1ctx | [stefanprodan/1ctx](https://github.com/stefanprodan/1ctx) | 2 (277 commits since 2026-10-04) | By Flux's creator; one Bun binary with web UI, scheduler and sandboxed bash; shared project knowledge base with provenance and rollback; Claude Code and Codex connect over MCP with access keys to claim tasks and read or update knowledge; Helm chart and Flux manifests for k0s; SLSA 2 attestations; Apache-2.0; no telemetry found in the source | Self-declared alpha: API and socket change freely; one author; a whole agent platform (chats, automations, own agents) when you may only want the shared memory; OS service mode is macOS only, so on your side it runs as a container | built-in memory, mem-agentmemory, mem-claude-mem |
+| mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | 29.3k | Local SQLite memory across agents | Background hooks |  |
 
 ## Building skills and MCPs
 
@@ -244,4 +250,5 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | ID | Entry | Stars | Pros | Cons |
 | --- | --- | --- | --- | --- |
 | mem-claude-mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | ~102k | Cross-session memory with search | Unauthenticated worker API (#3861); prompt erased when worker dies (#3871); Windows console flashes (#3873); crypto token in README |
+| mem-optmem | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | 10 (42 commits) | Two text files and a Python CLI, no daemon or API; constant-size wake via a binary merge tree; safe parallel appends; works in any harness; native Windows | No license; memo wake loads about 16k tokens at the start of every session; compression quality depends on your model; append-only rule enforced only by convention |
 | rt-ccrouter | [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | ~37k | Routes Claude Code to many providers with fallbacks | 940+ open issues; fallback regressions in v3.1.x; Docker auth token exposed |

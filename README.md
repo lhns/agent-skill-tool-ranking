@@ -1,7 +1,7 @@
 # Agent Skill & Tool Ranking
 
 <!-- BEGIN GENERATED: updated -->
-Last updated 2026-10-19 · 145 ranked entries, 14 gate failures
+Last updated 2026-10-19 · 146 ranked entries, 15 gate failures
 <!-- END GENERATED: updated -->
 
 Which agent skills, plugins and MCP servers to use for Pierre's work, ranked with one [rubric](RUBRIC.md). The stack below names one pick per job; the [ranking](ranking/README.md) has every evaluated entry with sub-scores, pros and cons.
@@ -89,6 +89,7 @@ Status:
   - [Home automation](ranking/home-automation.md)
   - [SAP and ABAP](ranking/sap-and-abap.md)
   - [Agent safety and harness](ranking/agent-safety-and-harness.md)
+  - [Memory and context](ranking/memory-and-context.md)
   - [Building skills and MCPs](ranking/building-skills-and-mcps.md)
   - [Architecture](ranking/architecture.md)
   - [Listed, not ranked (gate failure)](ranking/listed-not-ranked-gate-failure.md)
