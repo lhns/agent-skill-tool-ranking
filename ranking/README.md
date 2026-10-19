@@ -18,7 +18,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Writing and research](writing-and-research.md) | 16 | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | 60 |
 | [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 9 | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | 67 |
 | [Language servers and language skills](language-servers-and-language-skills.md) | 13 | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) | 79 |
-| [Self-hosted infrastructure](self-hosted-infrastructure.md) | 14 | [utensils/mcp-nixos](https://github.com/utensils/mcp-nixos) | 67 |
+| [Self-hosted infrastructure](self-hosted-infrastructure.md) | 15 | [lhns/remote-docker](https://github.com/lhns/remote-docker) | 88 |
 | [Observability](observability.md) | 5 | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | 60 |
 | [Data and databases](data-and-databases.md) | 5 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |

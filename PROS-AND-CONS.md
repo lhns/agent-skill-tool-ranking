@@ -145,11 +145,11 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 
 | ID | Entry | Stars | Pros | Cons | Overlaps with |
 | --- | --- | --- | --- | --- | --- |
+| infra-remote-docker | [lhns/remote-docker](https://github.com/lhns/remote-docker) | 1 (your own project) | One binary bundles SSH, an NFS server and the Docker CLI; bind mounts from anywhere are really mounted, not synced; published ports reach localhost; unmodified docker, compose and buildx, so agents just use the CLI with zero MCP context cost; Apache-2.0 | README says no Windows machine has run a session end to end yet (unit tested only); file-watch replay off by default and deletions are a known gap; the agent gets the full CLI, so pair it with a destructive-command guard | ckreiling/mcp-server-docker, L337-org/docker-mcp (MCP layer on top of the same job) |
 | infra-mcp-nixos | [utensils/mcp-nixos](https://github.com/utensils/mcp-nixos) | 823 | Packages, options, Home Manager; works on Windows; read-only; ~1k tokens | Store and flake actions need Nix |  |
 | infra-cc-devops | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) | 306 | Validators actually lint and dry-run: k8s, Helm, Dockerfile, PromQL | Runs local scripts; 24 commits |  |
 | infra-wshobson | [wshobson infra skills](https://github.com/wshobson/agents) | 41k (repo) | Helm, manifests, GitOps, Grafana dashboards | Audits only verified for grafana-dashboards |  |
 | infra-gateway-radumalica | [infrastructure-mcp](https://github.com/radumalica/infrastructure-mcp) | 5 | One safe gateway: read-only default, dry-run, token on HTTP | Unproven |  |
-| infra-docker-ckreiling | [ckreiling/mcp-server-docker](https://github.com/ckreiling/mcp-server-docker) | 736 | Works with `DOCKER_HOST=ssh://` | No read-only mode; no Swarm |  |
 | infra-docker-expert | [sickn33 docker-expert](https://github.com/sickn33/agentic-awesome-skills) | 47.9k (repo) | Inspects before acting; audits pass | Aggregator repo of 2,700 skills |  |
 | infra-github-mcp | [github/github-mcp-server](https://github.com/github/github-mcp-server) | 32.2k | Official; toolsets and read-only flag | `gh` CLI is cheaper in tokens |  |
 | infra-docker-l337 | [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) | 9 | Only real Swarm coverage; read-only and no-destructive modes | Python 3.14+; 150+ tools |  |
@@ -159,6 +159,7 @@ One row per entry, grouped like the Ranking. Stars are as shown on GitHub when t
 | infra-mcp-proxmox | [antonio-mello-ai/mcp-proxmox](https://github.com/antonio-mello-ai/mcp-proxmox) | 16 | Two-step confirm on destructive ops | No read-only mode |  |
 | infra-proximo | [Proximo](https://github.com/john-broadway/proximo) | 54 | Read-only default, plan-then-confirm, audit log | 924 tools |  |
 | infra-portainer | [portainer/portainer-mcp](https://github.com/portainer/portainer-mcp) | 225 | Official, read-only option | Needs Portainer |  |
+| infra-docker-ckreiling | [ckreiling/mcp-server-docker](https://github.com/ckreiling/mcp-server-docker) | 736 | Works with `DOCKER_HOST=ssh://` | No read-only mode; no Swarm |  |
 
 ## Observability
 

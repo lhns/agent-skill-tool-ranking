@@ -1,7 +1,7 @@
 # Agent Skill & Tool Ranking
 
 <!-- BEGIN GENERATED: updated -->
-Last updated 2026-10-19 · 144 ranked entries, 14 gate failures
+Last updated 2026-10-19 · 145 ranked entries, 14 gate failures
 <!-- END GENERATED: updated -->
 
 Which agent skills, plugins and MCP servers to use for Pierre's work, ranked with one [rubric](RUBRIC.md). The stack below names one pick per job; the [ranking](ranking/README.md) has every evaluated entry with sub-scores, pros and cons.
@@ -9,7 +9,7 @@ Which agent skills, plugins and MCP servers to use for Pierre's work, ranked wit
 ## Recommended stack
 
 <!-- BEGIN GENERATED: stack -->
-One pick per job, 41 jobs: 1 in use, 4 up next, 1 blocked, 35 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
+One pick per job, 41 jobs: 2 in use, 4 up next, 1 blocked, 34 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
 
 Status:
 
@@ -22,6 +22,7 @@ Status:
 | Job | Pick | Status | Score | Load | Setup notes | Alternates |
 | --- | --- | --- | --- | --- | --- | --- |
 | Workflow | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | In use | [88](ranking/workflow-and-process.md) | Global | Your baseline; everything else must beat or complement it | none |
+| Docker on the remote host | [lhns/remote-docker](https://github.com/lhns/remote-docker) | In use | [88](ranking/self-hosted-infrastructure.md) | Global (CLI) | Your own tool; agents run the real docker and compose CLI through it, so no Docker MCP is needed. For read-only agent access to containers and Swarm, use [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) instead of the CLI | [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) (50) |
 | Skill install gate | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Up next | [69](ranking/agent-safety-and-harness.md) | Before every install | Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev | none |
 | Requirements interview | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | Up next | [71](ranking/workflow-and-process.md) | Global | Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin | none |
 | Scala language intelligence | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | Up next | [63](ranking/language-and-library-docs.md) | Scala projects | `cs install metals-mcp`, then `metals-mcp --workspace . --client claude` | [oraios/serena](https://github.com/oraios/serena) (54) |
@@ -41,7 +42,6 @@ Status:
 | Library docs (non-Scala) | [upstash/context7](https://github.com/upstash/context7) | Planned | [60](ranking/language-and-library-docs.md) | Web, Python, Go projects | CLI plus skill mode; Metals covers Scala | none |
 | Nix lookup | [utensils/mcp-nixos](https://github.com/utensils/mcp-nixos) | Planned | [67](ranking/self-hosted-infrastructure.md) | Nix and Steam Frame config | Read-only, about 1k tokens | none |
 | Infra config generation and validation | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) | Planned | [60](ranking/self-hosted-infrastructure.md) | Infra repos | Review the validator scripts first | [wshobson infra skills](https://github.com/wshobson/agents) (60) |
-| Docker on the remote host | [ckreiling/mcp-server-docker](https://github.com/ckreiling/mcp-server-docker) | Planned | [52](ranking/self-hosted-infrastructure.md) | Infra repos | `DOCKER_HOST=ssh://`; no read-only mode, so use a limited user. [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) for Swarm | [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) (50) |
 | Kubernetes | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | Planned | [63](ranking/kubernetes-and-infrastructure.md) | Infra repos | `--read-only`, dedicated ServiceAccount with narrow RBAC | [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes) (52) |
 | Observability config | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | Planned | [60](ranking/observability.md) | Observability repos | Collector, OTTL, semantic conventions | none |
 | Metrics queries | [mcp-victoriametrics](https://github.com/VictoriaMetrics-Community/mcp-victoriametrics) | Planned | [56](ranking/observability.md) | Observability repos | Read-only APIs; no client auth, keep it local | [pab1it0/prometheus-mcp-server](https://github.com/pab1it0/prometheus-mcp-server) (54) |

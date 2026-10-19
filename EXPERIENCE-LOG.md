@@ -4,4 +4,5 @@ Add one row per trial, newest first. Note the model you used; a single bad sessi
 
 | Date | ID | Model | What you did | Verdict (+ / 0 / -) | Notes |
 | --- | --- | --- | --- | --- | --- |
+| 2026-10-19 | infra-remote-docker | n/a | Daily driver for Docker from Windows against the remote host; bind mounts work | + | Your own project |
 |  |  |  |  |  |  |

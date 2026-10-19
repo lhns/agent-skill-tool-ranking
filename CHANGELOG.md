@@ -2,6 +2,8 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | infra-remote-docker | Added, 88, stack pick (In use) for Docker on the remote host | Your own tool, in daily use (E3) |
+| 2026-10-19 | infra-docker-ckreiling | Fit 3 to 1, 52 to 40, pick to Skip | remote-docker plus the docker CLI covers the job without an MCP |
 | 2026-10-19 | x-hermes-godmode | Fit 1 to 3, 27 to 40, Skip to Optional | Fit set by user |
 | 2026-10-19 | x-hermes-godmode | Verdict reason no longer assumes your need; Fit stays 1 until you set it | User: need is the user's call |
 | 2026-10-19 | x-hermes-godmode | Gate failure (Security) to ranked, 27, Skip | User-intended behavior is not a security failure; scored on fit only, effectiveness not assessed |

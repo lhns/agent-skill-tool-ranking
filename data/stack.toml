@@ -161,10 +161,10 @@ alternates = ["infra-wshobson"]
 
 [[pick]]
 job = "Docker on the remote host"
-entry = "infra-docker-ckreiling"
-status = "Planned"
-load = "Infra repos"
-notes = "`DOCKER_HOST=ssh://`; no read-only mode, so use a limited user. {infra-docker-l337} for Swarm"
+entry = "infra-remote-docker"
+status = "In use"
+load = "Global (CLI)"
+notes = "Your own tool; agents run the real docker and compose CLI through it, so no Docker MCP is needed. For read-only agent access to containers and Swarm, use {infra-docker-l337} instead of the CLI"
 alternates = ["infra-docker-l337"]
 
 [[pick]]

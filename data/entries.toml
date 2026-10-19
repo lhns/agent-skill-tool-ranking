@@ -1633,7 +1633,7 @@ category = "self-hosted-infrastructure"
 name = "ckreiling/mcp-server-docker"
 url = "https://github.com/ckreiling/mcp-server-docker"
 type = "MCP"
-fit = 3
+fit = 1
 effectiveness = 1
 cost = 3
 reliability = 1
@@ -1644,6 +1644,7 @@ stars = "736"
 pros = "Works with `DOCKER_HOST=ssh://`"
 cons = "No read-only mode; no Swarm"
 
+verdict = "Skip: remote-docker plus the docker CLI covers it"
 [[entry]]
 id = "infra-docker-expert"
 category = "self-hosted-infrastructure"
@@ -2724,3 +2725,21 @@ stars = "~242k (parent repo, hermes-agent); 171 skills.sh installs"
 pros = "MIT; portable SKILL.md (only its auto-setup writes Hermes config); does what you ask it to, no hidden behavior"
 cons = "Jailbreak prompts against Claude or most hosted models break their terms and risk your account; multi-model mode sends each prompt to several paid providers via OpenRouter; writes persistent prefills; skills.sh audits: Snyk and Gen Agent Trust Hub fail, Socket warn. Effectiveness not assessed"
 overlaps = "none"
+
+[[entry]]
+id = "infra-remote-docker"
+category = "self-hosted-infrastructure"
+name = "lhns/remote-docker"
+url = "https://github.com/lhns/remote-docker"
+type = "CLI"
+fit = 4
+effectiveness = 3
+cost = 4
+reliability = 3
+quality = 3
+composability = 4
+evidence = "E3"
+stars = "1 (your own project)"
+pros = "One binary bundles SSH, an NFS server and the Docker CLI; bind mounts from anywhere are really mounted, not synced; published ports reach localhost; unmodified docker, compose and buildx, so agents just use the CLI with zero MCP context cost; Apache-2.0"
+cons = "README says no Windows machine has run a session end to end yet (unit tested only); file-watch replay off by default and deletions are a known gap; the agent gets the full CLI, so pair it with a destructive-command guard"
+overlaps = "ckreiling/mcp-server-docker, L337-org/docker-mcp (MCP layer on top of the same job)"
