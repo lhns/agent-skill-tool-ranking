@@ -15,6 +15,7 @@
 | wf-tdd-guard | [nizos/tdd-guard](https://github.com/nizos/tdd-guard) | hooks | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip: no JVM, maintenance mode |
 | wf-turbo | [tobihagemann/turbo](https://github.com/tobihagemann/turbo) | skills | 1 | 1 | 2 | 1 | 2 | 3 | E0 | 35 | Skip |
 | wf-neckbeard | [magnus919 neckbeard](https://github.com/magnus919/agent-skills) | skill bundle | 1 | 1 | 1 | 1 | 3 | 2 | E0 | 31 | Skip |
+| wf-ai-job-search | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | Claude Code project | 0 | 1 | 2 | 1 | 3 | 2 | E1 | 29 | Skip: Fit 0 assumes you're not job hunting; tell me if you are |
 | wf-ctx-eng-kit | [NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | plugins | 1 | 1 | 0 | 1 | 3 | 3 | E0 | 29 | Skip |
 | wf-superclaude | [SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | framework | 1 | 1 | 1 | 1 | 2 | 2 | E0 | 29 | Skip |
 | wf-ecc | [affaan-m/ECC](https://github.com/affaan-m/ECC) | plugin bundle | 1 | 1 | 0 | 1 | 3 | 2 | E1 | 27 | Skip |

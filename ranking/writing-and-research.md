@@ -5,6 +5,7 @@
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | rs-searxng | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | MCP | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
+| wr-diagram-design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | skill + plugin | 3 | 1 | 4 | 1 | 4 | 3 | E1 | 60 | Stack pick (Planned) |
 | wr-doc-coauthoring | [anthropics doc-coauthoring](https://github.com/anthropics/skills) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | wr-humanizer | [blader/humanizer](https://github.com/blader/humanizer) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | wr-vercel-writing | [vercel writing-guidelines](https://github.com/vercel-labs/agent-skills) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Alternate for Prose cleanup |
@@ -14,7 +15,7 @@
 | rs-academic | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | skill suite | 3 | 1 | 2 | 1 | 3 | 3 | E1 | 50 | Stack pick (Planned) |
 | rs-tapestry | [tapestry-skills](https://github.com/michalparkola/tapestry-skills-for-claude-code) | skills | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Skip |
 | rs-waza | [tw93/Waza](https://github.com/tw93/Waza) | skills | 2 | 1 | 4 | 1 | 2 | 3 | E1 | 50 | Skip |
-| wr-hand-drawn | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | skill | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Optional |
+| wr-hand-drawn | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | skill | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Alternate for Docs and ADR diagrams |
 | rs-firecrawl | [firecrawl/cli](https://github.com/firecrawl/cli) | CLI + skills | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip: unless self-hosted |
 | rs-nature | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | skills | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip: Socket warning |
 | wr-visual-docs | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | plugins | 2 | 1 | 3 | 1 | 2 | 3 | E0 | 46 | Skip |

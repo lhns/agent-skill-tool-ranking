@@ -253,6 +253,14 @@ load = "Writing projects"
 notes = "Structure and drafting"
 
 [[pick]]
+job = "Docs and ADR diagrams"
+entry = "wr-diagram-design"
+status = "Planned"
+load = "Writing projects"
+notes = "Self-contained HTML+SVG per diagram; remove the Google Fonts link if you publish offline"
+alternates = ["wr-hand-drawn"]
+
+[[pick]]
 job = "Prose cleanup"
 entry = "wr-humanizer"
 status = "Planned"
@@ -311,7 +319,7 @@ entry = "cad-build123d"
 status = "Planned"
 load = "CAD projects"
 notes = "STEP export"
-alternates = ["cad-openscad"]
+alternates = ["cad-text-to-cad", "cad-openscad"]
 
 [[pick]]
 job = "Printer control"

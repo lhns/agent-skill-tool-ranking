@@ -1045,10 +1045,10 @@ reliability = 1
 quality = 2
 composability = 3
 evidence = "E0"
-verdict = "Optional"
 stars = "75"
 pros = "Excalidraw diagrams for docs"
 cons = "Hosted editor by default"
+
 
 [[entry]]
 id = "rs-tapestry"
@@ -2800,3 +2800,155 @@ stars = "9 (1 squashed commit, 2026-10-19)"
 pros = "One endless chat with a memory tree: every message summarized and merged pairwise, the agent can zoom back to any original message, so no lossy compaction; summaries built in the background by a cheap model and kept prompt-cache friendly; shell and file tools on any machine running the unii client, subagents; imports Claude Code and Codex history; self-hosted, data in ~/.unii; Apache-2.0"
 cons = "README: vibe-coded, expect bugs; a standalone agent that replaces Claude Code rather than plugging into it; needs Anthropic or OpenAI API keys, so it bills per token instead of using your Claude subscription; screen control is macOS only; daily version check to bend-lang.com, off with UNII_NO_TELEMETRY=1"
 overlaps = "mem-optmem (same merge-tree idea), mem-1ctx, Claude Code itself"
+
+# ---- added 2026-10-20: trending list ----
+
+[[entry]]
+id = "wr-diagram-design"
+category = "writing-and-research"
+name = "cathrynlavery/diagram-design"
+url = "https://github.com/cathrynlavery/diagram-design"
+type = "skill + plugin"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+stars = "~58k (365 commits since 2026-04)"
+pros = "One self-contained HTML+SVG file per diagram, 45 diagram types; imports draw.io, Mermaid and Excalidraw; PNG/SVG export; brand matching from a site; verifier scripts in CI on Linux, Windows and macOS; MIT; no keys, no telemetry"
+cons = "Generated files load Google Fonts (removable); very fast star growth for the repo's age; PNG export needs a headless browser"
+overlaps = "wr-hand-drawn (Excalidraw), fe-frontend-design"
+
+[[entry]]
+id = "safe-ifixai"
+category = "agent-safety-and-harness"
+name = "ifixai-ai/ifixai"
+url = "https://github.com/ifixai-ai/ifixai"
+type = "CLI + plugin"
+fit = 1
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E1"
+verdict = "Skip: audits deployed business agents, not coding-agent compliance"
+stars = "~8.5k (commit count unclear: page 81, clone 286)"
+pros = "Apache-2.0; LLM-judge policy and governance audit of an agent behind an HTTP endpoint; scriptable in CI; Windows bootstrap"
+cons = "Not a check that a coding agent follows your AGENTS.md; needs paid API keys for the agent under test and the judges; PostHog telemetry on by default (off with IFIXAI_TELEMETRY=0 or DO_NOT_TRACK=1); Pro upsell; star anomaly with launch badges"
+overlaps = "none"
+
+[[entry]]
+id = "mem-context-mode"
+category = "memory-and-context"
+name = "mksglu/context-mode"
+url = "https://github.com/mksglu/context-mode"
+type = "MCP + hooks + skills"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 1
+evidence = "E1"
+verdict = "Watch: invasive routing hooks, open Windows bugs"
+stars = "~31k (2,241 commits, many bot stat updates)"
+pros = "Runs tool commands in a subprocess and puts only the output into context; local SQLite full-text index of large output and session events that survives compaction; no keys, no telemetry found; very active"
+cons = "Elastic License 2.0, source-available not OSI (fine for personal use); hooks hard-block curl and wget and inject a routing block that cuts across your AGENTS.md; 98% savings is self-reported; open Windows bugs (#947 4h hang, #982 CPU spin) per a third-party review"
+overlaps = "harness-lean-ctx, mem-optmem, mem-claude-mem"
+
+[[entry]]
+id = "fe-hyperframes"
+category = "web-frontend-and-testing"
+name = "heygen-com/hyperframes"
+url = "https://github.com/heygen-com/hyperframes"
+type = "CLI + skills"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Skip: Fit assumes no video work; tell me if you make videos"
+stars = "~67.5k (5,728 commits)"
+pros = "Renders HTML, CSS and seekable animations (GSAP, Lottie, Three.js) to MP4 deterministically via headless Chrome and FFmpeg; Docker rendering; Apache-2.0; backed by HeyGen"
+cons = "PostHog telemetry on by default (off with HYPERFRAMES_NO_TELEMETRY or DO_NOT_TRACK); Node 22, Chrome and FFmpeg dependencies; 21 skills behind a router"
+overlaps = "Remotion (not ranked)"
+
+[[entry]]
+id = "harness-free-claude-code"
+category = "agent-safety-and-harness"
+name = "Alishahryar1/free-claude-code"
+url = "https://github.com/Alishahryar1/free-claude-code"
+type = "local proxy + launchers"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 2
+evidence = "E1"
+verdict = "Optional: only with local or your own API-key providers"
+stars = "~61.8k (1,207 commits)"
+pros = "Local Anthropic/OpenAI-compatible gateway: points Claude Code, Codex and 9 other agents at about 61 backends, including local llama.cpp, Ollama and LM Studio; fallback chains; native Windows tray app; no telemetry of its own; AGPL-3.0"
+cons = "ChatGPT and Copilot providers reuse the Codex CLI's OAuth client ID to serve those subscriptions to other agents, likely against provider terms; catalog includes little-known resellers that would see your code; curl-pipe-sh install; skips Claude Code's sign-in onboarding; very fast churn"
+overlaps = "rt-ccrouter (claude-code-router)"
+
+[[entry]]
+id = "llm-airllm"
+category = "local-models"
+name = "lyogavin/airllm"
+url = "https://github.com/lyogavin/airllm"
+type = "Python library"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 1
+composability = 1
+evidence = "E1"
+verdict = "Watch: no throughput numbers published"
+stars = "~37.7k (413 commits)"
+pros = "Streams weights layer by layer from disk so very large models run in 3 to 12 GB of VRAM (README claims DeepSeek-V3 in about 12 GB); LoRA training in v4; Apache-2.0; active"
+cons = "Library only: no OpenAI-compatible server, no agent integration; no tokens-per-second figures, and disk streaming is likely far too slow for agent use (unmeasured); hundreds of GB of disk per split model; README carries unrelated affiliate links"
+overlaps = "llama.cpp offload, ktransformers (not ranked)"
+
+[[entry]]
+id = "wf-ai-job-search"
+category = "workflow-and-process"
+name = "MadsLorentzen/ai-job-search"
+url = "https://github.com/MadsLorentzen/ai-job-search"
+type = "Claude Code project"
+fit = 0
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E1"
+verdict = "Skip: Fit 0 assumes you're not job hunting; tell me if you are"
+stars = "~56.3k (395 commits)"
+pros = "Slash commands from profile to scraping, fit scoring, LaTeX CV and cover letter with a reviewer agent and interview prep; prompt-injection gate on job postings; CI and SECURITY.md; Windows documented; MIT"
+cons = "Portals mostly Danish plus public LinkedIn listings (scraping LinkedIn is against its terms); fork-based workflow risks putting personal data in a public repo; evidence is the author's own story"
+overlaps = "none"
+
+[[entry]]
+id = "cad-text-to-cad"
+category = "electronics-cad-and-3d-printing"
+name = "earthtojake/text-to-cad"
+url = "https://github.com/earthtojake/text-to-cad"
+type = "plugin + skills + MCP"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+stars = "~21.4k (1,460 commits since 2026-04)"
+pros = "build123d and OpenCASCADE models exported to STEP, GLB, STL and 3MF; 12 skills incl. DfAM and DfM checks, engineering drawings, G-code and a Bambu Labs skill; 3D viewer; very active releases; MIT"
+cons = "Telemetry on by default (counts and crash types only; off with uvx cadgen telemetry off or DO_NOT_TRACK=1); Windows 11 Smart App Control blocks its unsigned native module; pre-1.0 churn; optional paid SendCutSend fabrication"
+overlaps = "cad-build123d (same kernel), cad-openscad"

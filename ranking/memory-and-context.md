@@ -4,6 +4,7 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| mem-context-mode | [mksglu/context-mode](https://github.com/mksglu/context-mode) | MCP + hooks + skills | 2 | 1 | 4 | 1 | 3 | 1 | E1 | 48 | Watch: invasive routing hooks, open Windows bugs |
 | mem-optmem | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | CLI + AGENTS.md snippet | 3 | 1 | 1 | 1 | 3 | 3 | E1 | 46 | Optional: no license yet, rated as if licensed |
 | mem-1ctx | [stefanprodan/1ctx](https://github.com/stefanprodan/1ctx) | self-hosted server + MCP | 2 | 1 | 2 | 1 | 4 | 2 | E0 | 44 | Watch: alpha, two weeks old |
 | mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |

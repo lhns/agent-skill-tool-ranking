@@ -2,6 +2,15 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-20 | wr-diagram-design | Added, stack pick for new job Docs and ADR diagrams | Repo cloned and read; trending list |
+| 2026-10-20 | wr-hand-drawn | Optional to Alternate for Docs and ADR diagrams | New job |
+| 2026-10-20 | cad-text-to-cad | Added as Alternate for CAD for printing | Repo cloned and read; trending list |
+| 2026-10-20 | mem-context-mode | Added, Watch | Repo cloned; third-party review of open bugs |
+| 2026-10-20 | harness-free-claude-code | Added, Optional (local and own-key providers only) | Repo cloned; OAuth client reuse found in source |
+| 2026-10-20 | llm-airllm | Added in new category Local models, Watch | Repo cloned; no throughput data |
+| 2026-10-20 | fe-hyperframes | Added, Skip | Repo cloned; trending list |
+| 2026-10-20 | wf-ai-job-search | Added, Skip | Repo cloned; trending list |
+| 2026-10-20 | safe-ifixai | Added, Skip | Repo cloned; audits business agents, not coding agents |
 | 2026-10-19 | mem-uniichat | Added, 38, Watch | README and file list read; released 2026-10-19, 9 stars |
 | 2026-10-19 | mem-optmem | Gate failure (License) to ranked, 46, Optional; license still missing and noted | User: rate as if licensed |
 | 2026-10-19 | mem-1ctx | Added, 44, Watch | Repo source and docs read; alpha, started 2026-10-04 |

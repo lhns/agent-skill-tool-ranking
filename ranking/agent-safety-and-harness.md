@@ -17,8 +17,10 @@
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | MCP + proxy | 2 | 1 | 3 | 1 | 3 | 2 | E0 | 46 | Skip |
+| harness-free-claude-code | [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | local proxy + launchers | 2 | 1 | 3 | 1 | 2 | 2 | E1 | 44 | Optional: only with local or your own API-key providers |
 | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | hook | 2 | 1 | 2 | 1 | 3 | 3 | E0 | 44 | Skip |
 | x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | skill | 3 | 1 | 1 | 1 | 2 | 1 | E1 | 40 | Optional |
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | skill + proxy | 1 | 1 | 1 | 1 | 2 | 3 | E1 | 31 | Skip |
 | safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | MCP server | 1 | 1 | 1 | 1 | 3 | 2 | E1 | 31 | Watch |
+| safe-ifixai | [ifixai-ai/ifixai](https://github.com/ifixai-ai/ifixai) | CLI + plugin | 1 | 1 | 1 | 1 | 2 | 2 | E1 | 29 | Skip: audits deployed business agents, not coding-agent compliance |
 | harness-atc | [lampepfl/atc](https://github.com/lampepfl/atc) | standalone agent | 1 | 1 | 1 | 1 | 3 | 0 | E0 | 27 | Skip |

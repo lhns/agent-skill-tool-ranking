@@ -72,6 +72,11 @@ title = "Memory and context"
 note = "Built-in memory in Claude Code and Claude covers the basics; these add shared or long-term memory on top. claude-mem is a gate failure (unauthenticated local API)."
 
 [[category]]
+id = "local-models"
+title = "Local models"
+note = "Tools for running models on your own hardware."
+
+[[category]]
 id = "building-skills-and-mcps"
 title = "Building skills and MCPs"
 

@@ -1,7 +1,7 @@
 # Agent Skill & Tool Ranking
 
 <!-- BEGIN GENERATED: updated -->
-Last updated 2026-10-19 · 148 ranked entries, 14 gate failures
+Last updated 2026-10-20 · 156 ranked entries, 14 gate failures
 <!-- END GENERATED: updated -->
 
 Which agent skills, plugins and MCP servers to use for Pierre's work, ranked with one [rubric](RUBRIC.md). The stack below names one pick per job; the [ranking](ranking/README.md) has every evaluated entry with sub-scores, pros and cons.
@@ -9,7 +9,7 @@ Which agent skills, plugins and MCP servers to use for Pierre's work, ranked wit
 ## Recommended stack
 
 <!-- BEGIN GENERATED: stack -->
-One pick per job, 41 jobs: 2 in use, 4 up next, 1 blocked, 34 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
+One pick per job, 42 jobs: 2 in use, 4 up next, 1 blocked, 35 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
 
 Status:
 
@@ -53,6 +53,7 @@ Status:
 | Web design | [anthropics frontend-design](https://github.com/anthropics/skills) | Planned | [73](ranking/web-frontend-and-testing.md) | Web projects | Official | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (54) |
 | Web testing | [anthropics webapp-testing](https://github.com/anthropics/skills) | Planned | [71](ranking/web-frontend-and-testing.md) | Web projects | Official; uses Playwright. Tie with [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) (69) |
 | Technical writing | [anthropics doc-coauthoring](https://github.com/anthropics/skills) | Planned | [60](ranking/writing-and-research.md) | Writing projects | Structure and drafting | none |
+| Docs and ADR diagrams | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Planned | [60](ranking/writing-and-research.md) | Writing projects | Self-contained HTML+SVG per diagram; remove the Google Fonts link if you publish offline | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) (50) |
 | Prose cleanup | [blader/humanizer](https://github.com/blader/humanizer) | Planned | [60](ranking/writing-and-research.md) | Writing projects | Finished docs only | [vercel writing-guidelines](https://github.com/vercel-labs/agent-skills) (60) |
 | Web search | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | Planned | [60](ranking/writing-and-research.md) | Research projects | Needs your own SearXNG; blocks private URLs | [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) (54) |
 | Papers | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | Planned | [50](ranking/writing-and-research.md) | Research projects | CC-BY-NC; about $4 to 6 per long paper | none |
@@ -60,7 +61,7 @@ Status:
 | PCB review and simulation | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) (review, EMC, SPICE, BOM) | Planned | [67](ranking/electronics-cad-and-3d-printing.md) | KiCad projects | DigiKey and Mouser keys optional; Windows symlinks need Developer Mode | [clanker-lover/spicebridge](https://github.com/clanker-lover/spicebridge) (52), [cognitohazard/ltspice-mcp](https://github.com/cognitohazard/ltspice-mcp) (52) |
 | PCB editing | [mixelpixx/KiCAD-MCP-Server](https://github.com/mixelpixx/KiCAD-MCP-Server) (editing) | Planned | [56](ranking/electronics-cad-and-3d-printing.md) | KiCad projects | Work on a git-tracked copy | [oaslananka/kicad-mcp-pro](https://github.com/oaslananka/kicad-mcp-pro) (54) |
 | Firmware boards | [alexex1993/mcu-skills](https://github.com/alexex1993/mcu-skills) | Planned | [58](ranking/electronics-cad-and-3d-printing.md) | Firmware projects | ESP32, STM32, RP2040, nRF, AVR | none |
-| CAD for printing | [pzfreo/build123d-mcp](https://github.com/pzfreo/build123d-mcp) | Planned | [56](ranking/electronics-cad-and-3d-printing.md) | CAD projects | STEP export | [RobertCoop/openscad-mcp](https://github.com/RobertCoop/openscad-mcp) (54) |
+| CAD for printing | [pzfreo/build123d-mcp](https://github.com/pzfreo/build123d-mcp) | Planned | [56](ranking/electronics-cad-and-3d-printing.md) | CAD projects | STEP export | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) (54), [RobertCoop/openscad-mcp](https://github.com/RobertCoop/openscad-mcp) (54) |
 | Printer control | [mcp-3D-printer-server](https://github.com/DMontgomery40/mcp-3D-printer-server) | Planned | [52](ranking/electronics-cad-and-3d-printing.md) | Printer projects | Never let it start a print without your confirmation | none |
 
 **Jobs with no pick yet:** Proxmox (only immature servers: [infrastructure-mcp](https://github.com/radumalica/infrastructure-mcp) has 5 stars, [Proximo](https://github.com/john-broadway/proximo) exposes 924 tools), Ceph ([AIops-tools/Ceph-AIops](https://github.com/AIops-tools/Ceph-AIops) has 0 stars and looks generated), Docker Swarm ([L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) has 9 stars), Stalwart and S3/MinIO. No cats-effect, fs2, http4s or Circe skill exists; generate them with [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers).
@@ -90,6 +91,7 @@ Status:
   - [SAP and ABAP](ranking/sap-and-abap.md)
   - [Agent safety and harness](ranking/agent-safety-and-harness.md)
   - [Memory and context](ranking/memory-and-context.md)
+  - [Local models](ranking/local-models.md)
   - [Building skills and MCPs](ranking/building-skills-and-mcps.md)
   - [Architecture](ranking/architecture.md)
   - [Listed, not ranked (gate failure)](ranking/listed-not-ranked-gate-failure.md)

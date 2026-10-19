@@ -8,23 +8,24 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 
 | Category | Entries | Top entry | Score |
 | --- | --- | --- | --- |
-| [Workflow and process](workflow-and-process.md) | 16 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
+| [Workflow and process](workflow-and-process.md) | 17 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
 | [Code intelligence](code-intelligence.md) | 3 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 65 |
 | [Language and library docs](language-and-library-docs.md) | 2 | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | 63 |
 | [Reverse engineering](reverse-engineering.md) | 7 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
 | [Security review](security-review.md) | 5 | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | 69 |
 | [Kubernetes and infrastructure](kubernetes-and-infrastructure.md) | 3 | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | 63 |
-| [Web frontend and testing](web-frontend-and-testing.md) | 13 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |
-| [Writing and research](writing-and-research.md) | 16 | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | 60 |
-| [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 9 | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | 67 |
+| [Web frontend and testing](web-frontend-and-testing.md) | 14 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |
+| [Writing and research](writing-and-research.md) | 17 | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | 60 |
+| [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 10 | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | 67 |
 | [Language servers and language skills](language-servers-and-language-skills.md) | 13 | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) | 79 |
 | [Self-hosted infrastructure](self-hosted-infrastructure.md) | 15 | [lhns/remote-docker](https://github.com/lhns/remote-docker) | 88 |
 | [Observability](observability.md) | 5 | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | 60 |
 | [Data and databases](data-and-databases.md) | 5 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 18 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
-| [Memory and context](memory-and-context.md) | 4 | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | 46 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 20 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
+| [Memory and context](memory-and-context.md) | 5 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 48 |
+| [Local models](local-models.md) | 1 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | 40 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 5 | [skill-creator + mcp-builder](https://github.com/anthropics/skills) | 73 |
 | [Architecture](architecture.md) | 1 | [wshobson cqrs, event-store, saga, projection](https://github.com/wshobson/agents) | 58 |
 | [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 14 | | |
