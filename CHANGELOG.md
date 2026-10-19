@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-19 | mem-optmem | Gate failure (License) to ranked, 46, Optional; license still missing and noted | User: rate as if licensed |
 | 2026-10-19 | mem-1ctx | Added, 44, Watch | Repo source and docs read; alpha, started 2026-10-04 |
 | 2026-10-19 | mem-optmem | Listed as gate failure (License) | No LICENSE file; README states none |
 | 2026-10-19 | mem-agentmemory | Moved to new category Memory and context; score unchanged | New category |

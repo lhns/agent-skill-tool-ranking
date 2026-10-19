@@ -7,7 +7,6 @@
 | infra-ceph-aiops | [AIops-tools/Ceph-AIops](https://github.com/AIops-tools/Ceph-AIops) | Gate pending | 0 stars, inconsistent tool counts, part of a family that looks generated |
 | rs-rigorpilot | [RigorPilot-Skills](https://github.com/lllllllama/RigorPilot-Skills) | Gate pending | 321k installs against 481 stars |
 | harness-ykdojo-dx | [ykdojo/claude-code-tips](https://github.com/ykdojo/claude-code-tips) | License | No license stated |
-| mem-optmem | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | License | No LICENSE file and no license in the README, so it is all rights reserved by default. Otherwise interesting: append-only memo CLI, merge-tree summaries, ~16k-token wake per session, native Windows |
 | wf-loki-mode | [asklokesh/claudeskill-loki-mode](https://github.com/asklokesh/claudeskill-loki-mode) | License | Business Source License 1.1, not open source until 2030 |
 | ci-dsp | [data-structure-protocol](https://github.com/k-kolomeitsev/data-structure-protocol) | Maintenance | Deprecated by its author |
 | rs-notebooklm | [PleasePrompto/notebooklm-skill](https://github.com/PleasePrompto/notebooklm-skill) | Maintenance | Archived September 2026 |

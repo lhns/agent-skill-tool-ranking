@@ -2765,10 +2765,19 @@ overlaps = "built-in memory, mem-agentmemory, mem-claude-mem"
 
 [[entry]]
 id = "mem-optmem"
+category = "memory-and-context"
 name = "VictorTaelin/OptMem"
 url = "https://github.com/VictorTaelin/OptMem"
-gate = "License"
-gate_reason = "No LICENSE file and no license in the README, so it is all rights reserved by default. Otherwise interesting: append-only memo CLI, merge-tree summaries, ~16k-token wake per session, native Windows"
+type = "CLI + AGENTS.md snippet"
+fit = 3
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Optional: no license yet, rated as if licensed"
 stars = "10 (42 commits)"
 pros = "Two text files and a Python CLI, no daemon or API; constant-size wake via a binary merge tree; safe parallel appends; works in any harness; native Windows"
-cons = "No license; memo wake loads about 16k tokens at the start of every session; compression quality depends on your model; append-only rule enforced only by convention"
+cons = "NO LICENSE: no LICENSE file and none in the README, so all rights reserved until the author adds one (score assumes a permissive license). memo wake loads about 16k tokens at the start of every session (tunable via WAKE_LINES); compression quality depends on your model; append-only rule enforced only by convention"
+overlaps = "built-in memory, mem-1ctx, mem-agentmemory"
