@@ -3002,3 +3002,22 @@ gate_reason = "Product telemetry with no documented opt-out (plugin README). Als
 stars = "n/a (Claude Code plugin zed-industries/delta-claude is AGPL-3.0)"
 pros = "Shareable multiplayer threads between people and agents; edits linked to the conversation behind them; line-anchored review comments; Windows supported"
 cons = "Code and reasoning leave your machine for a hosted service; closed core; telemetry without documented opt-out; CLI in beta; built for teams"
+
+[[entry]]
+id = "safe-agents-sandbox"
+category = "agent-safety-and-harness"
+name = "inoio/agents-sandbox"
+url = "https://github.com/inoio/agents-sandbox"
+type = "local sandbox launcher (microVM)"
+fit = 2
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Watch: pre-1.0, Linux with KVM or macOS only"
+stars = "14 (3 forks, 23 open issues)"
+pros = "One microsandbox microVM per project and agent; launches Claude Code, opencode, opencode2 and pi; secrets stay on the host, the VM sees placeholders; network profiles public, private, host and deny-by-default none; only /workspace is read-write; persistent per-agent home volume; optional worktree sessions; release checksums verified on self-upgrade; no telemetry found in code; mutation tests, fuzzing, CodeQL; GPL-3.0"
+cons = "No Windows support, so it runs on the Linux host (needs KVM) and you attach there; default setup copies host agent config, including credentials, into the VM (set provision-host-config: false); VM can set exec bits on .git/hooks the host may run (issue #39); .env files in the project not hidden; opencode2 is the default agent; mostly agent-written commits, one main author"
+overlaps = "safe-discobox, safe-container-use, safe-coi"

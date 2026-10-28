@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-28 | safe-agents-sandbox | Added, 52, Watch | Repo cloned and read (v0.6.0); corrected URL from user |
 | 2026-10-28 | safe-discobox | Added, 58, Watch | Repo cloned and read; pre-1.0 |
 | 2026-10-28 | harness-microsoft-agensh | Added, 21, Skip | Repo and paper read; 1 commit, Copilot only |
 | 2026-10-28 | wf-zed-delta | Listed as gate failure (Security) | Telemetry with no documented opt-out; hosted |

@@ -15,6 +15,7 @@
 | safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Destructive-command guard |
 | harness-claude-squad | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | TUI | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Skip |
 | harness-mcp-cli | [obra/superpowers-lab](https://github.com/obra/superpowers-lab) mcp-cli | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Watch |
+| safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | 2 | 1 | 4 | 1 | 3 | 3 | E0 | 52 | Watch: pre-1.0, Linux with KVM or macOS only |
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | MCP + proxy | 2 | 1 | 3 | 1 | 3 | 2 | E0 | 46 | Skip |
