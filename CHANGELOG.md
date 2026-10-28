@@ -2,6 +2,9 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-28 | safe-agent-workspace | 67 to 88 (E0 to E3, Effectiveness and Reliability 1 to 3); stack pick for new job Run agents isolated, In use | Experience log 2026-10-28: in use at your company |
+| 2026-10-28 | safe-discobox | Watch to Alternate for Run agents isolated | New stack job |
+| 2026-10-28 | safe-agents-sandbox | Watch to Alternate for Run agents isolated | New stack job |
 | 2026-10-28 | safe-agent-workspace | Re-checked: still 67, verdict Optional (license fixed) | Commit df62064: Apache-2.0 license, cache volume, generated environment notes (ADR 25) |
 | 2026-10-28 | safe-agent-workspace | Added, 67, Optional | Repo cloned and read (main, 2026-10-27); no license file |
 | 2026-10-28 | safe-agents-sandbox | Added, 52, Watch | Repo cloned and read (v0.6.0); corrected URL from user |

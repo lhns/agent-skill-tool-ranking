@@ -9,7 +9,7 @@ Which agent skills, plugins and MCP servers to use for Pierre's work, ranked wit
 ## Recommended stack
 
 <!-- BEGIN GENERATED: stack -->
-One pick per job, 42 jobs: 2 in use, 4 up next, 1 blocked, 35 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
+One pick per job, 43 jobs: 3 in use, 4 up next, 1 blocked, 35 planned. Only the jobs loaded globally run in every session; everything else is installed per project. Every pick and alternate links to its repo; the score links to its category ranking.
 
 Status:
 
@@ -22,6 +22,7 @@ Status:
 | Job | Pick | Status | Score | Load | Setup notes | Alternates |
 | --- | --- | --- | --- | --- | --- | --- |
 | Workflow | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | In use | [88](ranking/workflow-and-process.md) | Global | Your baseline; everything else must beat or complement it | none |
+| Run agents isolated | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | In use | [88](ranking/agent-safety-and-harness.md) | Global (launcher) | Your own tool; agents see only the workspace and their own state. Still shared with every agent: the whole `.env`, the git token and the remote-docker seed key, and there is no egress policy. For VM isolation and egress control use [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) (58), [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) (52) |
 | Docker on the remote host | [lhns/remote-docker](https://github.com/lhns/remote-docker) | In use | [88](ranking/self-hosted-infrastructure.md) | Global (CLI) | Your own tool; agents run the real docker and compose CLI through it, so no Docker MCP is needed. For read-only agent access to containers and Swarm, use [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) instead of the CLI | [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) (50) |
 | Skill install gate | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Up next | [69](ranking/agent-safety-and-harness.md) | Before every install | Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev | none |
 | Requirements interview | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | Up next | [71](ranking/workflow-and-process.md) | Global | Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin | none |

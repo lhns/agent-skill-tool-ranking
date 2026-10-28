@@ -115,6 +115,14 @@ notes = "security-guidance and claude-security from the official marketplace; us
 alternates = ["sec-trailofbits"]
 
 [[pick]]
+job = "Run agents isolated"
+entry = "safe-agent-workspace"
+status = "In use"
+load = "Global (launcher)"
+notes = "Your own tool; agents see only the workspace and their own state. Still shared with every agent: the whole `.env`, the git token and the remote-docker seed key, and there is no egress policy. For VM isolation and egress control use {safe-discobox}"
+alternates = ["safe-discobox", "safe-agents-sandbox"]
+
+[[pick]]
 job = "Destructive-command guard"
 entry = "safe-safety-net"
 status = "Planned"

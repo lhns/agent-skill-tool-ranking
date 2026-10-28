@@ -23,7 +23,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Data and databases](data-and-databases.md) | 5 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 24 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 69 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 24 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
 | [Memory and context](memory-and-context.md) | 5 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 48 |
 | [Local models](local-models.md) | 1 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | 40 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 5 | [skill-creator + mcp-builder](https://github.com/anthropics/skills) | 73 |

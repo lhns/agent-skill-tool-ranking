@@ -4,19 +4,19 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| safe-agent-workspace | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | Docker launcher for agent harnesses | 4 | 3 | 4 | 3 | 3 | 4 | E3 | 88 | Stack pick (In use) |
 | safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Stack pick (Up next) |
-| safe-agent-workspace | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | Docker launcher for agent harnesses | 4 | 1 | 4 | 1 | 3 | 4 | E0 | 67 | Optional |
 | harness-hookify | [official hookify](https://github.com/anthropics/claude-plugins-official) | plugin | 2 | 2 | 4 | 2 | 3 | 4 | E2 | 65 | Optional |
 | safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Stack pick (Planned) |
 | safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | harness-herdr | [herdrdev/herdr](https://github.com/herdrdev/herdr) | terminal multiplexer | 3 | 1 | 4 | 1 | 3 | 3 | E1 | 58 | Optional |
-| safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | 3 | 1 | 4 | 1 | 3 | 3 | E0 | 58 | Watch: pre-1.0, privileged containers, telemetry unverified |
+| safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | 3 | 1 | 4 | 1 | 3 | 3 | E0 | 58 | Alternate for Run agents isolated |
 | harness-ccusage | [ccusage/ccusage](https://github.com/ccusage/ccusage) | CLI | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | harness-claude-hud | [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | status line | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Destructive-command guard |
 | harness-claude-squad | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | TUI | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Skip |
 | harness-mcp-cli | [obra/superpowers-lab](https://github.com/obra/superpowers-lab) mcp-cli | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Watch |
-| safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | 2 | 1 | 4 | 1 | 3 | 3 | E0 | 52 | Watch: pre-1.0, Linux with KVM or macOS only |
+| safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | 2 | 1 | 4 | 1 | 3 | 3 | E0 | 52 | Alternate for Run agents isolated |
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | MCP + proxy | 2 | 1 | 3 | 1 | 3 | 2 | E0 | 46 | Skip |
