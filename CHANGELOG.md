@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-28 | fe-hallmark | Added, 50, Optional | Repo cloned and read (v2.0.0) |
 | 2026-10-28 | safe-agent-workspace | 67 to 88 (E0 to E3, Effectiveness and Reliability 1 to 3); stack pick for new job Run agents isolated, In use | Experience log 2026-10-28: in use at your company |
 | 2026-10-28 | safe-discobox | Watch to Alternate for Run agents isolated | New stack job |
 | 2026-10-28 | safe-agents-sandbox | Watch to Alternate for Run agents isolated | New stack job |

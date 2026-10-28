@@ -11,6 +11,7 @@
 | fe-vercel-wdg | [vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional: accessibility audit |
 | fe-cf-web-perf | [cloudflare web-perf](https://github.com/cloudflare/skills) | skill | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Optional |
 | fe-web-assets | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Optional |
+| fe-hallmark | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) hallmark | skill + Node scripts | 3 | 1 | 2 | 1 | 3 | 3 | E1 | 50 | Optional: heavier than frontend-design, for landing and marketing pages |
 | fe-agent-browser | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip |
 | fe-playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | plugin | 2 | 1 | 3 | 1 | 2 | 3 | E1 | 46 | Skip |
 | fe-slides | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | skill | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip |

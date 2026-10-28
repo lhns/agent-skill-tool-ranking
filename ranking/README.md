@@ -14,7 +14,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Reverse engineering](reverse-engineering.md) | 7 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
 | [Security review](security-review.md) | 5 | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | 69 |
 | [Kubernetes and infrastructure](kubernetes-and-infrastructure.md) | 3 | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | 63 |
-| [Web frontend and testing](web-frontend-and-testing.md) | 14 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |
+| [Web frontend and testing](web-frontend-and-testing.md) | 15 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |
 | [Writing and research](writing-and-research.md) | 17 | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | 60 |
 | [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 10 | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | 67 |
 | [Language servers and language skills](language-servers-and-language-skills.md) | 13 | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) | 79 |

@@ -3037,3 +3037,23 @@ stars = "unverified (your own project; 50 commits since 2026-10-14)"
 pros = "In use at your company: lets people use agents on systems where agents were not allowed because they could read every file on the host; Runs Claude Code, opencode, pi, cline or hermes in Docker with only the workspace and per-harness state mounted; native Windows launchers (plain batch, Explorer entry, no admin) and Linux; one shared AGENTS.md mounted where each harness reads it; Docker for agents via remote-docker, one key per container, removed on exit; per-folder resume menu; agent versions pinned, Renovate PRs, prebuilt images on ghcr.io; CI with shellcheck and launcher tests; shared ~/.cache volume keeps npm cache and downloaded tools off the slow remote workspace; generated environment notes (max 120 words, CI-checked) tell agents about the container, Docker and where scratch files go; 25 ADRs; Apache-2.0"
 cons = "Container shares the Docker host kernel, no network egress policy; every harness gets the whole .env, so all API keys; git token in plaintext shared/git/credentials and remote-docker seed key are mounted into every agent, so an agent can push and mint Docker keys; with Docker on, agents act on your remote-docker account and can stop your containers; killed containers leave keys behind; about 3 s launch overhead on Docker Desktop; generated notes cost a few tokens every turn"
 overlaps = "safe-agents-sandbox, safe-discobox, safe-container-use, infra-remote-docker (used by it)"
+
+[[entry]]
+id = "fe-hallmark"
+category = "web-frontend-and-testing"
+name = "Nutlope/hallmark"
+url = "https://github.com/Nutlope/hallmark"
+detail = "hallmark"
+type = "skill + Node scripts"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Optional: heavier than frontend-design, for landing and marketing pages"
+stars = "25.5k (1.3k forks; repo since 2026-05)"
+pros = "Hard floor of non-waivable rules (contrast, focus, reduced motion, no invented metrics or testimonials); 50 themes dealt three at a time so builds do not converge; sloplint checks the page at eight widths in a real browser, then a subagent reviews it; redesign mode records every link, field and handler and fails if one goes missing; audit mode only reports; photos from Wikimedia Commons with credits; no telemetry; MIT"
+cons = "Heavy: SKILL.md about 2,800 words plus 6 MB of references and a multi-step build with renders; render checks need puppeteer-core and Chrome; image generation is opt-in and sends prompts to Together AI (TOGETHER_API_KEY); aimed at marketing pages, not app UIs; one main author (203 of 218 commits)"
+overlaps = "fe-frontend-design, fe-impeccable, fe-design-taste"
