@@ -3021,3 +3021,22 @@ stars = "14 (3 forks, 23 open issues)"
 pros = "One microsandbox microVM per project and agent; launches Claude Code, opencode, opencode2 and pi; secrets stay on the host, the VM sees placeholders; network profiles public, private, host and deny-by-default none; only /workspace is read-write; persistent per-agent home volume; optional worktree sessions; release checksums verified on self-upgrade; no telemetry found in code; mutation tests, fuzzing, CodeQL; GPL-3.0"
 cons = "No Windows support, so it runs on the Linux host (needs KVM) and you attach there; default setup copies host agent config, including credentials, into the VM (set provision-host-config: false); VM can set exec bits on .git/hooks the host may run (issue #39); .env files in the project not hidden; opencode2 is the default agent; mostly agent-written commits, one main author"
 overlaps = "safe-discobox, safe-container-use, safe-coi"
+
+[[entry]]
+id = "safe-agent-workspace"
+category = "agent-safety-and-harness"
+name = "lhns/agent-workspace"
+url = "https://github.com/lhns/agent-workspace"
+type = "Docker launcher for agent harnesses"
+fit = 4
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Optional: no license file yet"
+stars = "unverified (your own project; 49 commits since 2026-10-14)"
+pros = "Runs Claude Code, opencode, pi, cline or hermes in Docker with only the workspace and per-harness state mounted; native Windows launchers (plain batch, Explorer entry, no admin) and Linux; one shared AGENTS.md mounted where each harness reads it; Docker for agents via remote-docker, one key per container, removed on exit; per-folder resume menu; agent versions pinned, Renovate PRs, prebuilt images on ghcr.io; CI with shellcheck and launcher tests; 24 ADRs; zero token cost"
+cons = "No LICENSE file; container shares the Docker host kernel, no network egress policy; every harness gets the whole .env, so all API keys; git token in plaintext shared/git/credentials and remote-docker seed key are mounted into every agent, so an agent can push and mint Docker keys; with Docker on, agents act on your remote-docker account and can stop your containers; killed containers leave keys behind; about 3 s launch overhead on Docker Desktop"
+overlaps = "safe-agents-sandbox, safe-discobox, safe-container-use, infra-remote-docker (used by it)"

@@ -5,6 +5,7 @@
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Stack pick (Up next) |
+| safe-agent-workspace | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | Docker launcher for agent harnesses | 4 | 1 | 4 | 1 | 3 | 4 | E0 | 67 | Optional: no license file yet |
 | harness-hookify | [official hookify](https://github.com/anthropics/claude-plugins-official) | plugin | 2 | 2 | 4 | 2 | 3 | 4 | E2 | 65 | Optional |
 | safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Stack pick (Planned) |
 | safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
