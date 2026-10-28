@@ -2952,3 +2952,53 @@ stars = "~21.4k (1,460 commits since 2026-04)"
 pros = "build123d and OpenCASCADE models exported to STEP, GLB, STL and 3MF; 12 skills incl. DfAM and DfM checks, engineering drawings, G-code and a Bambu Labs skill; 3D viewer; very active releases; MIT"
 cons = "Telemetry on by default (counts and crash types only; off with uvx cadgen telemetry off or DO_NOT_TRACK=1); Windows 11 Smart App Control blocks its unsigned native module; pre-1.0 churn; optional paid SendCutSend fabrication"
 overlaps = "cad-build123d (same kernel), cad-openscad"
+
+# ---- added 2026-10-28 ----
+
+[[entry]]
+id = "safe-discobox"
+category = "agent-safety-and-harness"
+name = "discobox-ai/discobox"
+url = "https://github.com/discobox-ai/discobox"
+type = "local sandbox (microVM + containers)"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Watch: pre-1.0, privileged containers, telemetry unverified"
+stars = "unverified (2,447 commits since 2026-06)"
+pros = "Disposable box per agent: container inside a microVM (libkrun on Linux, HCS VM on Windows), nested Docker, desktop and browser; egress only through an mTLS proxy with destination policy, per-request audit and secret substitution, so the agent sees placeholders; repo cloned with origin read-only, commits handed back with plain git; Claude Code, Codex and others bundled; Apache-2.0; about 250 ADRs"
+cons = "Containers run privileged today; the in-box LLM judge is advisory, not a security boundary; Windows server needs the prerelease WSL Containers feature; remote-server setup undocumented; release-candidate churn; telemetry not verified"
+overlaps = "safe-container-use, safe-coi, harness-claude-squad, safe-safety-net"
+
+[[entry]]
+id = "harness-microsoft-agensh"
+category = "agent-safety-and-harness"
+name = "microsoft/Agensh"
+url = "https://github.com/microsoft/Agensh"
+type = "research multi-agent harness"
+fit = 0
+effectiveness = 1
+cost = 2
+reliability = 0
+quality = 2
+composability = 1
+evidence = "E0"
+verdict = "Skip: research code drop tied to Copilot CLI"
+stars = "255 (1 commit)"
+pros = "Scales to 1,024 agents coordinating via Gitea, Mattermost and a task board; published scaling data (paper arXiv 2609.26781); reproduction guide; MIT"
+cons = "Single commit; GitHub Copilot CLI only, no Claude Code or Codex; Linux host with passwordless sudo and systemd units; many agents for hours means large token cost; not a security sandbox"
+overlaps = "harness-claude-squad, harness-herdr"
+
+[[entry]]
+id = "wf-zed-delta"
+name = "Zed Delta (delta.dev)"
+url = "https://delta.dev/"
+gate = "Security"
+gate_reason = "Product telemetry with no documented opt-out (plugin README). Also: hosted, proprietary service that uploads Claude Code conversations and working-tree files to Zed; needs a Zed account; free tier with your own agents, Pro $10/month"
+stars = "n/a (Claude Code plugin zed-industries/delta-claude is AGPL-3.0)"
+pros = "Shareable multiplayer threads between people and agents; edits linked to the conversation behind them; line-anchored review comments; Windows supported"
+cons = "Code and reasoning leave your machine for a hosted service; closed core; telemetry without documented opt-out; CLI in beta; built for teams"

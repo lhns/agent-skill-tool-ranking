@@ -15,6 +15,7 @@
 | fe-design-mobile | designed-by-ai/skills design-mobile-apps | Security | Snyk High Risk; front end for a paid service; 0 stars against 895k installs |
 | mem-claude-mem | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Security | Unauthenticated local worker API reported to expose files and credentials (#3861) |
 | wf-gstack | [garrytan/gstack](https://github.com/garrytan/gstack) | Security | Registers hooks that bypass permissions; design tool sends data to OpenAI by default; edits CLAUDE.md |
+| wf-zed-delta | [Zed Delta (delta.dev)](https://delta.dev/) | Security | Product telemetry with no documented opt-out (plugin README). Also: hosted, proprietary service that uploads Claude Code conversations and working-tree files to Zed; needs a Zed account; free tier with your own agents, Pro $10/month |
 | x-101-superpowers | 101-skills/superpowers | Security | Borrows obra's name; 0 stars; needs an inference.sh account |
 | x-reddit-automation | flowkit-labs reddit-automation | Security | Install command points at a different owner; 0 stars against 992k installs |
 | rt-ccrouter | [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | Security (Docker) | Management token exposed in Docker setup; only useful for non-Anthropic models |

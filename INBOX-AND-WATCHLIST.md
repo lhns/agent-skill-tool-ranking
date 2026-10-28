@@ -6,7 +6,7 @@ Drop new candidates into the Inbox; Claude gate-checks and scores them on the ne
 
 | Added | URL | Suggested category | Why you're interested |
 | --- | --- | --- | --- |
-|  |  |  |  |
+| 2026-10-28 | github.com/inoio/agent-sandbox | agent-safety-and-harness | Not found publicly (404, likely private or misspelled); confirm URL |
 
 Empty. The second pass on 2026-10-19 cleared the previous candidates into the Ranking.
 

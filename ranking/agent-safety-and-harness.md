@@ -9,6 +9,7 @@
 | safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Stack pick (Planned) |
 | safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | harness-herdr | [herdrdev/herdr](https://github.com/herdrdev/herdr) | terminal multiplexer | 3 | 1 | 4 | 1 | 3 | 3 | E1 | 58 | Optional |
+| safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | 3 | 1 | 4 | 1 | 3 | 3 | E0 | 58 | Watch: pre-1.0, privileged containers, telemetry unverified |
 | harness-ccusage | [ccusage/ccusage](https://github.com/ccusage/ccusage) | CLI | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | harness-claude-hud | [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | status line | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Destructive-command guard |
@@ -24,3 +25,4 @@
 | safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | MCP server | 1 | 1 | 1 | 1 | 3 | 2 | E1 | 31 | Watch |
 | safe-ifixai | [ifixai-ai/ifixai](https://github.com/ifixai-ai/ifixai) | CLI + plugin | 1 | 1 | 1 | 1 | 2 | 2 | E1 | 29 | Skip: audits deployed business agents, not coding-agent compliance |
 | harness-atc | [lampepfl/atc](https://github.com/lampepfl/atc) | standalone agent | 1 | 1 | 1 | 1 | 3 | 0 | E0 | 27 | Skip |
+| harness-microsoft-agensh | [microsoft/Agensh](https://github.com/microsoft/Agensh) | research multi-agent harness | 0 | 1 | 2 | 0 | 2 | 1 | E0 | 21 | Skip: research code drop tied to Copilot CLI |
