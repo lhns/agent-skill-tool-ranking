@@ -3115,3 +3115,22 @@ stars = "3.6k (454 forks; v0.75.1, v0.76.0-rc8)"
 pros = "Pools GPUs and memory across machines behind one OpenAI-compatible API on localhost:9337; serves locally when one node fits, routes by model to a peer, or splits too-large models into stages across nodes; QUIC end-to-end encryption between nodes; private mesh with invite tokens; launchers for Claude Code, OpenCode, Goose and Pi; native Windows installer and Linux packages, OCI images, checksums and SBOMs; plugins (DeepSeek V4, Flash-MoE SSD backend); many contributors, very active; Apache-2.0"
 cons = "Anonymous usage analytics on by default: switch off with `mesh-llm analytics disable` (persisted in config); update checks on unless `updates.check = false`; `serve --auto` joins a public mesh, so prompts can run on strangers' machines, and installs by piping a script to bash; pre-1.0 with fast release churn (rc builds) and 140 open issues; split serving over LAN is only as fast as the network; local open models, not a Claude replacement for hard coding tasks"
 overlaps = "llm-airllm"
+
+[[entry]]
+id = "llm-colibri"
+category = "local-models"
+name = "JustVugg/colibri"
+url = "https://github.com/JustVugg/colibri"
+type = "MoE inference engine (C), NVMe expert streaming"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Optional: huge MoE models on little RAM, batch jobs"
+stars = "unverified (about 2,000 commits; active)"
+pros = "Runs MoE models far larger than RAM: dense part in RAM, experts streamed from NVMe into a per-layer cache with a pinned hot set and predictive prefetch; GLM-5.2 (744B) in about 25 GB RAM; 13 engines (GLM-5.2/5.3, DeepSeek V4, Qwen3.6, OLMoE and more); plain C, no runtime dependencies; CPU by default, optional CUDA, HIP (also Windows), Metal, Vulkan, AMD XDNA; OpenAI-compatible server; setup recommends a model that fits; telemetry is local stats only; Apache-2.0"
+cons = "Slow: 0.05 to 0.1 tok/s cold, 2 to 4 warm (third-party report); needs a local NVMe (about 370 GB for GLM-5.2); one hand-written engine per model family, so new models wait for support; experts stream through the CPU even with a GPU; own engine, not ggml"
+overlaps = "llm-mesh-llm, llm-airllm"

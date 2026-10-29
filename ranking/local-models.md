@@ -5,6 +5,7 @@
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | llm-mesh-llm | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | distributed inference server (Rust, llama.cpp) | 3 | 1 | 3 | 1 | 3 | 4 | E1 | 56 | Optional: pool homelab GPUs, private mesh only |
+| llm-colibri | [JustVugg/colibri](https://github.com/JustVugg/colibri) | MoE inference engine (C), NVMe expert streaming | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Optional: huge MoE models on little RAM, batch jobs |
 | llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | 2 | 1 | 3 | 1 | 1 | 1 | E1 | 40 | Watch: no throughput numbers published |
 
 Tools for running models on your own hardware.
