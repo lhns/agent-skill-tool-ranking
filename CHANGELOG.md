@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-29 | wf-desloppify | Added, 40, Watch | Repo cloned and read (main at v1.0, license branch checked) |
 | 2026-10-29 | harness-hydro-infinity | Added, 35, Watch | Repo cloned and read (v0.2.0) |
 | 2026-10-29 | fe-impeccable | 54 to 58 (Quality 3 to 4, Composability 3 to 4); telemetry and its switch noted | Re-check on user request; v4.8.0, Rust engine, standalone CLI and optional hook |
 | 2026-10-28 | fe-hallmark | Added, 50, Optional | Repo cloned and read (v2.0.0) |

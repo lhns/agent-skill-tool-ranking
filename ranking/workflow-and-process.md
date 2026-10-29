@@ -9,6 +9,7 @@
 | wf-pypict | [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) (pairwise test design) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Optional |
 | wf-karpathy | [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | guideline | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip: AGENTS.md covers it |
 | wf-addyosmani | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | skills | 1 | 1 | 3 | 1 | 3 | 3 | E1 | 42 | Skip |
+| wf-desloppify | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | CLI + skill (Python) | 2 | 1 | 1 | 1 | 3 | 3 | E1 | 40 | Watch: main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged |
 | wf-superpowers | [obra/superpowers](https://github.com/obra/superpowers) | plugin | 1 | 2 | 1 | 2 | 3 | 1 | E2 | 40 | Skip |
 | wf-compound | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | skills | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip |
 | wf-ponytail | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | skill | 1 | 1 | 2 | 1 | 3 | 3 | E1 | 38 | Skip |

@@ -3077,3 +3077,22 @@ stars = "12 (2 forks; repo since 2026-04)"
 pros = "Rust runtime where idle agents are plain data and hibernate for free, so slow tools run concurrently; Infinity Code agent works in jj workspaces or git worktrees on sandbox-* branches and never touches your checkout; bwrap or sandbox-exec limits writes, extra paths need your approval; streams build and test output while running; background agents and parallel threads; existing MCP servers work through a bridge; reads AGENTS.md and CLAUDE.md; no telemetry found; from the Hydro project; Apache-2.0"
 cons = "Only ready-made model provider is AWS Bedrock; Anthropic API, OpenAI or Gemini need your own provider binary built on the rig crate; no Claude subscription use; provider transport is Unix only, so no Windows; v0.2.0 with breaking changes; a separate harness, not a Claude Code add-on; one main author (143 of 200 recent commits)"
 overlaps = "harness-claude-squad, harness-microsoft-agensh, safe-agent-workspace"
+
+[[entry]]
+id = "wf-desloppify"
+category = "workflow-and-process"
+name = "peteromallet/desloppify"
+url = "https://github.com/peteromallet/desloppify"
+type = "CLI + skill (Python)"
+fit = 2
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Watch: main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged"
+stars = "3.2k (265 forks; v1.0)"
+pros = "Codebase quality loop: mechanical detectors (dead code, duplication, complexity, test gaps) plus LLM review of naming, abstractions and module boundaries, scored per dimension; triage into a queue, then next, fix, resolve, rescan; strict score resists gaming (wontfix widens the gap); 29 languages, full depth for Python, Go, Rust, TypeScript, C#, C++; CI profile runs only the mechanical part; state in .desloppify/; skill for Claude Code, Codex and others; no telemetry found"
+cons = "Heavy: long agent loop plus LLM review batches, many tokens per cycle; Scala only generic tree-sitter depth; main has no commits since 2026-05-13 (maintenance gate expires 2026-11-13), 99 open issues and 157 open PRs; license OSNL-0.2, not OSI: free for internal use, paid tiers only if a closed-source company redistributes it; branch adopting Apache-2.0 (2026-10-27) not merged; one main author (679 of 722 commits); README prompt tells the agent to follow scan output over its own analysis"
+overlaps = "wf-mattpocock, ci-codegraph"
