@@ -730,18 +730,18 @@ id = "fe-impeccable"
 category = "web-frontend-and-testing"
 name = "pbakaus/impeccable"
 url = "https://github.com/pbakaus/impeccable"
-type = "skill"
+type = "skill + hook + CLI"
 fit = 3
 effectiveness = 1
 cost = 3
 reliability = 1
-quality = 3
-composability = 3
+quality = 4
+composability = 4
 evidence = "E1"
-stars = "~83k"
-pros = "Critique, audit, polish commands; 61 detector rules run without an LLM"
-cons = "24 commands to learn"
-overlaps = "frontend-design"
+stars = "84.5k (5k forks; v4.8.0)"
+pros = "24 commands to steer (bolder, quieter, layout), review (critique scores UX, audit ranks P0 to P3) and finish (polish, harden); 62 deterministic slop rules, no LLM or API key; optional design hook scans every UI file the agent edits; same detector as a CLI for CI (--github annotations) and as a Chrome extension; live mode cycles variants on your dev server; strongest on existing interfaces; Rust engine with signed release bundles; Apache-2.0"
+cons = "Telemetry on by default: switch off with `npx impeccable telemetry off` or DO_NOT_TRACK=1; new designs always fetch directions from impeccable.style, even with telemetry off; engine binary downloads into ~/.impeccable/bin; live mode runs your package.json validate script; 24 commands to learn"
+overlaps = "fe-frontend-design, fe-hallmark"
 
 [[entry]]
 id = "fe-cf-web-perf"
@@ -3057,3 +3057,23 @@ stars = "25.5k (1.3k forks; repo since 2026-05)"
 pros = "Hard floor of non-waivable rules (contrast, focus, reduced motion, no invented metrics or testimonials); 50 themes dealt three at a time so builds do not converge; sloplint checks the page at eight widths in a real browser, then a subagent reviews it; redesign mode records every link, field and handler and fails if one goes missing; audit mode only reports; photos from Wikimedia Commons with credits; no telemetry; MIT"
 cons = "Heavy: SKILL.md about 2,800 words plus 6 MB of references and a multi-step build with renders; render checks need puppeteer-core and Chrome; image generation is opt-in and sends prompts to Together AI (TOGETHER_API_KEY); aimed at marketing pages, not app UIs; one main author (203 of 218 commits)"
 overlaps = "fe-frontend-design, fe-impeccable, fe-design-taste"
+
+[[entry]]
+id = "harness-hydro-infinity"
+category = "agent-safety-and-harness"
+name = "hydro-project/infinity"
+url = "https://github.com/hydro-project/infinity"
+detail = "Infinity Code"
+type = "Rust agent runtime + coding agent"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 2
+evidence = "E0"
+verdict = "Watch: Bedrock only out of the box, no Windows, v0.2"
+stars = "12 (2 forks; repo since 2026-04)"
+pros = "Rust runtime where idle agents are plain data and hibernate for free, so slow tools run concurrently; Infinity Code agent works in jj workspaces or git worktrees on sandbox-* branches and never touches your checkout; bwrap or sandbox-exec limits writes, extra paths need your approval; streams build and test output while running; background agents and parallel threads; existing MCP servers work through a bridge; reads AGENTS.md and CLAUDE.md; no telemetry found; from the Hydro project; Apache-2.0"
+cons = "Only ready-made model provider is AWS Bedrock; Anthropic API, OpenAI or Gemini need your own provider binary built on the rig crate; no Claude subscription use; provider transport is Unix only, so no Windows; v0.2.0 with breaking changes; a separate harness, not a Claude Code add-on; one main author (143 of 200 recent commits)"
+overlaps = "harness-claude-squad, harness-microsoft-agensh, safe-agent-workspace"

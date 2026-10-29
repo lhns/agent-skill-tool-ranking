@@ -1,7 +1,7 @@
 # Agent Skill & Tool Ranking
 
 <!-- BEGIN GENERATED: updated -->
-Last updated 2026-10-28 · 161 ranked entries, 15 gate failures
+Last updated 2026-10-29 · 162 ranked entries, 15 gate failures
 <!-- END GENERATED: updated -->
 
 Which agent skills, plugins and MCP servers to use for Pierre's work, ranked with one [rubric](RUBRIC.md). The stack below names one pick per job; the [ranking](ranking/README.md) has every evaluated entry with sub-scores, pros and cons.
@@ -51,7 +51,7 @@ Status:
 | Home Assistant | [Home Assistant MCP Server integration](https://www.home-assistant.io/integrations/mcp_server/) | Planned | [56](ranking/home-automation.md) | Home automation | OAuth, only exposed entities, Assist-level control; [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) for power use, [claude-skill-homeassistant](https://github.com/komal-SkyNET/claude-skill-homeassistant) for config work | [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) (52), [claude-skill-homeassistant](https://github.com/komal-SkyNET/claude-skill-homeassistant) (56), [voska/hass-mcp](https://github.com/voska/hass-mcp) (54) |
 | Zigbee | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | Planned | [60](ranking/home-automation.md) | Home automation | Use the safe write tier; it can still actuate locks and sirens | none |
 | ABAP | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | Planned | [60](ranking/sap-and-abap.md) | SAP work | `--read-only` plus package allowlist | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) (52) |
-| Web design | [anthropics frontend-design](https://github.com/anthropics/skills) | Planned | [73](ranking/web-frontend-and-testing.md) | Web projects | Official | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (54) |
+| Web design | [anthropics frontend-design](https://github.com/anthropics/skills) | Planned | [73](ranking/web-frontend-and-testing.md) | Web projects | Official | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (58) |
 | Web testing | [anthropics webapp-testing](https://github.com/anthropics/skills) | Planned | [71](ranking/web-frontend-and-testing.md) | Web projects | Official; uses Playwright. Tie with [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) (69) |
 | Technical writing | [anthropics doc-coauthoring](https://github.com/anthropics/skills) | Planned | [60](ranking/writing-and-research.md) | Writing projects | Structure and drafting | none |
 | Docs and ADR diagrams | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | Planned | [60](ranking/writing-and-research.md) | Writing projects | Self-contained HTML+SVG per diagram; remove the Google Fonts link if you publish offline | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) (50) |

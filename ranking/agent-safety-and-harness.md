@@ -23,6 +23,7 @@
 | harness-free-claude-code | [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | local proxy + launchers | 2 | 1 | 3 | 1 | 2 | 2 | E1 | 44 | Optional: only with local or your own API-key providers |
 | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | hook | 2 | 1 | 2 | 1 | 3 | 3 | E0 | 44 | Skip |
 | x-hermes-godmode | [NousResearch hermes-agent godmode](https://skillselion.com/skills/nousresearch/hermes-agent/godmode) | skill | 3 | 1 | 1 | 1 | 2 | 1 | E1 | 40 | Optional |
+| harness-hydro-infinity | [hydro-project/infinity](https://github.com/hydro-project/infinity) Infinity Code | Rust agent runtime + coding agent | 1 | 1 | 2 | 1 | 3 | 2 | E0 | 35 | Watch: Bedrock only out of the box, no Windows, v0.2 |
 | out-caveman | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | skill + proxy | 1 | 1 | 1 | 1 | 2 | 3 | E1 | 31 | Skip |
 | safe-tacit | [lampepfl/tacit](https://github.com/lampepfl/tacit) | MCP server | 1 | 1 | 1 | 1 | 3 | 2 | E1 | 31 | Watch |
 | safe-ifixai | [ifixai-ai/ifixai](https://github.com/ifixai-ai/ifixai) | CLI + plugin | 1 | 1 | 1 | 1 | 2 | 2 | E1 | 29 | Skip: audits deployed business agents, not coding-agent compliance |
