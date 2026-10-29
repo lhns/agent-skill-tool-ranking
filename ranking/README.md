@@ -12,7 +12,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Code intelligence](code-intelligence.md) | 3 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 65 |
 | [Language and library docs](language-and-library-docs.md) | 2 | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | 63 |
 | [Reverse engineering](reverse-engineering.md) | 7 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
-| [Security review](security-review.md) | 5 | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | 69 |
+| [Security review](security-review.md) | 6 | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | 69 |
 | [Kubernetes and infrastructure](kubernetes-and-infrastructure.md) | 3 | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | 63 |
 | [Web frontend and testing](web-frontend-and-testing.md) | 15 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |
 | [Writing and research](writing-and-research.md) | 17 | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | 60 |

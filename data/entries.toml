@@ -3134,3 +3134,23 @@ stars = "unverified (about 2,000 commits; active)"
 pros = "Runs MoE models far larger than RAM: dense part in RAM, experts streamed from NVMe into a per-layer cache with a pinned hot set and predictive prefetch; GLM-5.2 (744B) in about 25 GB RAM; 13 engines (GLM-5.2/5.3, DeepSeek V4, Qwen3.6, OLMoE and more); plain C, no runtime dependencies; CPU by default, optional CUDA, HIP (also Windows), Metal, Vulkan, AMD XDNA; OpenAI-compatible server; setup recommends a model that fits; telemetry is local stats only; Apache-2.0"
 cons = "Slow: 0.05 to 0.1 tok/s cold, 2 to 4 warm (third-party report); needs a local NVMe (about 370 GB for GLM-5.2); one hand-written engine per model family, so new models wait for support; experts stream through the CPU even with a GPU; own engine, not ggml"
 overlaps = "llm-mesh-llm, llm-airllm"
+
+[[entry]]
+id = "sec-cloudflare-audit"
+category = "security-review"
+name = "cloudflare/security-audit-skill"
+url = "https://github.com/cloudflare/security-audit-skill"
+detail = "security-audit"
+type = "skill + Node validators"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: full-repo audits when you can spend the tokens"
+stars = "about 40k (directory listing, unverified); 14 commits on main, last 2026-09-14"
+pros = "By Cloudflare, MIT; two modes: guidance by default, full six-phase audit only on explicit request (recon, coverage-led hunting, candidate validation, findings.json, independent verification by a fresh agent, Markdown report); strict safety rules: read-only source, target code only in an OS sandbox with no network, never probe live systems; findings schema and coverage ledger checked by Node validators with tests; 13 attack-class companion files (web auth, AI and LLM, supply chain, memory safety, cloud, IPC)"
+cons = "Full audits spawn many subagents and burn a lot of tokens (one user report: about 10% of a weekly 20x plan); SKILL.md is about 3,100 words plus about 22k words of companions loaded on demand; no published false-positive rates; Windows CLI input bug (#53); needs Node and an OS sandbox for execution checks; few commits, one main author"
+overlaps = "sec-official, sec-trailofbits"

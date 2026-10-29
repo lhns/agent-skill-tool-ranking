@@ -7,5 +7,6 @@
 | rev-official | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | plugins | 3 | 2 | 3 | 2 | 4 | 4 | E2 | 69 | Optional: overlaps your adversarial review |
 | sec-official | [official security-guidance + claude-security](https://github.com/anthropics/claude-plugins-official) | plugins | 3 | 2 | 3 | 2 | 4 | 4 | E2 | 69 | Stack pick (Planned) |
 | sec-trailofbits | [trailofbits/skills](https://github.com/trailofbits/skills) | skills | 3 | 1 | 3 | 1 | 4 | 4 | E1 | 58 | Alternate for Security review |
+| sec-cloudflare-audit | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) security-audit | skill + Node validators | 3 | 1 | 2 | 1 | 4 | 3 | E1 | 52 | Optional: full-repo audits when you can spend the tokens |
 | sec-getsentry | [getsentry/skills](https://github.com/getsentry/skills) | skills | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip |
 | sec-mukul | [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | skills | 1 | 1 | 1 | 1 | 1 | 2 | E1 | 27 | Skip |
