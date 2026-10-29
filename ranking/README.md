@@ -25,7 +25,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
 | [Agent safety and harness](agent-safety-and-harness.md) | 25 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
 | [Memory and context](memory-and-context.md) | 5 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 48 |
-| [Local models](local-models.md) | 1 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | 40 |
+| [Local models](local-models.md) | 2 | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | 56 |
 | [Building skills and MCPs](building-skills-and-mcps.md) | 5 | [skill-creator + mcp-builder](https://github.com/anthropics/skills) | 73 |
 | [Architecture](architecture.md) | 1 | [wshobson cqrs, event-store, saga, projection](https://github.com/wshobson/agents) | 58 |
 | [Listed, not ranked (gate failure)](listed-not-ranked-gate-failure.md) | 15 | | |

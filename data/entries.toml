@@ -3096,3 +3096,22 @@ stars = "3.2k (265 forks; v1.0)"
 pros = "Codebase quality loop: mechanical detectors (dead code, duplication, complexity, test gaps) plus LLM review of naming, abstractions and module boundaries, scored per dimension; triage into a queue, then next, fix, resolve, rescan; strict score resists gaming (wontfix widens the gap); 29 languages, full depth for Python, Go, Rust, TypeScript, C#, C++; CI profile runs only the mechanical part; state in .desloppify/; skill for Claude Code, Codex and others; no telemetry found"
 cons = "Heavy: long agent loop plus LLM review batches, many tokens per cycle; Scala only generic tree-sitter depth; main has no commits since 2026-05-13 (maintenance gate expires 2026-11-13), 99 open issues and 157 open PRs; license OSNL-0.2, not OSI: free for internal use, paid tiers only if a closed-source company redistributes it; branch adopting Apache-2.0 (2026-10-27) not merged; one main author (679 of 722 commits); README prompt tells the agent to follow scan output over its own analysis"
 overlaps = "wf-mattpocock, ci-codegraph"
+
+[[entry]]
+id = "llm-mesh-llm"
+category = "local-models"
+name = "Mesh-LLM/mesh-llm"
+url = "https://github.com/Mesh-LLM/mesh-llm"
+type = "distributed inference server (Rust, llama.cpp)"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional: pool homelab GPUs, private mesh only"
+stars = "3.6k (454 forks; v0.75.1, v0.76.0-rc8)"
+pros = "Pools GPUs and memory across machines behind one OpenAI-compatible API on localhost:9337; serves locally when one node fits, routes by model to a peer, or splits too-large models into stages across nodes; QUIC end-to-end encryption between nodes; private mesh with invite tokens; launchers for Claude Code, OpenCode, Goose and Pi; native Windows installer and Linux packages, OCI images, checksums and SBOMs; plugins (DeepSeek V4, Flash-MoE SSD backend); many contributors, very active; Apache-2.0"
+cons = "Anonymous usage analytics on by default: switch off with `mesh-llm analytics disable` (persisted in config); update checks on unless `updates.check = false`; `serve --auto` joins a public mesh, so prompts can run on strangers' machines, and installs by piping a script to bash; pre-1.0 with fast release churn (rc builds) and 140 open issues; split serving over LAN is only as fast as the network; local open models, not a Claude replacement for hard coding tasks"
+overlaps = "llm-airllm"

@@ -4,6 +4,7 @@
 
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| llm-mesh-llm | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | distributed inference server (Rust, llama.cpp) | 3 | 1 | 3 | 1 | 3 | 4 | E1 | 56 | Optional: pool homelab GPUs, private mesh only |
 | llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | 2 | 1 | 3 | 1 | 1 | 1 | E1 | 40 | Watch: no throughput numbers published |
 
 Tools for running models on your own hardware.
