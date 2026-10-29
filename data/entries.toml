@@ -3154,3 +3154,22 @@ stars = "about 40k (directory listing, unverified); 14 commits on main, last 202
 pros = "By Cloudflare, MIT; two modes: guidance by default, full six-phase audit only on explicit request (recon, coverage-led hunting, candidate validation, findings.json, independent verification by a fresh agent, Markdown report); strict safety rules: read-only source, target code only in an OS sandbox with no network, never probe live systems; findings schema and coverage ledger checked by Node validators with tests; 13 attack-class companion files (web auth, AI and LLM, supply chain, memory safety, cloud, IPC)"
 cons = "Full audits spawn many subagents and burn a lot of tokens (one user report: about 10% of a weekly 20x plan); SKILL.md is about 3,100 words plus about 22k words of companions loaded on demand; no published false-positive rates; Windows CLI input bug (#53); needs Node and an OS sandbox for execution checks; few commits, one main author"
 overlaps = "sec-official, sec-trailofbits"
+
+[[entry]]
+id = "re-superghidra"
+category = "reverse-engineering"
+name = "yuatemycat/SuperGhidra"
+url = "https://github.com/yuatemycat/SuperGhidra"
+type = "Python suite + MCP server (separate repo)"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Watch: one week old, one author, AGPL since 1.0"
+stars = "38 (2 forks; first commit 2026-10-22, 68 commits, v1.0.4)"
+pros = "Warm read-only Ghidra daemon on 127.0.0.1:5073 with token auth, so no JVM start per query and no .rep lock fight with the GUI; writes go to a JSON overlay and session forks with conflict detection instead of the project; MSVC RTTI, MFC CRuntimeClass and Serialize() layout recovery from PE files without Ghidra or a JVM; rewriter that makes decompiler output compile more often; about 27k lines of tests"
+cons = "Self-benchmarks only (compilable C 22.6% vs 8.2%, microsecond IPC, SIMD scan rates); about 60k lines written in one week by one author; repo also carries unrelated video and Figma skills (hyperframes, Remotion, media) for a launch kit; relicensed from Apache-2.0 to AGPL-3.0 with CLA and paid commercial license; own standalone decompiler is experimental (11 of 154 exports); MCP server lives in a separate repo, not reviewed; promoted on the REA showcase"
+overlaps = "re-ghidra-bethington, re-pyghidra, re-rea"

@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-29 | re-superghidra | Added, 42, Watch | Repo cloned and read (v1.0.4) |
 | 2026-10-29 | sec-cloudflare-audit | Added, 52, Optional | Repo cloned and read; SmartScope and AgentConn listings |
 | 2026-10-29 | llm-colibri | Added, 54, Optional | Repo cloned and read; Pinggy review |
 | 2026-10-29 | llm-mesh-llm | Added, 56, Optional | Repo cloned and read (v0.75.1) |

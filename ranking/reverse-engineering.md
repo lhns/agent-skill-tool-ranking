@@ -11,3 +11,4 @@
 | re-rea | [morluto/rea](https://github.com/morluto/rea) | MCP orchestrator | 4 | 1 | 2 | 1 | 3 | 2 | E0 | 54 | Stack pick (Blocked) |
 | re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E1 | 52 | Skip |
 | re-ghidra-laurie | [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | MCP | 2 | 1 | 3 | 1 | 2 | 3 | E1 | 46 | Skip |
+| re-superghidra | [yuatemycat/SuperGhidra](https://github.com/yuatemycat/SuperGhidra) | Python suite + MCP server (separate repo) | 2 | 1 | 2 | 1 | 2 | 3 | E0 | 42 | Watch: one week old, one author, AGPL since 1.0 |
