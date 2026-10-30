@@ -138,18 +138,19 @@ id = "wf-ponytail"
 category = "workflow-and-process"
 name = "DietrichGebert/ponytail"
 url = "https://github.com/DietrichGebert/ponytail"
-type = "skill"
+type = "plugin: 6 skills + session hooks"
 fit = 1
 effectiveness = 1
 cost = 2
 reliability = 1
-quality = 3
+quality = 4
 composability = 3
 evidence = "E1"
-verdict = "Skip"
-stars = "165.3k"
-pros = "Minimal-change mode; audits pass"
-cons = "Always in context"
+verdict = "Skip: duplicates your AGENTS.md"
+stars = "about 128k to 165k (sources disagree, unverified); 369 commits, many contributors, v5.3.3"
+pros = "The 'lazy senior dev' skill: smallest complete change; reuse codebase, stdlib and installed deps first; no speculative abstractions; never cuts validation, error handling, security or accessibility; replies end with what was skipped and the risk; levels lite, full, ultra, off; review, audit, debt and gain skills; works in Claude Code, Codex, Cursor, Copilot, Gemini and more; own benchmark harness published (39 tasks, 5 runs each, Opus 5.5); no telemetry, webhook only if configured; MIT"
+cons = "Always in context: SessionStart and SubagentStart hooks inject about 600 words per session and subagent, plus a codebase map and a status-line band; rules overlap your AGENTS.md and can conflict on reply format and test policy; benchmarks are the author's own (E0 until reproduced); fast release churn; marketing-heavy README with waitlist"
+overlaps = "wf-agentsmd, wf-mattpocock"
 
 [[entry]]
 id = "wf-tdd-guard"
