@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-10-30 | mem-tokeneconomizer | Added, 58, Optional | Repo cloned and read; paper arXiv 2610.22732 |
 | 2026-10-30 | wf-ponytail | Re-checked: 38 to 40 (Quality 3 to 4), still Skip | v5 rebuild; repo cloned and read (v5.3.3) |
 | 2026-10-29 | re-superghidra | Added, 42, Watch | Repo cloned and read (v1.0.4) |
 | 2026-10-29 | sec-cloudflare-audit | Added, 52, Optional | Repo cloned and read; SmartScope and AgentConn listings |

@@ -3174,3 +3174,22 @@ stars = "38 (2 forks; first commit 2026-10-22, 68 commits, v1.0.4)"
 pros = "Warm read-only Ghidra daemon on 127.0.0.1:5073 with token auth, so no JVM start per query and no .rep lock fight with the GUI; writes go to a JSON overlay and session forks with conflict detection instead of the project; MSVC RTTI, MFC CRuntimeClass and Serialize() layout recovery from PE files without Ghidra or a JVM; rewriter that makes decompiler output compile more often; about 27k lines of tests"
 cons = "Self-benchmarks only (compilable C 22.6% vs 8.2%, microsecond IPC, SIMD scan rates); about 60k lines written in one week by one author; repo also carries unrelated video and Figma skills (hyperframes, Remotion, media) for a launch kit; relicensed from Apache-2.0 to AGPL-3.0 with CLA and paid commercial license; own standalone decompiler is experimental (11 of 154 exports); MCP server lives in a separate repo, not reviewed; promoted on the REA showcase"
 overlaps = "re-ghidra-bethington, re-pyghidra, re-rea"
+
+[[entry]]
+id = "mem-tokeneconomizer"
+category = "memory-and-context"
+name = "microsoft/TokenEconomizer"
+url = "https://github.com/microsoft/TokenEconomizer"
+type = "plugin: hooks + CLI (Python)"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Optional: trial on a repo you work in daily"
+stars = "289 (22 forks; first commit 2026-10-13, 52 commits)"
+pros = "Learns per repository from past sessions: micro-skills (build steps, working command spellings, env vars) stated at session start once 3 sessions confirm them and dropped when contradicted; tool pruning hides tools unused over 10 prompts in 2 sessions or 5 sessions, via the agent's own deny list, one command restores; loop guard asks a judge model whether a turn is stuck and adds at most one redirect, never stops a turn itself; each mechanism can be switched off; fails open; all state local in ~/.tokeneconomizer, no network calls; paper with Microsoft Research and UC Berkeley (arXiv 2610.22732), rerunnable experiments; Claude Code, Codex, Copilot CLI, Pi, opencode; Apache-2.0"
+cons = "Benchmarks are the authors' own (18 to 31% lower cost on SWE-Bench); judge and fact-proposer calls cost tokens on your plan (included in its reports); pays off only on repos you revisit often; tool pruning edits your agent's deny list; two weeks old; in agent-workspace containers the home resets each run, so ~/.tokeneconomizer must be mounted or nothing is learned"
+overlaps = "mem-context-mode, mem-1ctx, wf-agentsmd"
