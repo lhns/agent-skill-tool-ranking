@@ -2,6 +2,8 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-02 | obs-holmesgpt | Added, 56, Optional | Repo cloned and read (v0.45.0) |
+| 2026-11-02 | safe-llamafirewall | Added, 46, Optional | PurpleLlama LlamaFirewall read (1.0.3) |
 | 2026-11-02 | re-box | Added, 58, Optional | Repo cloned and read |
 | 2026-11-02 | mem-hermes-mnemon | Moved to new category Harness plugins, score unchanged | New category for harness-only plugins |
 | 2026-11-02 | wr-obsidian-second-brain | Added, 44, Skip | Repo cloned and read |

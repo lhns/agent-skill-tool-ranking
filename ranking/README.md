@@ -19,11 +19,11 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Electronics, CAD and 3D printing](electronics-cad-and-3d-printing.md) | 10 | [aklofas/kicad-happy](https://github.com/aklofas/kicad-happy) | 67 |
 | [Language servers and language skills](language-servers-and-language-skills.md) | 14 | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) | 79 |
 | [Self-hosted infrastructure](self-hosted-infrastructure.md) | 15 | [lhns/remote-docker](https://github.com/lhns/remote-docker) | 88 |
-| [Observability](observability.md) | 5 | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | 60 |
+| [Observability](observability.md) | 6 | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | 60 |
 | [Data and databases](data-and-databases.md) | 7 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 25 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 26 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
 | [Memory and context](memory-and-context.md) | 7 | [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | 58 |
 | [Harness plugins](harness-plugins.md) | 1 | [gitricko/hermes-plugin-mnemon](https://github.com/gitricko/hermes-plugin-mnemon) | 42 |
 | [Local models](local-models.md) | 3 | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | 56 |

@@ -3365,3 +3365,41 @@ stars = "your own project (102 commits since 2026-10-19; image ghcr.io/lhns/re-b
 pros = "One container with Ghidra 12.1.4, REA (rea-agents, locked) and ghidra-mcp plus rizin, gdb/pwndbg, pwntools, JADX, apktool, binwalk, unblob, tshark, sigrok, WABT, mitmproxy, Chrome; one authenticated MCP endpoint (token from a file) with prefixed tools; one shared Ghidra JVM started on the first session and stopped when idle; per-session REA and bridge processes; REBOX_DENY_TOOLS and a config deny list; read-only work dir option; hardening docs for untrusted targets (egress-restricted network, no secrets in the environment, own folders); pinned and digest-checked downloads, Renovate, decision records, smoke and e2e tests; Windows paths via remote-docker documented; Apache-2.0"
 cons = "Inherits REA's open security question (prompt injection to command execution, full environment passed to children), mitigated by the documented hardening but not removed; large tool surface unless denied; about 3.7 GB image, linux/amd64 only; Ghidra heap needs a generous memory limit (16 GB suggested); no logged use yet"
 overlaps = "re-ghidra-bethington, re-rea, re-pyghidra, re-superghidra"
+
+[[entry]]
+id = "obs-holmesgpt"
+category = "observability"
+name = "HolmesGPT/holmesgpt"
+url = "https://github.com/HolmesGPT/holmesgpt"
+type = "SRE agent (Python): CLI, server, operator"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: incident root-cause agent for your k0s and VictoriaMetrics stack"
+stars = "unverified (CNCF project; v0.45.0; many contributors)"
+pros = "CNCF SRE agent that investigates incidents with an agentic loop over live data: Kubernetes, Prometheus, VictoriaLogs, Grafana, Loki, Elasticsearch, Docker, ArgoCD, Helm, Cilium, databases, Kafka, RabbitMQ, any REST API or MCP server; read-only by design and respects RBAC; fetches alerts from AlertManager, PagerDuty, Jira and writes findings back; operator mode for scheduled health checks and deployment verification; large outputs filtered and budgeted; any LLM provider including Anthropic; telemetry (Sentry) off unless ENABLE_TELEMETRY and a DSN are set; Apache-2.0"
+cons = "A separate agent with its own LLM bill, not a Claude Code add-on (no subscription use); many toolsets to configure and secure; write-back to alert systems needs its own scoped credentials; operator mode needs Kubernetes"
+overlaps = "obs-victoriametrics, obs-prometheus, k8s-containers"
+
+[[entry]]
+id = "safe-llamafirewall"
+category = "agent-safety-and-harness"
+name = "meta-llama/PurpleLlama LlamaFirewall"
+url = "https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall"
+type = "Python guardrail library"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+verdict = "Optional: building blocks for your own tool-call guard, not a ready hook"
+stars = "unverified (part of PurpleLlama; llamafirewall 1.0.3)"
+pros = "Layered scanners you pick individually: PromptGuard 2 (small BERT-style prompt-injection classifier, runs locally), AlignmentCheck (LLM audits the agent's reasoning for goal hijacking and indirect injection), CodeShield (Semgrep and regex rules over generated code, 8 languages), regex and custom LLM scanners; LangChain and OpenAI Agents examples; paper with AgentDojo results; library code MIT"
+cons = "No Claude Code hook: you wire it into PreToolUse yourself; AlignmentCheck needs a large model and defaults to Together AI's API, so agent traces leave the machine unless you point it at a local endpoint; PromptGuard 2 weights are gated on Hugging Face under Meta's Llama license; feature work quiet since mid-2026 (recent commits are automated lint fixes); benchmarks are Meta's own"
+overlaps = "safe-safety-net, safe-dippy, safe-parry-guard"

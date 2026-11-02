@@ -5,6 +5,7 @@
 | ID | Entry | Type | F | E | C | R | Q | Cmp | Ev | Score | Verdict |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | obs-otel-skills | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | skills | 3 | 1 | 4 | 1 | 3 | 4 | E0 | 60 | Stack pick (Planned) |
+| obs-holmesgpt | [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) | SRE agent (Python): CLI, server, operator | 3 | 1 | 3 | 1 | 4 | 3 | E1 | 56 | Optional: incident root-cause agent for your k0s and VictoriaMetrics stack |
 | obs-victoriametrics | [mcp-victoriametrics](https://github.com/VictoriaMetrics-Community/mcp-victoriametrics) | MCP | 4 | 1 | 2 | 1 | 3 | 3 | E1 | 56 | Stack pick (Planned) |
 | obs-prometheus | [pab1it0/prometheus-mcp-server](https://github.com/pab1it0/prometheus-mcp-server) | MCP | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate for Metrics queries |
 | obs-otelcol-doctor | [otelcol-doctor](https://github.com/s3onghyun/otelcol-doctor) | skill | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Skip |
