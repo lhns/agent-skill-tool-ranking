@@ -11,7 +11,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Workflow and process](workflow-and-process.md) | 19 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
 | [Code intelligence](code-intelligence.md) | 3 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 65 |
 | [Language and library docs](language-and-library-docs.md) | 2 | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | 63 |
-| [Reverse engineering](reverse-engineering.md) | 8 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
+| [Reverse engineering](reverse-engineering.md) | 9 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |
 | [Security review](security-review.md) | 6 | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | 69 |
 | [Kubernetes and infrastructure](kubernetes-and-infrastructure.md) | 3 | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | 63 |
 | [Web frontend and testing](web-frontend-and-testing.md) | 16 | [anthropics frontend-design](https://github.com/anthropics/skills) | 73 |

@@ -3346,3 +3346,22 @@ stars = "unverified (Microsoft's Presidio, moved to a community org; MIT)"
 pros = "Mature PII detection and anonymization for text, images and structured data: analyzer, anonymizer, image redactor, structured module, CLI; pluggable recognizers (regex, NER, custom); Docker images; no context cost for agents; OpenSSF best-practices badge; MIT"
 cons = "Not an agent tool: you wire it into a pipeline, gateway or hook yourself; detection quality depends on language models and recognizers (German needs extra setup); moved from Microsoft to data-privacy-stack, so check the transition notes"
 overlaps = ""
+
+[[entry]]
+id = "re-box"
+category = "reverse-engineering"
+name = "lhns/re-box"
+url = "https://github.com/lhns/re-box"
+type = "container: MCP aggregator (Ghidra, REA, ghidra-mcp)"
+fit = 4
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E0"
+verdict = "Optional: your own RE container; candidate pick once REA's gate is settled"
+stars = "your own project (102 commits since 2026-10-19; image ghcr.io/lhns/re-box)"
+pros = "One container with Ghidra 12.1.4, REA (rea-agents, locked) and ghidra-mcp plus rizin, gdb/pwndbg, pwntools, JADX, apktool, binwalk, unblob, tshark, sigrok, WABT, mitmproxy, Chrome; one authenticated MCP endpoint (token from a file) with prefixed tools; one shared Ghidra JVM started on the first session and stopped when idle; per-session REA and bridge processes; REBOX_DENY_TOOLS and a config deny list; read-only work dir option; hardening docs for untrusted targets (egress-restricted network, no secrets in the environment, own folders); pinned and digest-checked downloads, Renovate, decision records, smoke and e2e tests; Windows paths via remote-docker documented; Apache-2.0"
+cons = "Inherits REA's open security question (prompt injection to command execution, full environment passed to children), mitigated by the documented hardening but not removed; large tool surface unless denied; about 3.7 GB image, linux/amd64 only; Ghidra heap needs a generous memory limit (16 GB suggested); no logged use yet"
+overlaps = "re-ghidra-bethington, re-rea, re-pyghidra, re-superghidra"

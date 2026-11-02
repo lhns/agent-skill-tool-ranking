@@ -7,6 +7,7 @@
 | re-android | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | re-pyghidra | [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp) | MCP | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Alternate for Ghidra analysis |
 | re-wshobson | [wshobson binary-analysis + protocol-RE patterns](https://github.com/wshobson/agents) | skills | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
+| re-box | [lhns/re-box](https://github.com/lhns/re-box) | container: MCP aggregator (Ghidra, REA, ghidra-mcp) | 4 | 1 | 2 | 1 | 4 | 3 | E0 | 58 | Optional: your own RE container; candidate pick once REA's gate is settled |
 | re-ghidra-bethington | [bethington/ghidra-mcp](https://github.com/bethington/ghidra-mcp) | MCP | 4 | 1 | 2 | 1 | 4 | 3 | E1 | 58 | Stack pick (Up next) |
 | re-rea | [morluto/rea](https://github.com/morluto/rea) | MCP orchestrator | 4 | 1 | 2 | 1 | 3 | 2 | E0 | 54 | Stack pick (Blocked) |
 | re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E1 | 52 | Skip |
