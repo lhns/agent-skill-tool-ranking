@@ -7,6 +7,7 @@
 | wf-agentsmd | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | instructions | 4 | 3 | 4 | 3 | 3 | 4 | E3 | 88 | Stack pick (In use) |
 | wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | 3 | 2 | 4 | 2 | 3 | 4 | E2 | 71 | Stack pick (Up next) |
 | wf-pypict | [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) (pairwise test design) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Optional |
+| wf-elephant-goldfish | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) EGM plugin (7 skills) | plugin: skills + agents | 3 | 1 | 2 | 1 | 4 | 3 | E1 | 52 | Optional: design specs before big features; complements grill-with-docs |
 | wf-karpathy | [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | guideline | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip: AGENTS.md covers it |
 | wf-addyosmani | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | skills | 1 | 1 | 3 | 1 | 3 | 3 | E1 | 42 | Skip |
 | wf-desloppify | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | CLI + skill (Python) | 2 | 1 | 1 | 1 | 3 | 3 | E1 | 40 | Watch: main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged |

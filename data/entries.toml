@@ -3193,3 +3193,156 @@ stars = "289 (22 forks; first commit 2026-10-13, 52 commits)"
 pros = "Learns per repository from past sessions: micro-skills (build steps, working command spellings, env vars) stated at session start once 3 sessions confirm them and dropped when contradicted; tool pruning hides tools unused over 10 prompts in 2 sessions or 5 sessions, via the agent's own deny list, one command restores; loop guard asks a judge model whether a turn is stuck and adds at most one redirect, never stops a turn itself; each mechanism can be switched off; fails open; all state local in ~/.tokeneconomizer, no network calls; paper with Microsoft Research and UC Berkeley (arXiv 2610.22732), rerunnable experiments; Claude Code, Codex, Copilot CLI, Pi, opencode; Apache-2.0"
 cons = "Benchmarks are the authors' own (18 to 31% lower cost on SWE-Bench); judge and fact-proposer calls cost tokens on your plan (included in its reports); pays off only on repos you revisit often; tool pruning edits your agent's deny list; two weeks old; in agent-workspace containers the home resets each run, so ~/.tokeneconomizer must be mounted or nothing is learned"
 overlaps = "mem-context-mode, mem-1ctx, wf-agentsmd"
+
+[[entry]]
+id = "fe-agent-desktop"
+category = "web-frontend-and-testing"
+name = "vercel-labs/agent-desktop"
+url = "https://github.com/vercel-labs/agent-desktop"
+type = "CLI + C library + skills (Rust)"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Optional: desktop app automation via accessibility tree"
+stars = "unverified (317 commits since 2026-02; Vercel Labs)"
+pros = "Computer use through the OS accessibility tree instead of pixels: a snapshot returns JSON with a ref per actionable element, the agent acts on a ref and snapshots again; macOS, Windows and Linux (AT-SPI), x64 and ARM64; Windows needs no permission grant for apps at the terminal's integrity level; CLI usable from any agent; platform skills per OS; Apache-2.0"
+cons = "Snapshots, clipboard and screenshots can contain private desktop content; the optional JEV helper sends screen descriptions to a configured model provider; platform skills are 800 to 2,600 words each; apps with poor accessibility trees stay hard; npm install with native binaries"
+overlaps = "fe-agent-browser, fe-playwright-cli"
+
+[[entry]]
+id = "data-open-ontologies"
+category = "data-and-databases"
+name = "fabio-rovai/open-ontologies"
+url = "https://github.com/fabio-rovai/open-ontologies"
+type = "MCP server + CLI (Rust)"
+fit = 0
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip: only for OWL ontology work"
+stars = "unverified (720 commits since 2026-06)"
+pros = "Plans changes to OWL ontologies and shows every consequence before applying; checkable proofs (Lean, Isabelle, Rocq, Dafny material in repo); one Rust binary, no JVM or Protege; MCP server for Claude; container image; MIT"
+cons = "Niche: useful only if you maintain ontologies; tied to a company (Tesseract Semantics) with marketing-heavy README; MCP plus skill of about 1,600 words"
+overlaps = ""
+
+[[entry]]
+id = "wf-elephant-goldfish"
+category = "workflow-and-process"
+name = "google/elephant-goldfish-model"
+url = "https://github.com/google/elephant-goldfish-model"
+detail = "EGM plugin (7 skills)"
+type = "plugin: skills + agents"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: design specs before big features; complements grill-with-docs"
+stars = "unverified (122 commits since 2026-10-21; Google)"
+pros = "Spec-first design: the elephant (full project context) drafts the spec, goldfish reviewers (fresh subagents without the conversation) stress-test it for unstated assumptions; stops if fresh subagents are unavailable; skills for brainstorm, draft, review, review loop, resolve, drift report; Claude Code, Codex, Antigravity; plugin has no telemetry (analytics only on the website); Apache-2.0"
+cons = "Heavy: about 14k words across skills, several fresh subagents per review; for features that need design decisions, not small fixes; overlaps your requirements-interview pick and AGENTS.md planning rules; three weeks old"
+overlaps = "wf-mattpocock, wf-agentsmd, sec-cloudflare-audit"
+
+[[entry]]
+id = "lang-beautiful-rust"
+category = "language-servers-and-language-skills"
+name = "morganlinton/BeautifulRust"
+url = "https://github.com/morganlinton/BeautifulRust"
+type = "3 skills + clippy config"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Optional: broader than the pick; auto-loads about 4,400 words on any Rust edit"
+stars = "unverified (25 commits since 2026-10-22)"
+pros = "Idiomatic Rust distilled from Google's style guide, Rust API Guidelines, Effective Rust, Rust Design Patterns and Microsoft's Pragmatic Rust Guidelines, picking a side where they disagree; rust-review writes prioritized findings citing rules; rust-port ports C, C++, Python, Go or JS with tests ported first; drop-in clippy config enforces the checkable rules in CI; every example compiles on stable; no telemetry or network (privacy policy); MIT"
+cons = "rust-best-practices is about 4,400 words and loads whenever Rust is written; ten days old, few commits; general idioms, little on async or Tokio (your pick covers that)"
+overlaps = "lang-rust-async, lang-rust-apollo"
+
+[[entry]]
+id = "wr-obsidian-second-brain"
+category = "writing-and-research"
+name = "pogii123/obsidian-agentic-second-brain"
+url = "https://github.com/pogii123/obsidian-agentic-second-brain"
+type = "Obsidian vault template"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip: only if you keep notes in Obsidian"
+stars = "unverified (2 commits, 2026-06-01)"
+pros = "Starter Obsidian vault: numbered PARA folders, Zettelkasten knowledge layer, 18 note templates, Bases dashboards, typed frontmatter; AGENTS.md (about 700 words) with a fail-closed grounding rule and llms.txt so agents read the vault safely; provenance markers and a git hook for generated content; no community plugins; MIT"
+cons = "A template, not a tool: two commits, no updates since June; Obsidian only; the structure is opinionated and the value is mostly in the conventions"
+overlaps = ""
+
+[[entry]]
+id = "mem-mnemon"
+category = "memory-and-context"
+name = "mnemon-dev/mnemon"
+url = "https://github.com/mnemon-dev/mnemon"
+type = "CLI + hooks (Go)"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Watch: one main author, scope growing beyond memory"
+stars = "unverified (1,232 commits since 2026-02, v0.2.9)"
+pros = "Cross-session memory as a four-graph store (temporal, entity, causal, semantic) with intent-aware recall, importance decay and dedup; the host LLM makes the judgment calls, so it works on a Claude subscription without an API key; one native Go binary; setup for Claude Code, Codex, Cursor and more deploys skill, hooks and a guide; optional local vectors via Ollama; Apache-2.0"
+cons = "Hooks inject recall into every session; 1,145 of 1,232 commits by one author; scope grows (Agency preview, Telegram and DeepSeek integrations in experimental parts); interactive setup edits agent config; overlaps Claude's own memory and your AGENTS.md"
+overlaps = "mem-1ctx, mem-tokeneconomizer, mem-agentmemory"
+
+[[entry]]
+id = "mem-hermes-mnemon"
+category = "memory-and-context"
+name = "gitricko/hermes-plugin-mnemon"
+url = "https://github.com/gitricko/hermes-plugin-mnemon"
+type = "Hermes memory provider (Python)"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+verdict = "Skip: Hermes only; use Mnemon's own setup elsewhere"
+stars = "unverified (28 commits since 2026-05)"
+pros = "Wraps the mnemon CLI as a native Hermes Agent memory provider: cross-session graph memory instead of Hermes' built-in session memory that flushes on compress; tested against mnemon 0.1.14 to 0.2.12; CI and tests; MIT"
+cons = "Useful only with Hermes Agent; depends on Mnemon (one main author); small project"
+overlaps = "mem-mnemon"
+
+[[entry]]
+id = "data-presidio"
+category = "data-and-databases"
+name = "data-privacy-stack/presidio"
+url = "https://github.com/data-privacy-stack/presidio"
+type = "Python SDK and services"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Optional: redact PII before prompts or logs; a library, not a skill"
+stars = "unverified (Microsoft's Presidio, moved to a community org; MIT)"
+pros = "Mature PII detection and anonymization for text, images and structured data: analyzer, anonymizer, image redactor, structured module, CLI; pluggable recognizers (regex, NER, custom); Docker images; no context cost for agents; OpenSSF best-practices badge; MIT"
+cons = "Not an agent tool: you wire it into a pipeline, gateway or hook yourself; detection quality depends on language models and recognizers (German needs extra setup); moved from Microsoft to data-privacy-stack, so check the transition notes"
+overlaps = ""

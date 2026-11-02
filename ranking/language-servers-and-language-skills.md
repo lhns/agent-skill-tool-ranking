@@ -7,6 +7,7 @@
 | lang-lsp-official | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) (rust-analyzer-lsp, gopls-lsp, pyright-lsp) | plugins | 4 | 2 | 4 | 2 | 4 | 4 | E2 | 79 | Stack pick (Planned) |
 | lang-rust-async | [wshobson rust-async-patterns](https://github.com/wshobson/agents) | skill | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | lang-bash-defensive | [wshobson bash-defensive-patterns](https://github.com/wshobson/agents) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
+| lang-beautiful-rust | [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) | 3 skills + clippy config | 3 | 1 | 2 | 1 | 4 | 4 | E1 | 54 | Optional: broader than the pick; auto-loads about 4,400 words on any Rust edit |
 | lang-go-samber | [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang) | skills | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Alternate for Rust and Go idioms |
 | lang-gopls-mcp | [gopls built-in MCP](https://go.dev/gopls/features/mcp) | MCP | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate for Rust, Go, Python language intelligence |
 | lang-rust-apollo | [apollographql rust-best-practices](https://github.com/apollographql/skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Rust and Go idioms |

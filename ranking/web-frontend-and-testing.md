@@ -9,6 +9,7 @@
 | fe-playwright-cli | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | CLI + skills | 4 | 1 | 4 | 1 | 4 | 4 | E1 | 69 | Alternate for Web testing |
 | fe-impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | skill + hook + CLI | 3 | 1 | 3 | 1 | 4 | 4 | E1 | 58 | Alternate for Web design |
 | fe-vercel-wdg | [vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional: accessibility audit |
+| fe-agent-desktop | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | CLI + C library + skills (Rust) | 2 | 1 | 3 | 1 | 4 | 4 | E1 | 52 | Optional: desktop app automation via accessibility tree |
 | fe-cf-web-perf | [cloudflare web-perf](https://github.com/cloudflare/skills) | skill | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Optional |
 | fe-web-assets | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Optional |
 | fe-hallmark | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) hallmark | skill + Node scripts | 3 | 1 | 2 | 1 | 3 | 3 | E1 | 50 | Optional: heavier than frontend-design, for landing and marketing pages |

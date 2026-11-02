@@ -2,6 +2,14 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-02 | wr-obsidian-second-brain | Added, 44, Skip | Repo cloned and read |
+| 2026-11-02 | mem-mnemon | Added, 48, Watch | Repo cloned and read |
+| 2026-11-02 | mem-hermes-mnemon | Added, 42, Skip | Repo cloned and read |
+| 2026-11-02 | data-presidio | Added, 50, Optional | Repo cloned and read |
+| 2026-11-02 | fe-agent-desktop | Added, 52, Optional | Repo cloned and read |
+| 2026-11-02 | data-open-ontologies | Added, 31, Skip | Repo cloned and read |
+| 2026-11-02 | wf-elephant-goldfish | Added, 52, Optional | Repo cloned and read |
+| 2026-11-02 | lang-beautiful-rust | Added, 54, Optional | Repo cloned and read |
 | 2026-10-30 | mem-tokeneconomizer | Added, 58, Optional | Repo cloned and read; paper arXiv 2610.22732 |
 | 2026-10-30 | wf-ponytail | Re-checked: 38 to 40 (Quality 3 to 4), still Skip | v5 rebuild; repo cloned and read (v5.3.3) |
 | 2026-10-29 | re-superghidra | Added, 42, Watch | Repo cloned and read (v1.0.4) |

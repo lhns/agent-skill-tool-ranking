@@ -6,9 +6,11 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | mem-tokeneconomizer | [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | plugin: hooks + CLI (Python) | 3 | 1 | 3 | 1 | 4 | 4 | E1 | 58 | Optional: trial on a repo you work in daily |
 | mem-context-mode | [mksglu/context-mode](https://github.com/mksglu/context-mode) | MCP + hooks + skills | 2 | 1 | 4 | 1 | 3 | 1 | E1 | 48 | Watch: invasive routing hooks, open Windows bugs |
+| mem-mnemon | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | CLI + hooks (Go) | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch: one main author, scope growing beyond memory |
 | mem-optmem | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | CLI + AGENTS.md snippet | 3 | 1 | 1 | 1 | 3 | 3 | E1 | 46 | Optional: no license yet, rated as if licensed |
 | mem-1ctx | [stefanprodan/1ctx](https://github.com/stefanprodan/1ctx) | self-hosted server + MCP | 2 | 1 | 2 | 1 | 4 | 2 | E0 | 44 | Watch: alpha, two weeks old |
 | mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |
+| mem-hermes-mnemon | [gitricko/hermes-plugin-mnemon](https://github.com/gitricko/hermes-plugin-mnemon) | Hermes memory provider (Python) | 1 | 1 | 3 | 1 | 3 | 3 | E0 | 42 | Skip: Hermes only; use Mnemon's own setup elsewhere |
 | mem-uniichat | [VictorTaelin/UniiChat](https://github.com/VictorTaelin/UniiChat) | self-hosted agent | 2 | 1 | 2 | 1 | 2 | 1 | E0 | 38 | Watch: released today, self-declared vibe-coded |
 
 Built-in memory in Claude Code and Claude covers the basics; these add shared or long-term memory on top. claude-mem is a gate failure (unauthenticated local API).

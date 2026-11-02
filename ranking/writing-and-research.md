@@ -20,4 +20,5 @@
 | rs-nature | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | skills | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Skip: Socket warning |
 | wr-visual-docs | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | plugins | 2 | 1 | 3 | 1 | 2 | 3 | E0 | 46 | Skip |
 | rs-last30days | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | skill | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip: paid keys |
+| wr-obsidian-second-brain | [pogii123/obsidian-agentic-second-brain](https://github.com/pogii123/obsidian-agentic-second-brain) | Obsidian vault template | 1 | 1 | 4 | 1 | 2 | 3 | E0 | 44 | Skip: only if you keep notes in Obsidian |
 | rs-kdense | [K-Dense scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) | skills | 2 | 1 | 1 | 1 | 2 | 2 | E1 | 35 | Skip |
