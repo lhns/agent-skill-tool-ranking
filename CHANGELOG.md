@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-02 | mem-hermes-mnemon | Moved to new category Harness plugins, score unchanged | New category for harness-only plugins |
 | 2026-11-02 | wr-obsidian-second-brain | Added, 44, Skip | Repo cloned and read |
 | 2026-11-02 | mem-mnemon | Added, 48, Watch | Repo cloned and read |
 | 2026-11-02 | mem-hermes-mnemon | Added, 42, Skip | Repo cloned and read |

@@ -92,6 +92,7 @@ Status:
   - [SAP and ABAP](ranking/sap-and-abap.md)
   - [Agent safety and harness](ranking/agent-safety-and-harness.md)
   - [Memory and context](ranking/memory-and-context.md)
+  - [Harness plugins](ranking/harness-plugins.md)
   - [Local models](ranking/local-models.md)
   - [Building skills and MCPs](ranking/building-skills-and-mcps.md)
   - [Architecture](ranking/architecture.md)

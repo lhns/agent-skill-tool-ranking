@@ -72,6 +72,11 @@ title = "Memory and context"
 note = "Built-in memory in Claude Code and Claude covers the basics; these add shared or long-term memory on top. claude-mem is a gate failure (unauthenticated local API)."
 
 [[category]]
+id = "harness-plugins"
+title = "Harness plugins"
+note = "Plugins that only work inside one agent harness (Hermes, opencode, Pi, OpenClaw and the like), not portable skills or MCP servers. Fit depends on using that harness; agent-workspace runs Hermes, opencode, Pi and cline next to Claude Code."
+
+[[category]]
 id = "local-models"
 title = "Local models"
 note = "Tools for running models on your own hardware."

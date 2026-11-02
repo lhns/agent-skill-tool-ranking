@@ -3311,7 +3311,7 @@ overlaps = "mem-1ctx, mem-tokeneconomizer, mem-agentmemory"
 
 [[entry]]
 id = "mem-hermes-mnemon"
-category = "memory-and-context"
+category = "harness-plugins"
 name = "gitricko/hermes-plugin-mnemon"
 url = "https://github.com/gitricko/hermes-plugin-mnemon"
 type = "Hermes memory provider (Python)"
