@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-03 | data-auto-ontology | Added, 46, Optional | Repo cloned and read |
 | 2026-11-03 | fe-phone-harness | Added, 40, Skip | Repo cloned and read |
 | 2026-11-03 | safe-agent-keychain | Added, 48, Watch | Repo cloned and read (v0.34.0) |
 | 2026-11-03 | safe-openshell | Added, 56, Watch | Repo cloned and read (v0.1.7-pre.5) |

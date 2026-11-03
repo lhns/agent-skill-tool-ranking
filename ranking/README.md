@@ -20,7 +20,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Language servers and language skills](language-servers-and-language-skills.md) | 14 | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) | 79 |
 | [Self-hosted infrastructure](self-hosted-infrastructure.md) | 15 | [lhns/remote-docker](https://github.com/lhns/remote-docker) | 88 |
 | [Observability](observability.md) | 6 | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | 60 |
-| [Data and databases](data-and-databases.md) | 7 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
+| [Data and databases](data-and-databases.md) | 8 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
 | [Agent safety and harness](agent-safety-and-harness.md) | 28 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |

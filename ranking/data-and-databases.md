@@ -10,6 +10,7 @@
 | data-supabase-pg | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills) | skill | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Alternate for Postgres |
 | data-presidio | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | Python SDK and services | 1 | 1 | 4 | 1 | 4 | 4 | E1 | 50 | Optional: redact PII before prompts or logs; a library, not a skill |
 | data-sanjay-pg | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) read-only postgres | skill | 2 | 1 | 4 | 1 | 2 | 3 | E0 | 50 | Skip |
+| data-auto-ontology | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | platform: web app, API, MCP server, skills | 2 | 1 | 2 | 1 | 4 | 3 | E1 | 46 | Optional: semantic layer for text-to-SQL; a full stack to run |
 | data-open-ontologies | [fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies) | MCP server + CLI (Rust) | 0 | 1 | 2 | 1 | 3 | 3 | E1 | 31 | Skip: only for OWL ontology work |
 
 No usable generic S3/MinIO server was found; DuckDB's httpfs reads Parquet from S3 and likely covers the need (unverified).

@@ -3460,3 +3460,22 @@ stars = "unverified (13 commits since 2026-10-22, one author)"
 pros = "Gives any MCP client a real cloud iPhone or a cloud Android emulator: screenshots, tap, type, swipe, open apps; OAuth sign-in or API key, nothing to install (no Mac, adb or pairing); setup for Claude, Claude Code, Codex, Cursor, VS Code, Grok and more; tool names follow mobile-mcp; client code MIT"
 cons = "The phones are a commercial hosted service: Android 5 cents per phone-minute, iPhone 80 to 100 dollars a month; screens and app data run on their cloud; screenshots cost image tokens; 13 commits, one author; a local open-source route exists (mobile-mcp with your own emulator or device)"
 overlaps = "fe-agent-desktop, re-android"
+
+[[entry]]
+id = "data-auto-ontology"
+category = "data-and-databases"
+name = "NVIDIA/auto-ontology"
+url = "https://github.com/NVIDIA/auto-ontology"
+type = "platform: web app, API, MCP server, skills"
+fit = 2
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: semantic layer for text-to-SQL; a full stack to run"
+stars = "unverified (1,354 commits since 2026-04, NVIDIA)"
+pros = "Context layer for agentic analytics: generates an ontology from database metadata, grounds metrics, entities and relationships, validates generated SQL against certified definitions and lineage, returns provenance with every answer, learns from certified corrections; connectors for Postgres, DuckDB, SQLite, ClickHouse, Trino, MySQL, Snowflake, Databricks; MCP server, CLI, API and three agent skills; RBAC; credentials optionally in Vault; Helm or Docker Compose; text-to-SQL benchmark repo (BIRD); no telemetry; Apache-2.0"
+cons = "Heavy: Next.js frontend, FastAPI backend, ingestion worker, Postgres with pgvector, optional Vault; models default to NVIDIA's hosted API catalog, so schemas and questions leave the machine unless you self-host NIMs or point it at your own endpoint; no Db2 connector (DuckDB over Parquet works); not accepting external contributions"
+overlaps = "data-duckdb, data-postgres-pro, data-open-ontologies"
