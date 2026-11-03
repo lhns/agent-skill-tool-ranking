@@ -3403,3 +3403,22 @@ stars = "unverified (part of PurpleLlama; llamafirewall 1.0.3)"
 pros = "Layered scanners you pick individually: PromptGuard 2 (small BERT-style prompt-injection classifier, runs locally), AlignmentCheck (LLM audits the agent's reasoning for goal hijacking and indirect injection), CodeShield (Semgrep and regex rules over generated code, 8 languages), regex and custom LLM scanners; LangChain and OpenAI Agents examples; paper with AgentDojo results; library code MIT"
 cons = "No Claude Code hook: you wire it into PreToolUse yourself; AlignmentCheck needs a large model and defaults to Together AI's API, so agent traces leave the machine unless you point it at a local endpoint; PromptGuard 2 weights are gated on Hugging Face under Meta's Llama license; feature work quiet since mid-2026 (recent commits are automated lint fixes); benchmarks are Meta's own"
 overlaps = "safe-safety-net, safe-dippy, safe-parry-guard"
+
+[[entry]]
+id = "safe-openshell"
+category = "agent-safety-and-harness"
+name = "NVIDIA/OpenShell"
+url = "https://github.com/NVIDIA/OpenShell"
+type = "sandbox runtime: gateway, supervisor, CLI, SDKs (Rust)"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Watch: v0.1 pre-releases, Windows only via experimental WSL 2"
+stars = "unverified (NVIDIA; first commit in this history 2026-10-05, many contributors, v0.1.7-pre.5)"
+pros = "Sandbox runtime for fleets of agents: kernel-level enforcement on every file access, system call and network connection; policy changes checked by formal verification that flags new risky access (a new host with credentials, a new API method) before approval; policy advisor; credential providers that work only at approved endpoints, including inference routing; gateway as control plane, Helm chart for Kubernetes (CNI must enforce NetworkPolicy); Docker, Podman or host virtualization; GPU sandboxes; SDKs for Python, TypeScript, Go, Rust; agent skills for the CLI and policies; Apache-2.0"
+cons = "Anonymous telemetry on by default: set OPENSHELL_TELEMETRY_ENABLED=false on the gateway (or compile it out); pre-1.0 with fast churn; install pipes a script to sh; Windows needs WSL 2 (experimental) or a separate MXC branch; default image has no agent, you bring and configure it; more infrastructure than agent-workspace"
+overlaps = "safe-agent-workspace, safe-discobox, safe-agents-sandbox, safe-container-use"

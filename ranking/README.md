@@ -23,7 +23,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 | [Data and databases](data-and-databases.md) | 7 | [duckdb/duckdb-skills](https://github.com/duckdb/duckdb-skills) | 77 |
 | [Home automation](home-automation.md) | 5 | [alexpfau/zigbee2mqtt-mcp](https://github.com/alexpfau/zigbee2mqtt-mcp) | 60 |
 | [SAP and ABAP](sap-and-abap.md) | 3 | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | 60 |
-| [Agent safety and harness](agent-safety-and-harness.md) | 26 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
+| [Agent safety and harness](agent-safety-and-harness.md) | 27 | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | 88 |
 | [Memory and context](memory-and-context.md) | 7 | [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | 58 |
 | [Harness plugins](harness-plugins.md) | 1 | [gitricko/hermes-plugin-mnemon](https://github.com/gitricko/hermes-plugin-mnemon) | 42 |
 | [Local models](local-models.md) | 3 | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | 56 |

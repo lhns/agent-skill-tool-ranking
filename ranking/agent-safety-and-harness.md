@@ -11,6 +11,7 @@
 | safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | 3 | 1 | 4 | 1 | 3 | 4 | E1 | 60 | Stack pick (Planned) |
 | harness-herdr | [herdrdev/herdr](https://github.com/herdrdev/herdr) | terminal multiplexer | 3 | 1 | 4 | 1 | 3 | 3 | E1 | 58 | Optional |
 | safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | 3 | 1 | 4 | 1 | 3 | 3 | E0 | 58 | Alternate for Run agents isolated |
+| safe-openshell | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | sandbox runtime: gateway, supervisor, CLI, SDKs (Rust) | 3 | 1 | 3 | 1 | 4 | 3 | E1 | 56 | Watch: v0.1 pre-releases, Windows only via experimental WSL 2 |
 | harness-ccusage | [ccusage/ccusage](https://github.com/ccusage/ccusage) | CLI | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | harness-claude-hud | [jarrodwatts/claude-hud](https://github.com/jarrodwatts/claude-hud) | status line | 2 | 1 | 4 | 1 | 3 | 4 | E1 | 54 | Optional |
 | safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | 2 | 1 | 4 | 1 | 3 | 4 | E0 | 54 | Alternate for Destructive-command guard |

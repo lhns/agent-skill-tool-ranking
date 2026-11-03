@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-03 | safe-openshell | Added, 56, Watch | Repo cloned and read (v0.1.7-pre.5) |
 | 2026-11-02 | obs-holmesgpt | Added, 56, Optional | Repo cloned and read (v0.45.0) |
 | 2026-11-02 | safe-llamafirewall | Added, 46, Optional | PurpleLlama LlamaFirewall read (1.0.3) |
 | 2026-11-02 | re-box | Added, 58, Optional | Repo cloned and read |
