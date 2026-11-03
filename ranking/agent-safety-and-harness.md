@@ -18,6 +18,7 @@
 | harness-claude-squad | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | TUI | 2 | 1 | 4 | 1 | 3 | 3 | E1 | 52 | Skip |
 | harness-mcp-cli | [obra/superpowers-lab](https://github.com/obra/superpowers-lab) mcp-cli | skill | 2 | 1 | 4 | 1 | 2 | 4 | E0 | 52 | Watch |
 | safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | 2 | 1 | 4 | 1 | 3 | 3 | E0 | 52 | Alternate for Run agents isolated |
+| safe-agent-keychain | [stevederico/agent-keychain](https://github.com/stevederico/agent-keychain) | CLI + daemon (Rust, std only) | 1 | 1 | 4 | 1 | 3 | 4 | E0 | 48 | Watch: three days old; Linux desktop with polkit only |
 | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | 2 | 1 | 3 | 1 | 3 | 3 | E1 | 48 | Watch |
 | harness-lean-ctx | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | MCP + proxy | 2 | 1 | 3 | 1 | 3 | 2 | E0 | 46 | Skip |

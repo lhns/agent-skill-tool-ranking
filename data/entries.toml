@@ -3422,3 +3422,22 @@ stars = "unverified (NVIDIA; first commit in this history 2026-10-05, many contr
 pros = "Sandbox runtime for fleets of agents: kernel-level enforcement on every file access, system call and network connection; policy changes checked by formal verification that flags new risky access (a new host with credentials, a new API method) before approval; policy advisor; credential providers that work only at approved endpoints, including inference routing; gateway as control plane, Helm chart for Kubernetes (CNI must enforce NetworkPolicy); Docker, Podman or host virtualization; GPU sandboxes; SDKs for Python, TypeScript, Go, Rust; agent skills for the CLI and policies; Apache-2.0"
 cons = "Anonymous telemetry on by default: set OPENSHELL_TELEMETRY_ENABLED=false on the gateway (or compile it out); pre-1.0 with fast churn; install pipes a script to sh; Windows needs WSL 2 (experimental) or a separate MXC branch; default image has no agent, you bring and configure it; more infrastructure than agent-workspace"
 overlaps = "safe-agent-workspace, safe-discobox, safe-agents-sandbox, safe-container-use"
+
+[[entry]]
+id = "safe-agent-keychain"
+category = "agent-safety-and-harness"
+name = "stevederico/agent-keychain"
+url = "https://github.com/stevederico/agent-keychain"
+type = "CLI + daemon (Rust, std only)"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+verdict = "Watch: three days old; Linux desktop with polkit only"
+stars = "unverified (35 commits since 2026-11-01, v0.34.0)"
+pros = "Secret store for agents: a daemon running as its own system user holds an XChaCha20-Poly1305 vault whose key is sealed by systemd-creds (TPM2 when present); each get needs your login password through a polkit prompt naming the caller chain; rules per agent and secret (allow claude github, deny codex *); time-boxed grants for one launched program with revoke; every request logged, never values; scan and import for keys in .env and dotfiles; zero dependencies, about 3,800 lines of Rust with tests; honest threat model in SPEC.md; MIT"
+cons = "Linux only, built for Omarchy; needs polkit and a session to answer prompts, so headless hosts and agents in containers are awkward; allow rules trust the process name, which any program can set (documented); once printed, the secret is in the agent's hands; three days old, one author, many releases a day"
+overlaps = "safe-agent-workspace, safe-openshell, safe-discobox"
