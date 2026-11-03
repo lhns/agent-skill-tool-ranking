@@ -3441,3 +3441,22 @@ stars = "unverified (35 commits since 2026-11-01, v0.34.0)"
 pros = "Secret store for agents: a daemon running as its own system user holds an XChaCha20-Poly1305 vault whose key is sealed by systemd-creds (TPM2 when present); each get needs your login password through a polkit prompt naming the caller chain; rules per agent and secret (allow claude github, deny codex *); time-boxed grants for one launched program with revoke; every request logged, never values; scan and import for keys in .env and dotfiles; zero dependencies, about 3,800 lines of Rust with tests; honest threat model in SPEC.md; MIT"
 cons = "Linux only, built for Omarchy; needs polkit and a session to answer prompts, so headless hosts and agents in containers are awkward; allow rules trust the process name, which any program can set (documented); once printed, the secret is in the agent's hands; three days old, one author, many releases a day"
 overlaps = "safe-agent-workspace, safe-openshell, safe-discobox"
+
+[[entry]]
+id = "fe-phone-harness"
+category = "web-frontend-and-testing"
+name = "phone-harness/mcp"
+url = "https://github.com/phone-harness/mcp"
+type = "hosted MCP server (client code Python)"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 2
+composability = 3
+evidence = "E0"
+verdict = "Skip: paid hosted phones; only for mobile app testing"
+stars = "unverified (13 commits since 2026-10-22, one author)"
+pros = "Gives any MCP client a real cloud iPhone or a cloud Android emulator: screenshots, tap, type, swipe, open apps; OAuth sign-in or API key, nothing to install (no Mac, adb or pairing); setup for Claude, Claude Code, Codex, Cursor, VS Code, Grok and more; tool names follow mobile-mcp; client code MIT"
+cons = "The phones are a commercial hosted service: Android 5 cents per phone-minute, iPhone 80 to 100 dollars a month; screens and app data run on their cloud; screenshots cost image tokens; 13 commits, one author; a local open-source route exists (mobile-mcp with your own emulator or device)"
+overlaps = "fe-agent-desktop, re-android"

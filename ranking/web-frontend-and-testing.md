@@ -19,4 +19,5 @@
 | fe-ccworkflows | [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) | workflows | 2 | 1 | 2 | 1 | 3 | 3 | E1 | 44 | Skip |
 | fe-design-taste | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | skill | 1 | 1 | 4 | 1 | 2 | 3 | E1 | 44 | Skip |
 | fe-hyperframes | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | CLI + skills | 1 | 1 | 3 | 1 | 4 | 3 | E1 | 44 | Skip: Fit assumes no video work; tell me if you make videos |
+| fe-phone-harness | [phone-harness/mcp](https://github.com/phone-harness/mcp) | hosted MCP server (client code Python) | 1 | 1 | 3 | 1 | 2 | 3 | E0 | 40 | Skip: paid hosted phones; only for mobile app testing |
 | fe-uiuxpromax | ui-ux-pro-max-skill | skill | 2 | 1 | 2 | 1 | 1 | 2 | E0 | 38 | Skip |
