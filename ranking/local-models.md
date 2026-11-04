@@ -7,5 +7,6 @@
 | llm-mesh-llm | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | distributed inference server (Rust, llama.cpp) | 3 | 1 | 3 | 1 | 3 | 4 | E1 | 56 | Optional: pool homelab GPUs, private mesh only |
 | llm-colibri | [JustVugg/colibri](https://github.com/JustVugg/colibri) | MoE inference engine (C), NVMe expert streaming | 3 | 1 | 3 | 1 | 3 | 3 | E1 | 54 | Optional: huge MoE models on little RAM, batch jobs |
 | llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | 2 | 1 | 3 | 1 | 1 | 1 | E1 | 40 | Watch: no throughput numbers published |
+| llm-qwenfs | [vixhal-baraiya/qwenFS](https://github.com/vixhal-baraiya/qwenFS) | experimental model (Qwen3.5-2B plus compiled layers) | 1 | 1 | 2 | 1 | 3 | 1 | E0 | 33 | Skip: fascinating research toy, not a tool |
 
 Tools for running models on your own hardware.

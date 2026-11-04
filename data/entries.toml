@@ -3479,3 +3479,22 @@ stars = "unverified (1,354 commits since 2026-04, NVIDIA)"
 pros = "Context layer for agentic analytics: generates an ontology from database metadata, grounds metrics, entities and relationships, validates generated SQL against certified definitions and lineage, returns provenance with every answer, learns from certified corrections; connectors for Postgres, DuckDB, SQLite, ClickHouse, Trino, MySQL, Snowflake, Databricks; MCP server, CLI, API and three agent skills; RBAC; credentials optionally in Vault; Helm or Docker Compose; text-to-SQL benchmark repo (BIRD); no telemetry; Apache-2.0"
 cons = "Heavy: Next.js frontend, FastAPI backend, ingestion worker, Postgres with pgvector, optional Vault; models default to NVIDIA's hosted API catalog, so schemas and questions leave the machine unless you self-host NIMs or point it at your own endpoint; no Db2 connector (DuckDB over Parquet works); not accepting external contributions"
 overlaps = "data-duckdb, data-postgres-pro, data-open-ontologies"
+
+[[entry]]
+id = "llm-qwenfs"
+category = "local-models"
+name = "vixhal-baraiya/qwenFS"
+url = "https://github.com/vixhal-baraiya/qwenFS"
+type = "experimental model (Qwen3.5-2B plus compiled layers)"
+fit = 1
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 3
+composability = 1
+evidence = "E0"
+verdict = "Skip: fascinating research toy, not a tool"
+stars = "unverified (8 commits on 2026-11-03)"
+pros = "A filesystem compiled into transformer weights: 8 hand-constructed layers (no training) in front of Qwen3.5-2B parse its tool calls and answer write, read, list, link and backlink calls from inside the model; attention holds file text, Gated DeltaNet state holds tables and links, MLPs pick forced tokens; exact on scripted sessions and a dense link graph; Qwen's own predictions essentially unchanged (top-1 identical at 139 positions); disk image with paging; tests; MIT"
+cons = "One 2B model only; files live in the context and attention log, offsets decode exactly only to 600 tokens; residual widened from 2048 to 3072 plus 8 layers, so slower and larger; a plain tool or MCP filesystem does the same job with any model; one day old"
+overlaps = "mem-mnemon, mem-1ctx"
