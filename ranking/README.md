@@ -8,7 +8,7 @@ Verdicts: **Stack pick** and **Alternate** come from the [Recommended stack](../
 
 | Category | Entries | Top entry | Score |
 | --- | --- | --- | --- |
-| [Workflow and process](workflow-and-process.md) | 19 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
+| [Workflow and process](workflow-and-process.md) | 20 | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | 88 |
 | [Code intelligence](code-intelligence.md) | 3 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 65 |
 | [Language and library docs](language-and-library-docs.md) | 2 | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | 63 |
 | [Reverse engineering](reverse-engineering.md) | 9 | [android-reverse-engineering-skill](https://github.com/SimoneAvogadro/android-reverse-engineering-skill) | 60 |

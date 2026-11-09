@@ -3498,3 +3498,23 @@ stars = "unverified (8 commits on 2026-11-03)"
 pros = "A filesystem compiled into transformer weights: 8 hand-constructed layers (no training) in front of Qwen3.5-2B parse its tool calls and answer write, read, list, link and backlink calls from inside the model; attention holds file text, Gated DeltaNet state holds tables and links, MLPs pick forced tokens; exact on scripted sessions and a dense link graph; Qwen's own predictions essentially unchanged (top-1 identical at 139 positions); disk image with paging; tests; MIT"
 cons = "One 2B model only; files live in the context and attention log, offsets decode exactly only to 600 tokens; residual widened from 2048 to 3072 plus 8 layers, so slower and larger; a plain tool or MCP filesystem does the same job with any model; one day old"
 overlaps = "mem-mnemon, mem-1ctx"
+
+[[entry]]
+id = "wf-shadcn-improve"
+category = "workflow-and-process"
+name = "shadcn/improve"
+url = "https://github.com/shadcn/improve"
+detail = "improve"
+type = "skill (markdown only)"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 4
+evidence = "E1"
+verdict = "Optional: codebase audit that writes plans for cheaper models to execute"
+stars = "unverified (23 commits since 2026-06, last 2026-09-12; by shadcn)"
+pros = "Advisor and executor split: the strong model audits, vets and writes plans, never implements; parallel audit across nine categories (correctness, security, performance, tests, tech debt, dependencies, DX, docs, direction); re-reads every cited location before reporting, records rejected findings so they do not return; plans are self-contained with inlined code, verification commands per step, out-of-scope lists, STOP conditions and the commit they were written against; modes quick, deep, branch, next, plan, review-plan, execute (cheaper model in an isolated worktree, diff reviewed), reconcile; reads ADRs and flags stale ones; optional GitHub issues with a public-repo check; markdown only, no network or telemetry; MIT"
+cons = "Full audits fan out many subagents and cost tokens; SKILL.md about 2,200 words plus references; quiet since September; overlaps desloppify, Cloudflare's audit skill and your AGENTS.md planning rules"
+overlaps = "wf-desloppify, sec-cloudflare-audit, wf-elephant-goldfish, wf-agentsmd"
