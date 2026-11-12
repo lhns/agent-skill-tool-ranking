@@ -3575,3 +3575,22 @@ stars = "unverified (very active; GitHub)"
 pros = "Spec-driven development by GitHub: a project constitution, then specify, plan, tasks, implement and convergence; bundled processes for bug fixing and idea assessment; customizable through presets, workflow overlays, extensions and team bundles; local sources and self-hosted catalogs for offline use; supports many agents; no telemetry of its own; MIT"
 cons = "Heavier than OpenSpec: many steps and large templates per feature, best for greenfield or big features; community extensions are third-party code, review before installing; overlaps your AGENTS.md and ADR workflow"
 overlaps = "wf-openspec, wf-elephant-goldfish, wf-shadcn-improve"
+
+[[entry]]
+id = "wf-bmad"
+category = "workflow-and-process"
+name = "bmad-code-org/BMAD-METHOD"
+url = "https://github.com/bmad-code-org/BMAD-METHOD"
+type = "skill modules (npm installer or npx skills)"
+fit = 2
+effectiveness = 1
+cost = 1
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+verdict = "Skip: a full agile process with personas; heavy and mid-rewrite"
+stars = "unverified (very active; stable v6.12, v7 in preview alpha)"
+pros = "Agile AI-driven development across the whole effort: clarify, plan (briefs, specifications, architecture), build and verify, learn and adjust; start at any stage, or carry its documents into your own workflow; bmad-help and bmad status guide the next step; optional modules (Toolsmith with skill evals, Founder advisor); many agents; no telemetry found; MIT (names trademarked)"
+cons = "Very heavy: 33 skills and about 200k words of skill material in v7; persona-driven team simulation is overhead for a solo engineer; v7 is alpha with breaking changes between updates while v6.12 is frozen; overlaps your AGENTS.md, OpenSpec, spec-kit and grill-with-docs"
+overlaps = "wf-openspec, wf-speckit, wf-mattpocock, wf-agentsmd"

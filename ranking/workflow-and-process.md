@@ -13,6 +13,7 @@
 | wf-speckit | [github/spec-kit](https://github.com/github/spec-kit) | CLI (Python, uv) + templates, extensions, workflows | 3 | 1 | 2 | 1 | 4 | 3 | E1 | 52 | Optional: heavier, more formal spec process from GitHub |
 | wf-karpathy | [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | guideline | 1 | 1 | 4 | 1 | 2 | 4 | E1 | 46 | Skip: AGENTS.md covers it |
 | wf-addyosmani | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | skills | 1 | 1 | 3 | 1 | 3 | 3 | E1 | 42 | Skip |
+| wf-bmad | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | skill modules (npm installer or npx skills) | 2 | 1 | 1 | 1 | 3 | 3 | E1 | 40 | Skip: a full agile process with personas; heavy and mid-rewrite |
 | wf-desloppify | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | CLI + skill (Python) | 2 | 1 | 1 | 1 | 3 | 3 | E1 | 40 | Watch: main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged |
 | wf-ponytail | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | plugin: 6 skills + session hooks | 1 | 1 | 2 | 1 | 4 | 3 | E1 | 40 | Skip: duplicates your AGENTS.md |
 | wf-superpowers | [obra/superpowers](https://github.com/obra/superpowers) | plugin | 1 | 2 | 1 | 2 | 3 | 1 | E2 | 40 | Skip |
