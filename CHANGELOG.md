@@ -2,6 +2,8 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-12 | wf-openspec | Added, 56, Optional | Repo cloned and read (v2.0.0) |
+| 2026-11-12 | wf-speckit | Added, 52, Optional | Repo cloned and read |
 | 2026-11-10 | mem-billion-context | Added, 44, Skip | Repo cloned and read |
 | 2026-11-09 | wf-shadcn-improve | Added, 54, Optional | Repo cloned and read |
 | 2026-11-04 | llm-qwenfs | Added, 33, Skip | Repo cloned and read |

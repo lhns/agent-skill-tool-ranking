@@ -3537,3 +3537,41 @@ stars = "unverified (8,199 commits since 2026-08, mostly by agents and bots; npm
 pros = "Context compression proxy between any agent and the model API: injects compress, decompress, search_context and acp_status tools; the model folds old message ranges into layered summaries itself, reversibly, keeping the prompt cache prefix (claims 95 to 97% cache hits, 5 times fewer tokens, month-long sessions in a 100k window); paper with a 4.5-month production study; third-party benchmark set in the repo; plugins for opencode, pi, Hermes and about 25 clients; MIT"
 cons = "A man-in-the-middle for every request: your API keys or subscription tokens and all code pass through it; self-update from npm is on by default outside containers (disable with --no-auto-update or ACP_AUTO_UPDATE=0); about 190k lines of TypeScript written in three months, largely by agents; check whether routing a Claude subscription through a proxy is allowed; Claude Code already compacts on its own; numbers are the author's own"
 overlaps = "mem-context-mode, mem-tokeneconomizer, mem-mnemon"
+
+[[entry]]
+id = "wf-openspec"
+category = "workflow-and-process"
+name = "Fission-AI/OpenSpec"
+url = "https://github.com/Fission-AI/OpenSpec"
+type = "CLI + slash commands (npm)"
+fit = 3
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: light spec workflow for brownfield repos; telemetry off first"
+stars = "unverified (very active, v2.0.0, many contributors)"
+pros = "Lightweight spec-driven development: explore, propose (proposal, spec deltas as ADDED or MODIFIED requirements with scenarios, design, tasks), apply, archive; specs live as plain Markdown in the repo and get merged on archive, so the spec stays the current truth; built for brownfield changes, iterative not waterfall; works with Claude Code, Codex, Cursor and many more; MIT"
+cons = "Anonymous usage telemetry on by default: openspec config set telemetry.enabled false, OPENSPEC_TELEMETRY=0 or DO_NOT_TRACK=1; adds an openspec/ folder convention to every repo; overlaps your AGENTS.md planning and ADR habits, Elephant Goldfish and improve"
+overlaps = "wf-speckit, wf-elephant-goldfish, wf-shadcn-improve, wf-mattpocock"
+
+[[entry]]
+id = "wf-speckit"
+category = "workflow-and-process"
+name = "github/spec-kit"
+url = "https://github.com/github/spec-kit"
+type = "CLI (Python, uv) + templates, extensions, workflows"
+fit = 3
+effectiveness = 1
+cost = 2
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E1"
+verdict = "Optional: heavier, more formal spec process from GitHub"
+stars = "unverified (very active; GitHub)"
+pros = "Spec-driven development by GitHub: a project constitution, then specify, plan, tasks, implement and convergence; bundled processes for bug fixing and idea assessment; customizable through presets, workflow overlays, extensions and team bundles; local sources and self-hosted catalogs for offline use; supports many agents; no telemetry of its own; MIT"
+cons = "Heavier than OpenSpec: many steps and large templates per feature, best for greenfield or big features; community extensions are third-party code, review before installing; overlaps your AGENTS.md and ADR workflow"
+overlaps = "wf-openspec, wf-elephant-goldfish, wf-shadcn-improve"
