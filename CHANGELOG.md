@@ -2,6 +2,37 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | (method) | Scores replaced by tiers for untested entries; Fit below 2 is Not for you; trust split from evidence; Cost means context only; per-job tables; review depth and review date per entry; under-30-days rule; trials before intake | Method review of all 204 entries plus a blind second rating of 15 (RUBRIC.md, Rater noise) |
+| 2026-11-13 | wf-mattpocock | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | wf-superpowers | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | wf-gsd | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | docs-context7 | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | sec-official | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | rev-official | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | fe-frontend-design | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | fe-webapp-testing | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | lang-lsp-official | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | lang-serena | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | infra-github-mcp | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | data-duckdb | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | harness-hookify | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | build-official | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | build-mcp-tunnels | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
+| 2026-11-13 | llm-mesh-llm | Cost 3 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | llm-colibri | Cost 3 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | obs-holmesgpt | Cost 3 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | safe-openshell | Cost 3 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | data-auto-ontology | Cost 2 to 3 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | safe-llamafirewall | Cost 2 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | llm-qwenfs | Cost 2 to 4 | Cost now means context cost only; money and infrastructure stay in the cons |
+| 2026-11-13 | mem-tokeneconomizer | Optional to Watch | Under 30 days old at review |
+| 2026-11-13 | wf-elephant-goldfish | Optional to Watch | Under 30 days old at review |
+| 2026-11-13 | lang-beautiful-rust | Optional to Watch | Under 30 days old at review |
+| 2026-11-13 | re-box | Optional to Watch | Under 30 days old at review |
+| 2026-11-13 | safe-agent-workspace | Reliability 3 to 2, score 88 to 83 | Experience log has a usefulness statement but none about reliability |
+| 2026-11-13 | safe-skillspector | Up next to Trying now, until 2026-11-27 | Trials before intake; exit test in the stack |
+| 2026-11-13 | wf-mattpocock | Up next to Trying now, until 2026-11-27 | Trials before intake; exit test in the stack |
+| 2026-11-13 | lang-metals-mcp | Up next to Trying now, until 2026-11-27 | Trials before intake; exit test in the stack |
 | 2026-11-12 | wf-bmad | Added, 40, Skip | Repo cloned and read (v6.12, v7 alpha) |
 | 2026-11-12 | wf-openspec | Added, 56, Optional | Repo cloned and read (v2.0.0) |
 | 2026-11-12 | wf-speckit | Added, 52, Optional | Repo cloned and read |

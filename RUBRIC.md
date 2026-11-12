@@ -1,90 +1,150 @@
 # Rubric
 
-Entries pass hard gates, get scored 0 to 4 on six weighted criteria, and are ranked only within their category. A skill and an MCP server are never ranked against each other; they meet only in the Recommended stack.
+Entries pass hard gates, then get a tier. Only entries tested hands-on get a score. Tools are compared per job, never across jobs.
 
-## Gates (pass/fail, before scoring)
+This replaced the score-everything method on 2026-11-13. A review of all 204 entries showed that 90% rested on README-level evidence, that their scores were effectively "guessed Fit plus Cost", and that a blind second rating disagreed by 6 points on average (see Rater noise). Scores looked more precise than they were.
+
+## What is reliable here, and what is not
+
+- **Reliable:** gate failures, and the pros and cons (specific, checkable facts: telemetry switches, licenses, hosted services, age, authorship).
+- **Useful:** tiers and the stack, as sensible defaults for what to try first.
+- **Not reliable:** any ordering among untested entries. A tier is a triage decision, not a measurement.
+
+## Gates (pass/fail, before anything else)
 
 A failed gate means "listed, not ranked".
 
 | Gate | Pass condition |
 | --- | --- |
-| Security | Full SKILL.md or server code read before install; no undisclosed network calls or telemetry you can't disable; no instructions that override system prompts; install pinned to a commit or checksummed release |
-| License | OSI or clearly permissive for personal use; no license = fail; non-commercial noted |
-| Maintenance | Commit or release within 6 months, or explicitly finished with no open security issues |
+| Security | No undisclosed network calls; telemetry can be switched off; no instructions that override system prompts; no known design flaw that lets untrusted input run commands with your credentials |
+| License | OSI or clearly permissive for personal use; no license = fail; non-commercial and custom licenses noted |
+| Maintenance | Commit or release within 6 months, or explicitly finished (static guidelines count as finished) with no open security issues |
 | Platform | Works on Windows desktop or runs entirely on the remote Docker host |
 
-## Scored criteria (0 to 4 each)
+The Security gate is judged at the entry's review depth (see below). A `readme` or `search` review can fail the gate but cannot certify it: read the code and pin a version before you install anything.
+
+## Fit comes first
+
+Fit is 0 to 4: 0 = a task you don't do, or it duplicates AGENTS.md; 2 = useful sometimes, partial overlap; 4 = core task, nothing else in the stack does it.
+
+- **Fit below 2 is "Not for you".** The entry keeps its facts but is not compared further. No other criterion can buy that back.
+- **Fit is yours to set.** The rater's Fit is a guess from what it knows about your work; `fit_by = "user"` marks the ones you set, shown as `*`. Only a Fit you set can put an entry on the Shortlist.
+
+## Sub-scores (0 to 4 each)
 
 | Criterion | Weight | 0 | 2 | 4 |
 | --- | --- | --- | --- | --- |
-| Fit | 3 | Task you don't do, or duplicates AGENTS.md | Useful sometimes, partial overlap | Core task, nothing else in the stack does it |
+| Fit | 3 | See above | | |
 | Effectiveness | 3 | Made sessions worse | Helps modestly over plain Claude | Clearly better than no tool, repeatedly |
-| Cost | 2 | Heavy tokens, many tools, slow | Moderate overhead | Near zero always-on cost |
+| Cost | 2 | Heavy context: many tools, long always-on text, token-hungry loops | Moderate context overhead | Near zero always-on context |
 | Reliability | 2 | Misfires or crashes | Occasional misfires | Triggers exactly when wanted, stable |
 | Implementation quality | 1 | Template-generated, no tests | Reasonable | Expert-written, tested, clear scope |
 | Composability | 1 | All-or-nothing, conflicts | Usable alongside others | Adopt partially, removes cleanly |
 
-Score = weighted sum (max 48), shown as 0 to 100. Sub-scores are always recorded so one criterion can change without re-deriving the rest.
+**Cost means context cost for the agent only.** Money (API bills, subscriptions, hosted services), hardware and infrastructure effort go into the cons, not into Cost. Cost sub-scores from before 2026-11-13 may still mix these; they are corrected when an entry is next touched.
 
-## Evidence levels
+Effectiveness and Reliability are **unknown** without a trial. They are stored as 1 for untested entries and shown as `?`.
 
-Effectiveness and Reliability are both capped by the evidence level; nobody can judge stability from a README. An entry reaches **In use** only after a logged trial (E3); below that it stays Up next, Planned or Trying now.
+## Evidence, trust and review depth
 
-| Level | Source | Effectiveness cap |
+Three separate things that used to be mixed:
+
+| Evidence | Source | What it allows |
 | --- | --- | --- |
-| E0 | README or author claims, self-benchmarks | 1 |
-| E1 | Stars, installs, list mentions | 1 |
-| E2 | Independent third-party test with methodology, or reviewed official marketplace | 2 |
-| E3 | Your hands-on trial, logged | 3 |
-| E4 | Weeks of use, compared against not using it | 4 |
+| E0 | README or author claims, self-benchmarks | Tier only |
+| E1 | Stars, installs, list mentions (often unverifiable) | Tier only |
+| E2 | Independent third-party test with methodology; needs `evidence_source` | Tier only; Effectiveness and Reliability up to 2 once you confirm |
+| E3 | Your hands-on trial, logged in the Experience log | Score; Effectiveness and Reliability up to 3 |
+| E4 | Weeks of use, compared against not using it | Score; up to 4 |
 
-Evidence older than 6 months drops one level unless re-confirmed.
+- **Trust** (`official`, `own`) says who publishes it. It is not evidence that it works, and gives no bonus. Your own tools are scored like anything else, on logged use.
+- **Review depth** says how the rater looked: `readme` (README only), `search` (README plus keyword search of the code), `code` (code read). Claims like "no telemetry found" carry that depth.
+- Each sub-score above 1 for Effectiveness or Reliability needs its own statement in the Experience log. "It works for my team" supports Effectiveness, not Reliability.
+- Evidence older than 6 months drops one level unless re-confirmed.
 
-## Statuses and verdicts
+## Tiers
 
-Two separate vocabularies, so a word means one thing.
+| Tier | Meaning | Rule |
+| --- | --- | --- |
+| Stack pick, Alternate | The default to try for a job, and next in line | Set in `data/stack.toml` |
+| Shortlist | Fine to try, and you confirmed it fits | Verdict Optional, Fit 3 or 4 set by you |
+| Candidate | Fine to try | Verdict Optional, Fit 2 or more |
+| Watch | Promising but not ready | Verdict Watch; automatic when the repo was under 30 days old at review |
+| No | Don't use it | Verdict Skip; needs a reason |
+| Not for you | Fit below 2 | Automatic |
 
-**Stack status** (one per job in `data/stack.toml`, shown in the README):
+Entries carry `verdict` (Optional, Watch or Skip, with a reason after a colon); the tier is derived. Picks and alternates need Fit 2 or more and must not be under 30 days old and untested.
 
-- **In use:** E3 or better and in daily use, or your own AGENTS.md baseline.
-- **Trying now:** on probation. At most 3 at once, each time-boxed to 2 weeks with a written exit test (for example "adopt if it cuts exploration tool calls on a Scala repo"). Log the result in the Experience log; then In use or dropped.
-- **Up next:** start these first, in table order.
+## Score
+
+Only for E3 and E4: weighted sum of the six sub-scores (max 48), shown as 0 to 100. Gaps under 10 points are within rater noise.
+
+## Compare per job
+
+Categories only group entries; a category like "Agent safety and harness" holds sandboxes, command guards, linters and secret stores, which don't compete. The comparison unit is the job: `ranking/by-job.md` lists, for each stack job, the pick, its alternates and every entry that names the job (`jobs = ["..."]`) or cites the pick or an alternate in `overlaps`.
+
+## Stack statuses
+
+- **In use:** E3 or better and in regular use, or your own AGENTS.md baseline.
+- **Trying now:** at most 3 at once, each with `exit_test` and `trial_ends` (2 weeks). Log the result in the Experience log; then In use or dropped.
+- **Up next:** start these when a trial slot frees up.
 - **Blocked:** picked, but a gate check must pass first.
 - **Planned:** picked for its job; install when you work on that kind of project.
 
-**Ranking verdict** (one per entry, shown in the category tables):
+## Trials before intake
 
-- **Stack pick** and **Alternate:** set automatically from the stack. An alternate is next in line if the pick fails.
-- **Optional:** fine to add if you want it; not needed for any job.
-- **Watch:** promising but not ready; re-check later.
-- **Skip:** don't use it. A reason after a colon is allowed (`Skip: 924 tools`).
-- Gate failures are listed separately and never scored.
+The ranking only becomes real through trials, so trials come first:
+
+- While no trial result has been logged in the Experience log within the last 30 days, new candidates get a gate check, review-depth facts and a tier, in one short entry. No sub-score debates, no stack changes.
+- When a trial ends, log it (date, ID, model, task, result against the exit test), update the entry to E3, and move the next "Up next" pick to "Trying now".
 
 ## Consistency rules
 
-- **Telemetry:** passes the Security gate only if it can be switched off; the switch goes in the install notes and is applied.
-- **Hosted services** (Context7, cloud embeddings) cost a Fit point when the query itself leaks private code or names.
-- **Write access to live systems** (cluster, printer, KiCad files): read-only or scoped credentials by default, noted in the stack.
+- **Telemetry:** passes the Security gate only if it can be switched off; the switch goes in the cons or stack notes.
+- **Hosted services** cost a Fit point when the query itself leaks private code or names.
+- **Write access to live systems:** read-only or scoped credentials by default, noted in the stack.
+- **Young repos:** under 30 days old at review is Watch at best, whatever the code looks like.
+- **Design flaws:** a confirmed flaw that lets untrusted input run commands with your credentials fails the Security gate unless the documented setup removes it; then the entry is Blocked until that setup is in place.
 
 ## Re-rank protocol
 
 1. Read this rubric and Experience log rows since the last Changelog entry.
-2. Gate-check and provisionally score Inbox entries; move each to the table or to the Watchlist with a reason. Nothing sits in the Inbox over 30 days.
-3. Re-score only entries with new evidence or a trigger: 90 days since last score, new major version, new Claude model generation, maintenance gate near expiry, or a logged negative experience.
-4. Score the first re-check blind (without the old row), then compare. Never re-score the whole table for consistency.
-5. Update the Recommended stack: one pick per job, keeping the always-on budget under about 8k tokens; extra MCP servers go per project.
+2. Turn logged trials into evidence first: update evidence, Effectiveness, Reliability, stack status.
+3. Gate-check Inbox entries and give each a tier, or move it to the Watchlist with a reason. Nothing sits in the Inbox over 30 days.
+4. Re-check only entries with a trigger: 90 days since `reviewed`, new major version, new Claude model generation, maintenance gate near expiry, or a logged negative experience.
+5. Update the stack: one pick per job, always-on context under about 8k tokens.
 6. Add one Changelog row per changed entry: ID, change, triggering evidence.
 
-## Ranking pitfalls
+## Rater noise
 
-- **Star inflation:** check stars per month and contributor count. Thousands of stars with a handful of commits is a discount signal; REA's page shows about 320k stars, which is implausible.
+On 2026-11-13 a second agent rated 15 entries blind (no access to this repo), from the same rubric and the same description of your work.
+
+| Criterion | Exact match | Within 1 point | Mean difference |
+| --- | --- | --- | --- |
+| Fit | 5 of 15 | 15 of 15 | 0.67 |
+| Cost | 8 of 15 | 14 of 15 | 0.53 |
+| Quality | 6 of 15 | 15 of 15 | 0.60 |
+| Composability | 7 of 15 | 15 of 15 | 0.53 |
+
+- Converted to the old 0 to 100 score, the two ratings differed by 6 points on average and up to 12.5. Most old score gaps were smaller than that.
+- "Try it or not" matched for 11 of 15. All 7 stack members in the sample were also judged worth trying by the second rater. The 4 disagreements were entries marked Skip (three of them without a stated reason) and one Fit guess.
+- 3 of 15 entries crossed the Fit 2 line between the two ratings. That is why Fit is yours to set.
+- The first rater scored Fit, Cost and Composability about 0.4 points higher on average.
+
+Repeat this check when the rubric or the rating model changes.
+
+## Pitfalls
+
+- **Star inflation:** check stars per month and contributor count. Many star counts here could not be verified at all.
 - **Self-benchmarks:** "65% fewer tokens" in a README stays E0 until reproduced.
-- **Popularity over fit:** a hugely starred React skill scores 0 on Fit for a Scala workflow.
-- **Anchoring:** first scores are provisional; the first re-check is blind.
-- **Model drift:** heavy scaffolding written for weaker models often hurts stronger ones. Log the model used and re-check on model upgrades.
-- **Prompt injection and supply chain:** skills are executable instructions. Read fully, pin a commit, diff on update; marketplace auto-update without review fails the Security gate.
+- **Popularity over fit:** a hugely starred React skill is Not for you on a Scala workflow.
+- **Official is not tested:** vendor or marketplace origin lowers supply-chain risk; it says nothing about whether the tool helps you.
+- **Your own tools:** easy to over-rate. They need logged use like everything else.
+- **Intake without trials:** rating new links feels like progress and produces none. See Trials before intake.
+- **Model drift:** scaffolding written for weaker models often hurts stronger ones. Log the model and re-check on model upgrades.
+- **Prompt injection and supply chain:** skills are executable instructions. Read fully, pin a commit, diff on update.
 - **Triggering:** test 3 prompts that should fire and 3 that shouldn't.
 - **Token overhead:** an MCP server with 200 tools costs context every turn; prefer few coarse tools or tool filtering.
 - **Double installs:** plugin plus `npx skills` gives duplicate triggers; record the install path.
 - **Windows:** many skills assume bash and Unix paths; mark whether verified on your setup.
-- **Conflicts with AGENTS.md:** two tools prescribing different test-before-commit procedures is a conflict, not harmless overlap. AGENTS.md is itself an entry in the workflow category.
+- **Conflicts with AGENTS.md:** two tools prescribing different test-before-commit procedures is a conflict, not harmless overlap.
