@@ -6,5 +6,5 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 
 | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| lang-metals-mcp | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | MCP | Stack pick (Trying now) | 4 | ? | 3 | ? | 3 | 4 | E1, official | readme | untested |  |
+| lang-metals-mcp | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | MCP | Stack pick (Up next) | 4 | ? | 3 | ? | 3 | 4 | E1, official | readme | untested |  |
 | docs-context7 | [upstash/context7](https://github.com/upstash/context7) | MCP or CLI + skill | Stack pick (Planned) | 2 | ? | 3 | ? | 3 | 4 | E1 | readme | untested |  |

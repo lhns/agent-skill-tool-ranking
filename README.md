@@ -9,13 +9,13 @@ Which agent skills, plugins and MCP servers to use for Pierre's work, triaged wi
 ## Recommended stack
 
 <!-- BEGIN GENERATED: stack -->
-One pick per job, 43 jobs: 3 in use, 3 trying now, 1 up next, 1 blocked, 35 planned. A pick is the default to try for that job, not a proven winner: only entries marked with a score have been tested hands-on. Only the jobs loaded globally run in every session; everything else is installed per project. All candidates for a job are in [ranking/by-job.md](ranking/by-job.md).
+One pick per job, 43 jobs: 3 in use, 4 up next, 1 blocked, 35 planned. A pick is the default to try for that job, not a proven winner: only entries marked with a score have been tested hands-on. Only the jobs loaded globally run in every session; everything else is installed per project. All candidates for a job are in [ranking/by-job.md](ranking/by-job.md).
 
 Status:
 
-- **In use**: adopted after a logged trial, or your own baseline
-- **Trying now**: on a 2-week trial with a written exit test; at most 3 at once
-- **Up next**: start these first, in table order; move to Trying now when you begin and log the result
+- **In use**: adopted after logged use, or your own baseline
+- **Trying now**: you are using it; tell the agent how it goes
+- **Up next**: try these first, in table order
 - **Blocked**: picked, but a gate check must pass first
 - **Planned**: picked for its job; install when you work on that kind of project
 
@@ -24,9 +24,9 @@ Status:
 | Workflow | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | In use | [E3, own, score 88](ranking/workflow-and-process.md) | Global | Your baseline; everything else must beat or complement it | none |
 | Run agents isolated | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | In use | [E3, own, score 83](ranking/agent-safety-and-harness.md) | Global (launcher) | Your own tool; agents see only the workspace and their own state. Still shared with every agent: the whole `.env`, the git token and the remote-docker seed key, and there is no egress policy. For VM isolation and egress control use [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | [discobox-ai/discobox](https://github.com/discobox-ai/discobox), [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) |
 | Docker on the remote host | [lhns/remote-docker](https://github.com/lhns/remote-docker) | In use | [E3, own, score 88](ranking/self-hosted-infrastructure.md) | Global (CLI) | Your own tool; agents run the real docker and compose CLI through it, so no Docker MCP is needed. For read-only agent access to containers and Swarm, use [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) instead of the CLI | [L337-org/docker-mcp](https://github.com/L337-org/docker-mcp) |
-| Skill install gate | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Trying now | [E1, untested](ranking/agent-safety-and-harness.md) | Before every install | Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev **Trial until 2026-11-27.** Exit test: Scan the next 5 skills or plugins you install. Keep it if it runs on your setup without manual fixes and no false alarm costs you more than 5 minutes; drop it if it misses a problem you find by reading. | none |
-| Requirements interview | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | Trying now | [E1, untested](ranking/workflow-and-process.md) | Global | Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin **Trial until 2026-11-27.** Exit test: Use grill-with-docs on 3 features. Keep it if at least 2 interviews surface a requirement or decision you had not written down and its glossary and ADR output needs under 10 minutes of cleanup each. | none |
-| Scala language intelligence | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | Trying now | [E1, official, untested](ranking/language-and-library-docs.md) | Scala projects | `cs install metals-mcp`, then `metals-mcp --workspace . --client claude` **Trial until 2026-11-27.** Exit test: Do 5 comparable tasks in a cats-effect repo with it and count compile-fix round trips against 5 without it. Keep it if the count drops and Metals indexing never blocks a session. | [oraios/serena](https://github.com/oraios/serena) |
+| Skill install gate | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Up next | [E1, untested](ranking/agent-safety-and-harness.md) | Before every install | Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev Keep it if: Scan the next 5 skills or plugins you install. Keep it if it runs on your setup without manual fixes and no false alarm costs you more than 5 minutes; drop it if it misses a problem you find by reading. | none |
+| Requirements interview | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | Up next | [E1, untested](ranking/workflow-and-process.md) | Global | Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin Keep it if: Use grill-with-docs on 3 features. Keep it if at least 2 interviews surface a requirement or decision you had not written down and its glossary and ADR output needs under 10 minutes of cleanup each. | none |
+| Scala language intelligence | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | Up next | [E1, official, untested](ranking/language-and-library-docs.md) | Scala projects | `cs install metals-mcp`, then `metals-mcp --workspace . --client claude` Keep it if: Do 5 comparable tasks in a cats-effect repo with it and count compile-fix round trips against 5 without it. Keep it if the count drops and Metals indexing never blocks a session. | [oraios/serena](https://github.com/oraios/serena) |
 | Ghidra analysis | [bethington/ghidra-mcp](https://github.com/bethington/ghidra-mcp) | Up next | [E1, untested](ranking/reverse-engineering.md) | RE container | Headless, `--lazy`, scripts off, `GHIDRA_MCP_FILE_ROOT` set; the bridge holds the token; Ghidra 12.1.3. Statistical tie with [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp), which is leaner (18 tools, official Docker image) | [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp) |
 | Multi-tool RE orchestration | [morluto/rea](https://github.com/morluto/rea) | Blocked | [E0, untested](ranking/reverse-engineering.md) | RE container | Security gate pending: anomalous stars. Read the code, pin npm `rea-agents`, no secrets, restricted network; own image if its Ghidra 12.1.4 clashes with ghidra-mcp | none |
 | RE method knowledge | [wshobson binary-analysis + protocol-RE patterns](https://github.com/wshobson/agents) | Planned | [E1, untested](ranking/reverse-engineering.md) | RE container | binary-analysis-patterns and protocol-reverse-engineering; the latter has a Socket warning, read it first | none |
@@ -72,7 +72,7 @@ Status:
 
 - [How to use this repo](HOW-TO-USE.md)
 - [Agent instructions](AGENTS.md): how agents add, score and re-rank entries
-- [Rubric](RUBRIC.md): gates, Fit, tiers, evidence, trust and review depth, trials before intake, rater noise, pitfalls
+- [Rubric](RUBRIC.md): gates, Fit, tiers, evidence, trust and review depth, rater noise, pitfalls
 - [Ranking](ranking/README.md), per job and by category:
 <!-- BEGIN GENERATED: categories -->
   - [Candidates per job](ranking/by-job.md)

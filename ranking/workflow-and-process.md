@@ -7,7 +7,7 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | wf-agentsmd | [Your global AGENTS.md](https://github.com/lhns/global-agents-md) | instructions | Stack pick (In use) | 4 | 3 | 4 | 3 | 3 | 4 | E3, own | readme | 88 |  |
-| wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | Stack pick (Trying now) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
+| wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | Stack pick (Up next) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | wf-openspec | [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | CLI + slash commands (npm) | Candidate | 3 | ? | 3 | ? | 4 | 3 | E1 | search | untested | light spec workflow for brownfield repos; telemetry off first |
 | wf-shadcn-improve | [shadcn/improve](https://github.com/shadcn/improve) improve | skill (markdown only) | Candidate | 3 | ? | 2 | ? | 4 | 4 | E1 | search | untested | codebase audit that writes plans for cheaper models to execute |
 | wf-speckit | [github/spec-kit](https://github.com/github/spec-kit) | CLI (Python, uv) + templates, extensions, workflows | Candidate | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | heavier, more formal spec process from GitHub |

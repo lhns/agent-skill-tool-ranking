@@ -2,6 +2,10 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | rubric | Dropped trial periods: no end dates, no limit of 3, no short-intake rule; exit tests stay optional | User dropped trial periods |
+| 2026-11-13 | safe-skillspector | Trying now to Up next; trial end date removed | User dropped trial periods |
+| 2026-11-13 | wf-mattpocock | Trying now to Up next; trial end date removed | User dropped trial periods |
+| 2026-11-13 | lang-metals-mcp | Trying now to Up next; trial end date removed | User dropped trial periods |
 | 2026-11-13 | rs-openkb | Added, Candidate | Short intake (trials open): README plus keyword search |
 | 2026-11-13 | nt-obsidian-hybrid-search | Added, Not for you (Fit guessed 1) | Short intake (trials open): README plus keyword search |
 | 2026-11-13 | (all) | `jobs` set on 59 entries so the per-job tables are complete; 46 Skip and Watch verdicts got their reason written out | Applying the 2026-11-13 method to every entry |

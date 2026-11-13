@@ -1,14 +1,14 @@
 # The Recommended stack: one pick per job. Rendered into README.md by scripts/build.py.
 #
 # status: "In use" | "Trying now" | "Up next" | "Planned" | "Blocked"
-#   In use      adopted after a logged trial (or your own baseline)
-#   Trying now  on a 2-week trial with an exit test; at most 3 at once
+#   In use      adopted after logged use (or your own baseline)
+#   Trying now  you are using it; tell the agent how it goes
 #   Up next     start these first, in table order
 #   Planned     picked for its job; install when you work on that kind of project
 #   Blocked     picked, but a gate check must pass first (see notes)
 # entry and alternates are entry IDs from entries.toml. In notes, {entry-id} renders as a link.
 # The ranking tables show picks as "Stack pick" and alternates as "Alternate"; don't set a verdict on them.
-# "Trying now" needs exit_test (what must be true to keep it) and trial_ends (YYYY-MM-DD).
+# exit_test is optional: what should be true to keep it once you have used it.
 
 gaps = "Proxmox (only immature servers: {infra-gateway-radumalica} has 5 stars, {infra-proximo} exposes 924 tools), Ceph ({infra-ceph-aiops} has 0 stars and looks generated), Docker Swarm ({infra-docker-l337} has 9 stars), Stalwart and S3/MinIO. No cats-effect, fs2, http4s or Circe skill exists; generate them with {build-skill-seekers}."
 
@@ -22,8 +22,7 @@ notes = "Your baseline; everything else must beat or complement it"
 [[pick]]
 job = "Skill install gate"
 entry = "safe-skillspector"
-status = "Trying now"
-trial_ends = "2026-11-27"
+status = "Up next"
 exit_test = "Scan the next 5 skills or plugins you install. Keep it if it runs on your setup without manual fixes and no false alarm costs you more than 5 minutes; drop it if it misses a problem you find by reading."
 load = "Before every install"
 notes = "Set it up first so every later install gets scanned. `--no-llm` static mode; sends dependency names to OSV.dev"
@@ -31,8 +30,7 @@ notes = "Set it up first so every later install gets scanned. `--no-llm` static 
 [[pick]]
 job = "Requirements interview"
 entry = "wf-mattpocock"
-status = "Trying now"
-trial_ends = "2026-11-27"
+status = "Up next"
 exit_test = "Use grill-with-docs on 3 features. Keep it if at least 2 interviews surface a requirement or decision you had not written down and its glossary and ADR output needs under 10 minutes of cleanup each."
 load = "Global"
 notes = "Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEMETRY=1`, not the whole plugin"
@@ -40,8 +38,7 @@ notes = "Install only `grill-with-docs` via `npx skills add` with `DISABLE_TELEM
 [[pick]]
 job = "Scala language intelligence"
 entry = "lang-metals-mcp"
-status = "Trying now"
-trial_ends = "2026-11-27"
+status = "Up next"
 exit_test = "Do 5 comparable tasks in a cats-effect repo with it and count compile-fix round trips against 5 without it. Keep it if the count drops and Metals indexing never blocks a session."
 load = "Scala projects"
 notes = "`cs install metals-mcp`, then `metals-mcp --workspace . --client claude`"

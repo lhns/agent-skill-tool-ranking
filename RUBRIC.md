@@ -86,17 +86,10 @@ Categories only group entries; a category like "Agent safety and harness" holds 
 ## Stack statuses
 
 - **In use:** E3 or better and in regular use, or your own AGENTS.md baseline.
-- **Trying now:** at most 3 at once, each with `exit_test` and `trial_ends` (2 weeks). Log the result in the Experience log; then In use or dropped.
-- **Up next:** start these when a trial slot frees up.
+- **Trying now:** you are using it. No deadline. When you have an opinion, log it in the Experience log; then In use or dropped. A pick may carry an `exit_test`: what should be true to keep it.
+- **Up next:** try these first, in table order.
 - **Blocked:** picked, but a gate check must pass first.
 - **Planned:** picked for its job; install when you work on that kind of project.
-
-## Trials before intake
-
-The ranking only becomes real through trials, so trials come first:
-
-- While no trial result has been logged in the Experience log within the last 30 days, new candidates get a gate check, review-depth facts and a tier, in one short entry. No sub-score debates, no stack changes.
-- When a trial ends, log it (date, ID, model, task, result against the exit test), update the entry to E3, and move the next "Up next" pick to "Trying now".
 
 ## Consistency rules
 
@@ -140,7 +133,7 @@ Repeat this check when the rubric or the rating model changes.
 - **Popularity over fit:** a hugely starred React skill is Not for you on a Scala workflow.
 - **Official is not tested:** vendor or marketplace origin lowers supply-chain risk; it says nothing about whether the tool helps you.
 - **Your own tools:** easy to over-rate. They need logged use like everything else.
-- **Intake without trials:** rating new links feels like progress and produces none. See Trials before intake.
+- **Intake without use:** rating new links feels like progress but adds no evidence. Only your logged use turns a tier into a score.
 - **Model drift:** scaffolding written for weaker models often hurts stronger ones. Log the model and re-check on model upgrades.
 - **Prompt injection and supply chain:** skills are executable instructions. Read fully, pin a commit, diff on update.
 - **Triggering:** test 3 prompts that should fire and 3 that shouldn't.

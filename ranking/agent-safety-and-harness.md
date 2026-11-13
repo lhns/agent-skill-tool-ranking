@@ -7,7 +7,7 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | safe-agent-workspace | [lhns/agent-workspace](https://github.com/lhns/agent-workspace) | Docker launcher for agent harnesses | Stack pick (In use) | 4 | 3 | 4 | 2 | 3 | 4 | E3, own | search | 83 |  |
-| safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | Stack pick (Trying now) | 4 | ? | 4 | ? | 4 | 4 | E1 | readme | untested |  |
+| safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | Stack pick (Up next) | 4 | ? | 4 | ? | 4 | 4 | E1 | readme | untested |  |
 | safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
 | safe-safety-net | [kenryu42/claude-code-safety-net](https://github.com/kenryu42/claude-code-safety-net) | hooks | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | Alternate for Run agents isolated | 3 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |

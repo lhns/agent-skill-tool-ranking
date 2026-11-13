@@ -18,13 +18,13 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pick | safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | Stack pick (Trying now) | 4 | ? | 4 | ? | 4 | 4 | E1 | readme | untested |  |
+| Pick | safe-skillspector | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | scanner CLI | Stack pick (Up next) | 4 | ? | 4 | ? | 4 | 4 | E1 | readme | untested |  |
 
 ## Requirements interview
 
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pick | wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | Stack pick (Trying now) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
+| Pick | wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | Stack pick (Up next) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Candidate | wf-openspec | [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | CLI + slash commands (npm) | Candidate | 3 | ? | 3 | ? | 4 | 3 | E1 | search | untested | light spec workflow for brownfield repos; telemetry off first |
 | Candidate | wf-speckit | [github/spec-kit](https://github.com/github/spec-kit) | CLI (Python, uv) + templates, extensions, workflows | Candidate | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | heavier, more formal spec process from GitHub |
 | Candidate | wf-elephant-goldfish | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) EGM plugin (7 skills) | plugin: skills + agents | Watch | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | under 30 days old at review; design specs before big features, complements grill-with-docs |
@@ -35,7 +35,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pick | lang-metals-mcp | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | MCP | Stack pick (Trying now) | 4 | ? | 3 | ? | 3 | 4 | E1, official | readme | untested |  |
+| Pick | lang-metals-mcp | [Metals MCP](https://scalameta.org/metals/docs/features/mcp/) | MCP | Stack pick (Up next) | 4 | ? | 3 | ? | 3 | 4 | E1, official | readme | untested |  |
 | Alternate | lang-serena | [oraios/serena](https://github.com/oraios/serena) | MCP | Alternate for Scala language intelligence | 3 | ? | 1 | ? | 3 | 2 | E1 | readme | untested |  |
 
 ## Ghidra analysis
