@@ -126,7 +126,6 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | Alternate for Run agents isolated | 3 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |
 | Alternate | safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | Alternate for Run agents isolated | 2 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |
 | Candidate | safe-openshell | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | sandbox runtime: gateway, supervisor, CLI, SDKs (Rust) | Watch | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested | v0.1 pre-releases, Windows only via experimental WSL 2 |
-| Candidate | harness-peerspan | [peerspan/peerspan](https://github.com/peerspan/peerspan) | P2P host daemon (Rust) + channel/MCP adapters for Claude Code, Codex, OpenCode | Watch | 2 | ? | 1 | ? | 3 | 3 | E0 | search | untested | preview with breaking changes between releases, Linux only, and Claude delivery depends on the channels research preview; revisit when Windows is validated or you have a cross-machine agent job |
 | Candidate | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | Watch | 2 | ? | 4 | ? | 3 | 3 | E1 | readme | untested | needs Incus |
 | Candidate | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | Watch | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | experimental |
 

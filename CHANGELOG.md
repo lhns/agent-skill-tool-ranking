@@ -2,6 +2,7 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | harness-peerspan | Overlap with agent-workspace removed; it is not an isolation tool and wrongly showed up under Run agents isolated | Per-job table check |
 | 2026-11-13 | harness-peerspan | Added: Watch (Fit 2 guessed, Cost 1, Quality 3, Composability 3, E0) | Code search of v0.2.2 (commit 8819c85) |
 | 2026-11-13 | rs-openkb | Full rating: stars verified (4.8k), PageIndex runs locally unless a cloud key is set, ChatGPT and Copilot OAuth but no Claude subscription route, git identity written into skill manifests, maintenance re-check due 2027-01-22; tier unchanged (Candidate) | Code search of OpenKB and the pageindex 0.3.0.dev3 wheel |
 | 2026-11-13 | nt-obsidian-hybrid-search | Full rating: stars verified (103), E0 to E1, last commit 2026-11-09, undisclosed npm update check and shell-quoting con added; tier unchanged (Not for you) | Code search of v0.17.5 |
