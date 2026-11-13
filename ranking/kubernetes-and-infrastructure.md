@@ -8,4 +8,4 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | k8s-containers | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | MCP | Stack pick (Planned) | 4 | ? | 3 | ? | 3 | 4 | E1 | readme | untested |  |
 | k8s-flux159 | [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes) | MCP | Alternate for Kubernetes | 3 | ? | 3 | ? | 2 | 3 | E1 | readme | untested |  |
-| infra-neckbeard-bealesh | [bealesh/neckbeard](https://github.com/bealesh/neckbeard) | plugin + CLI | Not for you | 0 | ? | 2 | ? | 2 | 2 | E0 | readme | untested | Fit below 2. Pre-alpha |
+| infra-neckbeard-bealesh | [bealesh/neckbeard](https://github.com/bealesh/neckbeard) | plugin + CLI | Not for you | 0 | ? | 2 | ? | 2 | 2 | E0 | readme | untested | Fit below 2. pre-alpha |

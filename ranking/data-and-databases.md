@@ -11,7 +11,7 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | data-motherduck | [motherduckdb/mcp-server-motherduck](https://github.com/motherduckdb/mcp-server-motherduck) | MCP | Alternate for Parquet and DuckDB | 3 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | data-supabase-pg | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills) | skill | Alternate for Postgres | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | data-auto-ontology | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | platform: web app, API, MCP server, skills | Candidate | 2 | ? | 3 | ? | 4 | 3 | E1 | search | untested | semantic layer for text-to-SQL; a full stack to run |
-| data-sanjay-pg | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) read-only postgres | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | Mixed quality repo |
+| data-sanjay-pg | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) read-only postgres | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | mixed quality repo |
 | data-presidio | [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) | Python SDK and services | Not for you | 1 | ? | 4 | ? | 4 | 4 | E1 | search | untested | Fit below 2. redact PII before prompts or logs; a library, not a skill |
 | data-open-ontologies | [fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies) | MCP server + CLI (Rust) | Not for you | 0 | ? | 2 | ? | 3 | 3 | E1 | search | untested | Fit below 2. only for OWL ontology work |
 

@@ -16,9 +16,9 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | lang-bash-defensive | [wshobson bash-defensive-patterns](https://github.com/wshobson/agents) | skill | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | lang-beautiful-rust | [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) | 3 skills + clippy config | Watch | 3 | ? | 2 | ? | 4 | 4 | E1 | search | untested | under 30 days old at review; broader than the pick, auto-loads about 4,400 words on any Rust edit |
 | lang-agent-lsp | [agent-lsp](https://github.com/blackwell-systems/agent-lsp) | MCP | No | 2 | ? | 1 | ? | 2 | 2 | E0 | readme | untested | 65 tools |
-| lang-go-eduardo | [go-agent-skills](https://github.com/eduardo-sl/go-agent-skills) | skills | No | 2 | ? | 3 | ? | 3 | 4 | E0 | readme | untested | Low adoption |
-| lang-mcp-lsp-bridge | [isaacphi/mcp-language-server](https://github.com/isaacphi/mcp-language-server) | MCP | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Beta |
-| lang-rust-actionbook | [actionbook/rust-skills](https://github.com/actionbook/rust-skills) | skills | No | 2 | ? | 2 | ? | 2 | 2 | E1 | readme | untested | Needs its own MCP server |
-| lang-warp-fix-errors | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills) | skills | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | Audits unverified |
+| lang-go-eduardo | [go-agent-skills](https://github.com/eduardo-sl/go-agent-skills) | skills | No | 2 | ? | 3 | ? | 3 | 4 | E0 | readme | untested | low adoption |
+| lang-mcp-lsp-bridge | [isaacphi/mcp-language-server](https://github.com/isaacphi/mcp-language-server) | MCP | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | beta |
+| lang-rust-actionbook | [actionbook/rust-skills](https://github.com/actionbook/rust-skills) | skills | No | 2 | ? | 2 | ? | 2 | 2 | E1 | readme | untested | needs its own MCP server |
+| lang-warp-fix-errors | [warpdotdev/common-skills](https://github.com/warpdotdev/common-skills) | skills | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | audits unverified |
 
 The only Scala-specific skill found is VirtusLab/scala-skill, which covers direct style (Ox, Magnum, Tapir) but nothing for cats-effect, fs2, http4s or Circe. Generate those with Skill_Seekers.

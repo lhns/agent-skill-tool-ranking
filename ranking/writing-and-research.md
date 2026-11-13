@@ -16,11 +16,11 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | rs-kagi | [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) | MCP | Alternate for Web search | 2 | ? | 4 | ? | 3 | 4 | E1, official | readme | untested |  |
 | wr-hand-drawn | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | skill | Alternate for Docs and ADR diagrams | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested |  |
 | rs-firecrawl | [firecrawl/cli](https://github.com/firecrawl/cli) | CLI + skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | unless self-hosted |
-| rs-kdense | [K-Dense scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) | skills | No | 2 | ? | 1 | ? | 2 | 2 | E1 | readme | untested | Dependency conflicts |
+| rs-kdense | [K-Dense scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) | skills | No | 2 | ? | 1 | ? | 2 | 2 | E1 | readme | untested | dependency conflicts |
 | rs-last30days | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | skill | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | paid keys |
 | rs-nature | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Socket warning |
-| rs-tapestry | [tapestry-skills](https://github.com/michalparkola/tapestry-skills-for-claude-code) | skills | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | Learning skills are fluff |
-| rs-waza | [tw93/Waza](https://github.com/tw93/Waza) | skills | No | 2 | ? | 4 | ? | 2 | 3 | E1 | readme | untested | Audits unverified |
+| rs-tapestry | [tapestry-skills](https://github.com/michalparkola/tapestry-skills-for-claude-code) | skills | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | learning skills are fluff |
+| rs-waza | [tw93/Waza](https://github.com/tw93/Waza) | skills | No | 2 | ? | 4 | ? | 2 | 3 | E1 | readme | untested | audits unverified |
 | wr-visual-docs | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | plugins | No | 2 | ? | 3 | ? | 2 | 3 | E0 | readme | untested | 22 commits |
 | nt-obsidian | [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | skills | Not for you | 1 | ? | 4 | ? | 4 | 4 | E1 | readme | untested | Fit below 2. only if you use Obsidian |
 | wr-obsidian-second-brain | [pogii123/obsidian-agentic-second-brain](https://github.com/pogii123/obsidian-agentic-second-brain) | Obsidian vault template | Not for you | 1 | ? | 4 | ? | 2 | 3 | E0 | search | untested | Fit below 2. only if you keep notes in Obsidian |

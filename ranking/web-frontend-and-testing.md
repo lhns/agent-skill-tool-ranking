@@ -15,11 +15,11 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | fe-cf-web-perf | [cloudflare web-perf](https://github.com/cloudflare/skills) | skill | Candidate | 2 | ? | 4 | ? | 3 | 3 | E1 | readme | untested |  |
 | fe-vercel-wdg | [vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills) | skill | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested | accessibility audit |
 | fe-web-assets | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | skill | Candidate | 2 | ? | 4 | ? | 2 | 4 | E0 | readme | untested |  |
-| fe-agent-browser | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | CLI | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Snyk medium risk |
-| fe-ccworkflows | [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) | workflows | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | Only three workflows |
-| fe-playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | plugin | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | Installs its own Chromium |
-| fe-uiuxpromax | ui-ux-pro-max-skill | skill | No | 2 | ? | 2 | ? | 1 | 2 | E0 | readme | untested | Unverified claims, paid upsell, install friction |
-| fe-design-taste | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | skill | Not for you | 1 | ? | 4 | ? | 2 | 3 | E1 | readme | untested | Fit below 2. Overlaps frontend-design |
+| fe-agent-browser | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | CLI | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | snyk medium risk |
+| fe-ccworkflows | [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) | workflows | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | only three workflows |
+| fe-playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | plugin | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | installs its own Chromium |
+| fe-uiuxpromax | ui-ux-pro-max-skill | skill | No | 2 | ? | 2 | ? | 1 | 2 | E0 | readme | untested | unverified claims, paid upsell, install friction |
+| fe-design-taste | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) | skill | Not for you | 1 | ? | 4 | ? | 2 | 3 | E1 | readme | untested | Fit below 2. overlaps frontend-design |
 | fe-hyperframes | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | CLI + skills | Not for you | 1 | ? | 3 | ? | 4 | 3 | E1 | search | untested | Fit below 2. Fit assumes no video work; tell me if you make videos |
 | fe-phone-harness | [phone-harness/mcp](https://github.com/phone-harness/mcp) | hosted MCP server (client code Python) | Not for you | 1 | ? | 3 | ? | 2 | 3 | E0 | search | untested | Fit below 2. paid hosted phones; only for mobile app testing |
-| fe-slides | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | skill | Not for you | 1 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | Fit below 2. Off-profile |
+| fe-slides | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | skill | Not for you | 1 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | Fit below 2. off-profile |

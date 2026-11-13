@@ -13,5 +13,5 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | re-pyghidra | [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp) | MCP | Alternate for Ghidra analysis | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | re-box | [lhns/re-box](https://github.com/lhns/re-box) | container: MCP aggregator (Ghidra, REA, ghidra-mcp) | Watch | 4 | ? | 2 | ? | 4 | 3 | E0, own | search | untested | under 30 days old at review and no logged use; your own RE container, candidate pick once REA's gate is settled |
 | re-superghidra | [yuatemycat/SuperGhidra](https://github.com/yuatemycat/SuperGhidra) | Python suite + MCP server (separate repo) | Watch | 2 | ? | 2 | ? | 2 | 3 | E0 | search | untested | one week old, one author, AGPL since 1.0 |
-| re-ghidra-laurie | [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | MCP | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | No auth |
-| re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | Generic |
+| re-ghidra-laurie | [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | MCP | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | no auth |
+| re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | generic |

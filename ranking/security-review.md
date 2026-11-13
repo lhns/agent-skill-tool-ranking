@@ -10,5 +10,5 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | sec-trailofbits | [trailofbits/skills](https://github.com/trailofbits/skills) | skills | Alternate for Security review | 3 | ? | 3 | ? | 4 | 4 | E1 | readme | untested |  |
 | rev-official | [official code-review + pr-review-toolkit](https://github.com/anthropics/claude-plugins-official) | plugins | Candidate | 3 | ? | 3 | ? | 4 | 4 | E1, official | readme | untested | overlaps your adversarial review |
 | sec-cloudflare-audit | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) security-audit | skill + Node validators | Candidate | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | full-repo audits when you can spend the tokens |
-| sec-getsentry | [getsentry/skills](https://github.com/getsentry/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Much is Sentry-specific |
-| sec-mukul | [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | skills | Not for you | 1 | ? | 1 | ? | 1 | 2 | E1 | readme | untested | Fit below 2. Not affiliated with Anthropic |
+| sec-getsentry | [getsentry/skills](https://github.com/getsentry/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | much is Sentry-specific |
+| sec-mukul | [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | skills | Not for you | 1 | ? | 1 | ? | 1 | 2 | E1 | readme | untested | Fit below 2. not affiliated with Anthropic |

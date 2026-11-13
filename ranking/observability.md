@@ -11,4 +11,4 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | obs-prometheus | [pab1it0/prometheus-mcp-server](https://github.com/pab1it0/prometheus-mcp-server) | MCP | Alternate for Metrics queries | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | obs-holmesgpt | [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) | SRE agent (Python): CLI, server, operator | Candidate | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested | incident root-cause agent for your k0s and VictoriaMetrics stack |
 | obs-grafana | [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana) | MCP | Candidate | 2 | ? | 2 | ? | 3 | 3 | E1, official | readme | untested | only with Grafana |
-| obs-otelcol-doctor | [otelcol-doctor](https://github.com/s3onghyun/otelcol-doctor) | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | Tiny |
+| obs-otelcol-doctor | [otelcol-doctor](https://github.com/s3onghyun/otelcol-doctor) | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | tiny |

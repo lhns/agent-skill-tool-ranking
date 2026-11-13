@@ -8,4 +8,4 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | sap-vsp | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | MCP (ADT) | Stack pick (Planned) | 4 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | sap-adt-mario | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | MCP | Alternate for ABAP | 3 | ? | 3 | ? | 2 | 3 | E1 | readme | untested |  |
-| sap-adt-fr0ster | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | MCP | No | 3 | ? | 2 | ? | 2 | 3 | E0 | readme | untested | Writes to live systems |
+| sap-adt-fr0ster | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | MCP | No | 3 | ? | 2 | ? | 2 | 3 | E0 | readme | untested | writes to live systems |

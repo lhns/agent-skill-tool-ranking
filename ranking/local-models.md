@@ -8,7 +8,7 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | llm-colibri | [JustVugg/colibri](https://github.com/JustVugg/colibri) | MoE inference engine (C), NVMe expert streaming | Candidate | 3 | ? | 4 | ? | 3 | 3 | E1 | search | untested | huge MoE models on little RAM, batch jobs |
 | llm-mesh-llm | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | distributed inference server (Rust, llama.cpp) | Candidate | 3 | ? | 4 | ? | 3 | 4 | E1 | search | untested | pool homelab GPUs, private mesh only |
-| llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | Watch | 2 | ? | 3 | ? | 1 | 1 | E1 | search | untested | no throughput numbers published |
+| llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | Watch | 2 | ? | 4 | ? | 1 | 1 | E1 | search | untested | no throughput numbers published |
 | llm-qwenfs | [vixhal-baraiya/qwenFS](https://github.com/vixhal-baraiya/qwenFS) | experimental model (Qwen3.5-2B plus compiled layers) | Not for you | 1 | ? | 4 | ? | 3 | 1 | E0 | search | untested | Fit below 2. fascinating research toy, not a tool |
 
 Tools for running models on your own hardware.

@@ -2,6 +2,13 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | (all) | `jobs` set on 59 entries so the per-job tables are complete; 46 Skip and Watch verdicts got their reason written out | Applying the 2026-11-13 method to every entry |
+| 2026-11-13 | llm-airllm | Cost 3 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
+| 2026-11-13 | safe-coi | Cost 3 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
+| 2026-11-13 | harness-free-claude-code | Cost 3 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
+| 2026-11-13 | harness-hydro-infinity | Cost 2 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
+| 2026-11-13 | harness-atc | Cost 1 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
+| 2026-11-13 | mem-uniichat | Cost 2 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
 | 2026-11-13 | (method) | Scores replaced by tiers for untested entries; Fit below 2 is Not for you; trust split from evidence; Cost means context only; per-job tables; review depth and review date per entry; under-30-days rule; trials before intake | Method review of all 204 entries plus a blind second rating of 15 (RUBRIC.md, Rater noise) |
 | 2026-11-13 | wf-mattpocock | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |
 | 2026-11-13 | wf-superpowers | E2 to E1, Effectiveness and Reliability to 1 | No independent test source on record; official origin is now a trust flag, not evidence |

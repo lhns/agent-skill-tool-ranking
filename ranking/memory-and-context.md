@@ -11,8 +11,8 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | mem-1ctx | [stefanprodan/1ctx](https://github.com/stefanprodan/1ctx) | self-hosted server + MCP | Watch | 2 | ? | 2 | ? | 4 | 2 | E0 | readme | untested | alpha, two weeks old |
 | mem-context-mode | [mksglu/context-mode](https://github.com/mksglu/context-mode) | MCP + hooks + skills | Watch | 2 | ? | 4 | ? | 3 | 1 | E1 | search | untested | invasive routing hooks, open Windows bugs |
 | mem-mnemon | [mnemon-dev/mnemon](https://github.com/mnemon-dev/mnemon) | CLI + hooks (Go) | Watch | 2 | ? | 3 | ? | 3 | 3 | E1 | search | untested | one main author, scope growing beyond memory |
-| mem-uniichat | [VictorTaelin/UniiChat](https://github.com/VictorTaelin/UniiChat) | self-hosted agent | Watch | 2 | ? | 2 | ? | 2 | 1 | E0 | readme | untested | released today, self-declared vibe-coded |
-| mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | Background hooks |
+| mem-uniichat | [VictorTaelin/UniiChat](https://github.com/VictorTaelin/UniiChat) | self-hosted agent | Watch | 2 | ? | 4 | ? | 2 | 1 | E0 | readme | untested | released today, self-declared vibe-coded |
+| mem-agentmemory | [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) | hooks + MCP | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | background hooks |
 | mem-billion-context | [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | API proxy + plugins (TypeScript) | No | 2 | ? | 3 | ? | 2 | 2 | E1 | search | untested | sits in all your API traffic, self-updates by default |
 
 Built-in memory in Claude Code and Claude covers the basics; these add shared or long-term memory on top. claude-mem is a gate failure (unauthenticated local API).

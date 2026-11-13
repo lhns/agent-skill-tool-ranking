@@ -26,6 +26,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | wf-mattpocock | [mattpocock/skills](https://github.com/mattpocock/skills) (grill-with-docs only) | skills | Stack pick (Trying now) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Candidate | wf-openspec | [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | CLI + slash commands (npm) | Candidate | 3 | ? | 3 | ? | 4 | 3 | E1 | search | untested | light spec workflow for brownfield repos; telemetry off first |
+| Candidate | wf-speckit | [github/spec-kit](https://github.com/github/spec-kit) | CLI (Python, uv) + templates, extensions, workflows | Candidate | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | heavier, more formal spec process from GitHub |
 | Candidate | wf-elephant-goldfish | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) EGM plugin (7 skills) | plugin: skills + agents | Watch | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | under 30 days old at review; design specs before big features, complements grill-with-docs |
 | Candidate | wf-desloppify | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | CLI + skill (Python) | Watch | 2 | ? | 1 | ? | 3 | 3 | E1 | search | untested | main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged |
 | Candidate | wf-bmad | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | skill modules (npm installer or npx skills) | No | 2 | ? | 1 | ? | 3 | 3 | E1 | search | untested | a full agile process with personas; heavy and mid-rewrite |
@@ -45,6 +46,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | re-pyghidra | [clearbluejar/pyghidra-mcp](https://github.com/clearbluejar/pyghidra-mcp) | MCP | Alternate for Ghidra analysis | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Candidate | re-box | [lhns/re-box](https://github.com/lhns/re-box) | container: MCP aggregator (Ghidra, REA, ghidra-mcp) | Watch | 4 | ? | 2 | ? | 4 | 3 | E0, own | search | untested | under 30 days old at review and no logged use; your own RE container, candidate pick once REA's gate is settled |
 | Candidate | re-superghidra | [yuatemycat/SuperGhidra](https://github.com/yuatemycat/SuperGhidra) | Python suite + MCP server (separate repo) | Watch | 2 | ? | 2 | ? | 2 | 3 | E0 | search | untested | one week old, one author, AGPL since 1.0 |
+| Candidate | re-ghidra-laurie | [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | MCP | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | no auth |
 
 ## Multi-tool RE orchestration
 
@@ -59,6 +61,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | re-wshobson | [wshobson binary-analysis + protocol-RE patterns](https://github.com/wshobson/agents) | skills | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
+| Candidate | re-sickn33 | [sickn33 reverse-engineer](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | generic |
 
 ## Android apps
 
@@ -72,6 +75,8 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | lang-lsp-official | [Official LSP plugins](https://github.com/anthropics/claude-plugins-official) (rust-analyzer-lsp, gopls-lsp, pyright-lsp) | plugins | Stack pick (Planned) | 4 | ? | 4 | ? | 4 | 4 | E1, official | readme | untested |  |
 | Alternate | lang-gopls-mcp | [gopls built-in MCP](https://go.dev/gopls/features/mcp) | MCP | Alternate for Rust, Go, Python language intelligence | 2 | ? | 4 | ? | 3 | 4 | E1, official | readme | untested |  |
+| Candidate | lang-agent-lsp | [agent-lsp](https://github.com/blackwell-systems/agent-lsp) | MCP | No | 2 | ? | 1 | ? | 2 | 2 | E0 | readme | untested | 65 tools |
+| Candidate | lang-mcp-lsp-bridge | [isaacphi/mcp-language-server](https://github.com/isaacphi/mcp-language-server) | MCP | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | beta |
 
 ## Rust and Go idioms
 
@@ -81,6 +86,8 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | lang-go-samber | [samber/cc-skills-golang](https://github.com/samber/cc-skills-golang) | skills | Alternate for Rust and Go idioms | 3 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | Alternate | lang-rust-apollo | [apollographql rust-best-practices](https://github.com/apollographql/skills) | skill | Alternate for Rust and Go idioms | 2 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
 | Candidate | lang-beautiful-rust | [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) | 3 skills + clippy config | Watch | 3 | ? | 2 | ? | 4 | 4 | E1 | search | untested | under 30 days old at review; broader than the pick, auto-loads about 4,400 words on any Rust edit |
+| Candidate | lang-go-eduardo | [go-agent-skills](https://github.com/eduardo-sl/go-agent-skills) | skills | No | 2 | ? | 3 | ? | 3 | 4 | E0 | readme | untested | low adoption |
+| Candidate | lang-rust-actionbook | [actionbook/rust-skills](https://github.com/actionbook/rust-skills) | skills | No | 2 | ? | 2 | ? | 2 | 2 | E1 | readme | untested | needs its own MCP server |
 
 ## Scala library knowledge
 
@@ -99,6 +106,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | build-official | [skill-creator + mcp-builder](https://github.com/anthropics/skills) (+ plugin-dev, mcp-server-dev) | skills | Stack pick (Planned) | 3 | ? | 4 | ? | 4 | 4 | E1, official | readme | untested |  |
+| Candidate | build-context-eng | [Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | reference skills | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 
 ## Security review
 
@@ -107,6 +115,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | sec-official | [official security-guidance + claude-security](https://github.com/anthropics/claude-plugins-official) | plugins | Stack pick (Planned) | 3 | ? | 3 | ? | 4 | 4 | E1, official | readme | untested |  |
 | Alternate | sec-trailofbits | [trailofbits/skills](https://github.com/trailofbits/skills) | skills | Alternate for Security review | 3 | ? | 3 | ? | 4 | 4 | E1 | readme | untested |  |
 | Candidate | sec-cloudflare-audit | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) security-audit | skill + Node validators | Candidate | 3 | ? | 2 | ? | 4 | 3 | E1 | search | untested | full-repo audits when you can spend the tokens |
+| Candidate | sec-getsentry | [getsentry/skills](https://github.com/getsentry/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | much is Sentry-specific |
 
 ## Run agents isolated
 
@@ -116,6 +125,8 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | Alternate for Run agents isolated | 3 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |
 | Alternate | safe-agents-sandbox | [inoio/agents-sandbox](https://github.com/inoio/agents-sandbox) | local sandbox launcher (microVM) | Alternate for Run agents isolated | 2 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |
 | Candidate | safe-openshell | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | sandbox runtime: gateway, supervisor, CLI, SDKs (Rust) | Watch | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested | v0.1 pre-releases, Windows only via experimental WSL 2 |
+| Candidate | safe-coi | [code-on-incus](https://github.com/mensfeld/code-on-incus) | sandbox | Watch | 2 | ? | 4 | ? | 3 | 3 | E1 | readme | untested | needs Incus |
+| Candidate | safe-container-use | [dagger/container-use](https://github.com/dagger/container-use) | MCP + CLI | Watch | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | experimental |
 
 ## Destructive-command guard
 
@@ -125,6 +136,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | safe-dippy | [ldayton/Dippy](https://github.com/ldayton/Dippy) | hook | Alternate for Destructive-command guard | 2 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
 | Candidate | safe-discobox | [discobox-ai/discobox](https://github.com/discobox-ai/discobox) | local sandbox (microVM + containers) | Alternate for Run agents isolated | 3 | ? | 4 | ? | 3 | 3 | E0 | search | untested |  |
 | Candidate | safe-llamafirewall | [meta-llama/PurpleLlama LlamaFirewall](https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall) | Python guardrail library | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | search | untested | building blocks for your own tool-call guard, not a ready hook |
+| Candidate | safe-parry-guard | [vaporif/parry-guard](https://github.com/vaporif/parry-guard) | hook | No | 2 | ? | 2 | ? | 3 | 3 | E0 | readme | untested | gated HuggingFace models |
 
 ## Agent config linting
 
@@ -139,6 +151,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | ci-codegraph | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | MCP | Stack pick (Planned) | 4 | ? | 3 | ? | 4 | 4 | E1 | readme | untested |  |
 | Alternate | ci-graphify | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | skill + CLI | Alternate for Code navigation | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | Candidate | wf-desloppify | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | CLI + skill (Python) | Watch | 2 | ? | 1 | ? | 3 | 3 | E1 | search | untested | main idle since 2026-05, 157 open PRs, Apache-2.0 switch unmerged |
+| Candidate | ci-crg | [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | MCP | No | 2 | ? | 1 | ? | 3 | 3 | E1 | readme | untested | 30 MCP tools by default (filterable) |
 
 ## Library docs (non-Scala)
 
@@ -158,6 +171,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | infra-cc-devops | [akin-ozer/cc-devops-skills](https://github.com/akin-ozer/cc-devops-skills) | skills | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
 | Alternate | infra-wshobson | [wshobson infra skills](https://github.com/wshobson/agents) (helm, k8s-manifest, gitops) | skills | Alternate for Infra config generation and validation | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
+| Candidate | infra-docker-expert | [sickn33 docker-expert](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | aggregator repo of 2,700 skills |
 
 ## Docker on the remote host
 
@@ -174,12 +188,15 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | k8s-containers | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server) | MCP | Stack pick (Planned) | 4 | ? | 3 | ? | 3 | 4 | E1 | readme | untested |  |
 | Alternate | k8s-flux159 | [Flux159/mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes) | MCP | Alternate for Kubernetes | 3 | ? | 3 | ? | 2 | 3 | E1 | readme | untested |  |
 | Candidate | obs-holmesgpt | [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) | SRE agent (Python): CLI, server, operator | Candidate | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested | incident root-cause agent for your k0s and VictoriaMetrics stack |
+| Candidate | infra-gateway-radumalica | [infrastructure-mcp](https://github.com/radumalica/infrastructure-mcp) (Proxmox, Docker, k8s) | MCP | Watch | 3 | ? | 3 | ? | 3 | 3 | E0 | readme | untested | 5 stars |
+| Candidate | infra-mirrord | [metalbear-co/skills](https://github.com/metalbear-co/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E0 | readme | untested | tied to mirrord |
 
 ## Observability config
 
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | obs-otel-skills | [ollygarden/opentelemetry-agent-skills](https://github.com/ollygarden/opentelemetry-agent-skills) | skills | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
+| Candidate | obs-otelcol-doctor | [otelcol-doctor](https://github.com/s3onghyun/otelcol-doctor) | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | tiny |
 
 ## Metrics queries
 
@@ -188,6 +205,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | obs-victoriametrics | [mcp-victoriametrics](https://github.com/VictoriaMetrics-Community/mcp-victoriametrics) | MCP | Stack pick (Planned) | 4 | ? | 2 | ? | 3 | 3 | E1 | readme | untested |  |
 | Alternate | obs-prometheus | [pab1it0/prometheus-mcp-server](https://github.com/pab1it0/prometheus-mcp-server) | MCP | Alternate for Metrics queries | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Candidate | obs-holmesgpt | [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) | SRE agent (Python): CLI, server, operator | Candidate | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested | incident root-cause agent for your k0s and VictoriaMetrics stack |
+| Candidate | obs-grafana | [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana) | MCP | Candidate | 2 | ? | 2 | ? | 3 | 3 | E1, official | readme | untested | only with Grafana |
 
 ## Parquet and DuckDB
 
@@ -204,6 +222,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | data-postgres-pro | [crystaldba/postgres-mcp](https://github.com/crystaldba/postgres-mcp) | MCP | Stack pick (Planned) | 3 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | Alternate | data-supabase-pg | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills) | skill | Alternate for Postgres | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Candidate | data-auto-ontology | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | platform: web app, API, MCP server, skills | Candidate | 2 | ? | 3 | ? | 4 | 3 | E1 | search | untested | semantic layer for text-to-SQL; a full stack to run |
+| Candidate | data-sanjay-pg | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) read-only postgres | skill | No | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested | mixed quality repo |
 
 ## Home Assistant
 
@@ -226,6 +245,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | sap-vsp | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | MCP (ADT) | Stack pick (Planned) | 4 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | Alternate | sap-adt-mario | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | MCP | Alternate for ABAP | 3 | ? | 3 | ? | 2 | 3 | E1 | readme | untested |  |
+| Candidate | sap-adt-fr0ster | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | MCP | No | 3 | ? | 2 | ? | 2 | 3 | E0 | readme | untested | writes to live systems |
 
 ## Web design
 
@@ -235,6 +255,9 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Alternate | fe-impeccable | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | skill + hook + CLI | Alternate for Web design | 3 | ? | 3 | ? | 4 | 4 | E1 | readme | untested |  |
 | Candidate | wr-diagram-design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | skill + plugin | Stack pick (Planned) | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested |  |
 | Candidate | fe-hallmark | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) hallmark | skill + Node scripts | Candidate | 3 | ? | 2 | ? | 3 | 3 | E1 | search | untested | heavier than frontend-design, for landing and marketing pages |
+| Candidate | fe-vercel-wdg | [vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills) | skill | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested | accessibility audit |
+| Candidate | fe-ccworkflows | [OneRedOak/claude-code-workflows](https://github.com/OneRedOak/claude-code-workflows) | workflows | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | only three workflows |
+| Candidate | fe-uiuxpromax | ui-ux-pro-max-skill | skill | No | 2 | ? | 2 | ? | 1 | 2 | E0 | readme | untested | unverified claims, paid upsell, install friction |
 
 ## Web testing
 
@@ -243,6 +266,8 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Pick | fe-webapp-testing | [anthropics webapp-testing](https://github.com/anthropics/skills) | skill | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E1, official | readme | untested |  |
 | Alternate | fe-playwright-cli | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) | CLI + skills | Alternate for Web testing | 4 | ? | 4 | ? | 4 | 4 | E1 | readme | untested |  |
 | Candidate | fe-agent-desktop | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | CLI + C library + skills (Rust) | Candidate | 2 | ? | 3 | ? | 4 | 4 | E1 | search | untested | desktop app automation via accessibility tree |
+| Candidate | fe-agent-browser | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | CLI | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | snyk medium risk |
+| Candidate | fe-playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | plugin | No | 2 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | installs its own Chromium |
 
 ## Technical writing
 
@@ -256,6 +281,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | wr-diagram-design | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | skill + plugin | Stack pick (Planned) | 3 | ? | 4 | ? | 4 | 3 | E1 | search | untested |  |
 | Alternate | wr-hand-drawn | [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | skill | Alternate for Docs and ADR diagrams | 2 | ? | 4 | ? | 2 | 3 | E0 | readme | untested |  |
+| Candidate | wr-visual-docs | [mhattingpete/claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) | plugins | No | 2 | ? | 3 | ? | 2 | 3 | E0 | readme | untested | 22 commits |
 
 ## Prose cleanup
 
@@ -270,12 +296,16 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | rs-searxng | [ihor-sokoliuk/mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng) | MCP | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | Alternate | rs-kagi | [kagisearch/kagimcp](https://github.com/kagisearch/kagimcp) | MCP | Alternate for Web search | 2 | ? | 4 | ? | 3 | 4 | E1, official | readme | untested |  |
+| Candidate | rs-firecrawl | [firecrawl/cli](https://github.com/firecrawl/cli) | CLI + skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | unless self-hosted |
+| Candidate | rs-last30days | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | skill | No | 2 | ? | 2 | ? | 3 | 3 | E1 | readme | untested | paid keys |
 
 ## Papers
 
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | rs-academic | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | skill suite | Stack pick (Planned) | 3 | ? | 2 | ? | 3 | 3 | E1 | readme | untested |  |
+| Candidate | rs-kdense | [K-Dense scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) | skills | No | 2 | ? | 1 | ? | 2 | 2 | E1 | readme | untested | dependency conflicts |
+| Candidate | rs-nature | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Socket warning |
 
 ## Paper lookup
 

@@ -15,9 +15,9 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | infra-mcp-gateway | [docker/mcp-gateway](https://github.com/docker/mcp-gateway) | MCP host | Watch | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | for the RE bridge |
 | infra-proximo | [Proximo](https://github.com/john-broadway/proximo) (Proxmox) | MCP | No | 4 | ? | 0 | ? | 3 | 2 | E0 | readme | untested | 924 tools |
 | infra-mcp-proxmox | [antonio-mello-ai/mcp-proxmox](https://github.com/antonio-mello-ai/mcp-proxmox) | MCP | No | 3 | ? | 2 | ? | 2 | 2 | E0 | readme | untested | no read-only |
-| infra-docker-expert | [sickn33 docker-expert](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | Aggregator repo of 2,700 skills |
+| infra-docker-expert | [sickn33 docker-expert](https://github.com/sickn33/agentic-awesome-skills) | skill | No | 2 | ? | 4 | ? | 2 | 4 | E1 | readme | untested | aggregator repo of 2,700 skills |
 | infra-github-mcp | [github/github-mcp-server](https://github.com/github/github-mcp-server) | MCP | No | 2 | ? | 1 | ? | 4 | 3 | E1, official | readme | untested | `gh` CLI is cheaper |
-| infra-mirrord | [metalbear-co/skills](https://github.com/metalbear-co/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E0 | readme | untested | Tied to mirrord |
+| infra-mirrord | [metalbear-co/skills](https://github.com/metalbear-co/skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E0 | readme | untested | tied to mirrord |
 | infra-docker-ckreiling | [ckreiling/mcp-server-docker](https://github.com/ckreiling/mcp-server-docker) | MCP | Not for you | 1 | ? | 3 | ? | 2 | 3 | E1 | readme | untested | Fit below 2. remote-docker plus the docker CLI covers it |
 | infra-hashicorp | [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) | skills | Not for you | 1 | ? | 4 | ? | 4 | 4 | E1, official | readme | untested | Fit below 2. unless Terraform |
 | infra-portainer | [portainer/portainer-mcp](https://github.com/portainer/portainer-mcp) | MCP | Not for you | 1 | ? | 3 | ? | 3 | 3 | E1, official | readme | untested | Fit below 2. only with Portainer |

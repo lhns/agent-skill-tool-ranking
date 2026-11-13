@@ -10,4 +10,4 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | build-skill-seekers | [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | Stack pick (Planned) | 3 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
 | build-context-eng | [Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | reference skills | Candidate | 2 | ? | 4 | ? | 3 | 4 | E1 | readme | untested |  |
 | build-mcp-tunnels | [official mcp-tunnels](https://github.com/anthropics/claude-plugins-official) | plugin | Watch | 2 | ? | 3 | ? | 3 | 3 | E1, official | readme | untested | RE bridge |
-| build-harness2 | [google-research/harness2](https://github.com/google-research/harness2) | research framework | Not for you | 1 | ? | 0 | ? | 3 | 1 | E1 | readme | untested | Fit below 2. Research code, not an official Google product |
+| build-harness2 | [google-research/harness2](https://github.com/google-research/harness2) | research framework | Not for you | 1 | ? | 0 | ? | 3 | 1 | E1 | readme | untested | Fit below 2. research code, not an official Google product |
