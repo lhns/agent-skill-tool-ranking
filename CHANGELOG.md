@@ -2,6 +2,9 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | rs-openkb | Full rating: stars verified (4.8k), PageIndex runs locally unless a cloud key is set, ChatGPT and Copilot OAuth but no Claude subscription route, git identity written into skill manifests, maintenance re-check due 2027-01-22; tier unchanged (Candidate) | Code search of OpenKB and the pageindex 0.3.0.dev3 wheel |
+| 2026-11-13 | nt-obsidian-hybrid-search | Full rating: stars verified (103), E0 to E1, last commit 2026-11-09, undisclosed npm update check and shell-quoting con added; tier unchanged (Not for you) | Code search of v0.17.5 |
+| 2026-11-13 | (method) | Every new entry gets the full rating | User request |
 | 2026-11-13 | rubric | Dropped trial periods: no end dates, no limit of 3, no short-intake rule; exit tests stay optional | User dropped trial periods |
 | 2026-11-13 | safe-skillspector | Trying now to Up next; trial end date removed | User dropped trial periods |
 | 2026-11-13 | wf-mattpocock | Trying now to Up next; trial end date removed | User dropped trial periods |

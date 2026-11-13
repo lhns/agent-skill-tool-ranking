@@ -12,6 +12,8 @@ This repo triages agent skills, plugins and MCP servers for one user. [RUBRIC.md
 
 ## Adding or re-checking an entry
 
+Every new entry gets the full rating below, never a short one.
+
 1. Verify facts on the live repo (license, last commit, first commit, install method, telemetry and its switch). Mark anything you couldn't check as unverified. Never invent repos or numbers.
 2. Record how deeply you looked in `review`: `readme`, `search` (README plus keyword search of the code) or `code` (you read the code). Don't write "read" when you searched.
 3. Gate-check. A failed gate gets `gate` and `gate_reason` instead of sub-scores.
