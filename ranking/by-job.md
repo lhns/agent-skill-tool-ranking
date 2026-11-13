@@ -94,6 +94,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | build-skill-seekers | [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | Stack pick (Planned) | 3 | ? | 3 | ? | 3 | 3 | E1 | readme | untested |  |
+| Candidate | rs-openkb | [VectifyAI/OpenKB](https://github.com/VectifyAI/OpenKB) | CLI (Python): documents to wiki, skill generator | Candidate | 2 | ? | 4 | ? | 3 | 3 | E1 | search | untested | turn papers and manuals into a wiki or a skill; needs an LLM API key |
 
 ## Scala direct-style conventions
 
@@ -304,6 +305,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | rs-academic | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | skill suite | Stack pick (Planned) | 3 | ? | 2 | ? | 3 | 3 | E1 | readme | untested |  |
+| Candidate | rs-openkb | [VectifyAI/OpenKB](https://github.com/VectifyAI/OpenKB) | CLI (Python): documents to wiki, skill generator | Candidate | 2 | ? | 4 | ? | 3 | 3 | E1 | search | untested | turn papers and manuals into a wiki or a skill; needs an LLM API key |
 | Candidate | rs-kdense | [K-Dense scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills) | skills | No | 2 | ? | 1 | ? | 2 | 2 | E1 | readme | untested | dependency conflicts |
 | Candidate | rs-nature | [Yuan1z0825/nature-skills](https://github.com/Yuan1z0825/nature-skills) | skills | No | 2 | ? | 3 | ? | 3 | 3 | E1 | readme | untested | Socket warning |
 

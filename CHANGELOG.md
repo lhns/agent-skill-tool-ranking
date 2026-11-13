@@ -2,6 +2,8 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-13 | rs-openkb | Added, Candidate | Short intake (trials open): README plus keyword search |
+| 2026-11-13 | nt-obsidian-hybrid-search | Added, Not for you (Fit guessed 1) | Short intake (trials open): README plus keyword search |
 | 2026-11-13 | (all) | `jobs` set on 59 entries so the per-job tables are complete; 46 Skip and Watch verdicts got their reason written out | Applying the 2026-11-13 method to every entry |
 | 2026-11-13 | llm-airllm | Cost 3 to 4 | Adds nothing to the agent's context; running cost stays in the cons |
 | 2026-11-13 | safe-coi | Cost 3 to 4 | Adds nothing to the agent's context; running cost stays in the cons |

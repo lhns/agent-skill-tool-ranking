@@ -1,7 +1,7 @@
 # Agent Skill & Tool Ranking
 
 <!-- BEGIN GENERATED: updated -->
-Last updated 2026-11-13 · 189 evaluated entries, 3 tested hands-on, 15 gate failures
+Last updated 2026-11-13 · 191 evaluated entries, 3 tested hands-on, 15 gate failures
 <!-- END GENERATED: updated -->
 
 Which agent skills, plugins and MCP servers to use for Pierre's work, triaged with one [rubric](RUBRIC.md). The stack below names one default per job; the [ranking](ranking/README.md) has every evaluated entry with its tier, pros and cons. Only entries tested hands-on carry a score; everything else is a judged shortlist, not a measurement.
