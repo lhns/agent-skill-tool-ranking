@@ -144,6 +144,7 @@ One table per job in the [Recommended stack](../README.md#recommended-stack): th
 | Role | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pick | safe-agnix | [agent-sh/agnix](https://github.com/agent-sh/agnix) | linter + LSP | Stack pick (Planned) | 3 | ? | 4 | ? | 3 | 4 | E0 | readme | untested |  |
+| Candidate | mem-deadweight | [msertdev/deadweight](https://github.com/msertdev/deadweight) | CLI (Rust) + Claude Code plugin | Watch | 3 | ? | 4 | ? | 3 | 4 | E0 | search | untested | five days old; measures and trims what your Claude Code setup adds to every request, worth a run after 2026-12-12 |
 
 ## Code navigation
 

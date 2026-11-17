@@ -2,6 +2,13 @@
 
 | Date | ID | Change | Evidence |
 | --- | --- | --- | --- |
+| 2026-11-17 | mem-deadweight | Added: Watch (Fit 3 guessed) | Code search of the repo |
+| 2026-11-17 | data-relate | Added: Watch (Fit 1 guessed) | Code search of the repo |
+| 2026-11-17 | mem-obelisk | Added: Optional (Fit 2 guessed) | Code search of the repo |
+| 2026-11-17 | safe-agent-substrate | Added: Skip (Fit 1 guessed) | Code search of the repo |
+| 2026-11-17 | harness-openharness | Added: Optional (Fit 2 guessed) | Code search of the repo |
+| 2026-11-17 | wr-academic-humanizer | Added: Skip (Fit 1 guessed) | README of the repo |
+| 2026-11-17 | llm-tontaube | Added: Skip (Fit 1 guessed) | README of the repo |
 | 2026-11-13 | harness-peerspan | Overlap with agent-workspace removed; it is not an isolation tool and wrongly showed up under Run agents isolated | Per-job table check |
 | 2026-11-13 | harness-peerspan | Added: Watch (Fit 2 guessed, Cost 1, Quality 3, Composability 3, E0) | Code search of v0.2.2 (commit 8819c85) |
 | 2026-11-13 | rs-openkb | Full rating: stars verified (4.8k), PageIndex runs locally unless a cloud key is set, ChatGPT and Copilot OAuth but no Claude subscription route, git identity written into skill manifests, maintenance re-check due 2027-01-22; tier unchanged (Candidate) | Code search of OpenKB and the pageindex 0.3.0.dev3 wheel |

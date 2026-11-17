@@ -10,5 +10,6 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | llm-mesh-llm | [Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm) | distributed inference server (Rust, llama.cpp) | Candidate | 3 | ? | 4 | ? | 3 | 4 | E1 | search | untested | pool homelab GPUs, private mesh only |
 | llm-airllm | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Python library | Watch | 2 | ? | 4 | ? | 1 | 1 | E1 | search | untested | no throughput numbers published |
 | llm-qwenfs | [vixhal-baraiya/qwenFS](https://github.com/vixhal-baraiya/qwenFS) | experimental model (Qwen3.5-2B plus compiled layers) | Not for you | 1 | ? | 4 | ? | 3 | 1 | E0 | search | untested | Fit below 2. fascinating research toy, not a tool |
+| llm-tontaube | [TontaubeAI/TontaubeV1.1-int4](https://huggingface.co/TontaubeAI/TontaubeV1.1-int4) | text-to-speech model (4-bit) + inference server | Not for you | 1 | ? | 4 | ? | 3 | 3 | E0 | readme | untested | Fit below 2. a local voice-cloning text-to-speech model; no speech job in your stack |
 
 Tools for running models on your own hardware.

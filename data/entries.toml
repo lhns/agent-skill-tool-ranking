@@ -4160,3 +4160,157 @@ stars = "2, 0 forks (GitHub page); 1665 commits since 2026-09-29, 1533 by one au
 pros = "Lets agents on different machines and owners pass messages, tasks with files, group conversations and opted-in MCP operations; hosts connect directly over QUIC, optional helpers only relay end-to-end encrypted traffic, no Peerspan-run coordinator required; access is decided and enforced by each agent's owner on the receiving host (signed policy, grants with expiry and send budgets), and membership grants no access; the adapter tells the model that peer events are external input; per-session opt-in with an expiring credential in a private 0700 directory, no global or project Claude config edited; installer checks a release signature; no telemetry found (it sets GH_TELEMETRY=0 when it calls gh); about 160k lines of Rust with conformance suites and written contracts; Apache-2.0"
 cons = "Preview: rough edges and breaking changes; native Linux amd64 and arm64 only, macOS and Windows not validated, so on your setup only agents on Linux hosts can join; Claude Code delivery uses channels (research preview, needs Claude Code 2.1.187 or later and may need org enablement); 26 MCP tools with long descriptions plus long server instructions in every attached session; authorized peers can put instructions into your agent's context, so grants are a prompt-injection boundary; tiny adoption (2 stars), almost all commits by one author in six weeks; pull requests not accepted during the preview; install via curl to bash from peerspan.dev"
 overlaps = ""
+
+[[entry]]
+id = "mem-deadweight"
+category = "memory-and-context"
+name = "msertdev/deadweight"
+url = "https://github.com/msertdev/deadweight"
+type = "CLI (Rust) + Claude Code plugin"
+fit = 3
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E0"
+reviewed = "2026-11-17"
+created = "2026-11-12"
+review = "search"
+verdict = "Watch: five days old; measures and trims what your Claude Code setup adds to every request, worth a run after 2026-12-12"
+stars = "3, 0 forks (GitHub page); 8 commits since 2026-11-12, one author; v0.2.0"
+pros = "Measures the fixed per-request overhead from your own transcripts (API-billed tokens of the first request, not an estimate) and attributes it to each plugin, skill, MCP server, hook and agent listing; shows what you never used in 30 days, user-scope MCP servers used in only one or two projects, failed or never-signed-in servers, duplicate skills and skills that lost their description past the roughly 30k-character listing cap; fix disables unused plugins in settings.json and parks unused skills, asks first, skips plugins with hooks unless told, backs up and has undo; no HTTP crate in its dependencies, matching its no-network claim; reads only MCP server names from .claude.json; Windows binaries; plugin adds about 18 tokens; MIT"
+cons = "Five days old, one author, 2.6k lines; Claude Code only; depends on the transcript format, which can change with any Claude Code release; one test file; token sizes other than the total are converted from text length"
+overlaps = "safe-agnix (lints the same config files for errors, not for size)"
+
+[[entry]]
+id = "data-relate"
+category = "data-and-databases"
+name = "relatedb/relate"
+url = "https://github.com/relatedb/relate"
+type = "embedded graph database (Rust) with CLI, Bolt, HTTP and MCP server"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 4
+composability = 3
+evidence = "E0"
+reviewed = "2026-11-17"
+created = "2026-11-06"
+review = "search"
+verdict = "Watch: eleven days old; an embedded Cypher graph store with an MCP server, but no graph job is known for you"
+stars = "unverified (page did not load); 467 commits since 2026-11-06, mostly Michael Hunger (Neo4j); v1.1.0"
+pros = "In-memory property graph queried in Cypher, as one .rl file, a directory or pure memory, durable through an fsync'd write-ahead log and Parquet checkpoints; same engine as CLI, Rust crate, Python, Node, WASM and an optional one-process server with Bolt, HTTP and MCP (localhost, auth on); an honest limitations document (working set must fit in memory, one graph per store, one user per process); Windows installer and static binary; installers verify a signed manifest and checksum; Jepsen and TCK workflows in CI; Apache-2.0"
+cons = "Anonymous CLI telemetry on by default: relate telemetry off, DO_NOT_TRACK=1 or RELATE_TELEMETRY=0 (embedded APIs collect nothing); self-updating binary; eleven days old; relate skill install writes its skill bundle into every detected agent's skills directory at once; install pipes a script to a shell"
+overlaps = "none"
+
+[[entry]]
+id = "mem-obelisk"
+category = "memory-and-context"
+name = "tommy0103/obelisk"
+url = "https://github.com/tommy0103/obelisk"
+type = "CLI + skill + Electron app (TypeScript)"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+reviewed = "2026-11-17"
+created = "2026-05-30"
+review = "search"
+verdict = "Optional: lets agents search past sessions of Claude Code, Codex, Hermes, OpenCode, Pi and others from one local index"
+stars = "814, 56 forks (GitHub page); 264 commits since 2026-05-30, 120 by the main author; v0.2.5"
+pros = "Indexes local session history of 11 harnesses into one SQLite file and keeps it fresh by watching their directories; the agent writes JS queries (search, sessions, messages, sql) run by the CLI and answers in plain language; optional memory files the agent proposes and you approve; Electron app to browse sessions, tool calls, diffs and token charts; CLI has zero runtime npm dependencies (Node's built-in SQLite); no network calls found in the core; skill loads its references only when invoked"
+cons = "One SQLite file holding every past transcript, including any secrets that passed through a session; query scripts run in node:vm, which the code itself says is not a security boundary (the agent could run the same code in a shell anyway); prebuilt app only for macOS and Linux, Windows from source; installs its query skill through a third-party skills installer; queries can return large JSON into context; AGPL-3.0"
+overlaps = "mem-mnemon"
+
+[[entry]]
+id = "safe-agent-substrate"
+category = "agent-safety-and-harness"
+name = "agent-substrate/substrate"
+url = "https://github.com/agent-substrate/substrate"
+type = "Kubernetes runtime for sandboxed agents (Go)"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 4
+composability = 2
+evidence = "E1"
+reviewed = "2026-11-17"
+created = "2026-05-19"
+review = "search"
+verdict = "Skip: built to run thousands of mutually hostile agents on a Kubernetes cluster; far more than one person's agents need"
+stars = "5.9k, 647 forks (GitHub page); 1719 commits since 2026-05-19, maintainers mostly from Google (Kubernetes people such as Tim Hockin and Benjamin Elder) and Solo.io; v1.0.0"
+pros = "Every actor in gVisor or a Cloud Hypervisor microVM, never a plain container; credentials stay outside the sandbox and an egress gateway injects them into approved requests; default-deny networking with a replaceable policy point; per-actor SPIFFE identity; snapshots idle agents out of memory and restores them in under 500 ms, 10x to 30x oversubscription; runs on standard Kubernetes; no telemetry found outside the benchmarking tools; Apache-2.0"
+cons = "Needs a Kubernetes cluster with gVisor or Cloud Hypervisor support, plus Go, kind and Docker even for the dev quickstart; a platform for running agents, not a launcher: you still package the agent yourself; performance figures are the project's own"
+overlaps = "safe-openshell, safe-discobox"
+
+[[entry]]
+id = "harness-openharness"
+category = "agent-safety-and-harness"
+name = "autonomous-ai/openharness"
+url = "https://github.com/autonomous-ai/openharness"
+type = "desktop app + daemon + CLI + relay (Flutter, Node)"
+fit = 2
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E1"
+reviewed = "2026-11-17"
+created = "2026-08-04"
+review = "search"
+verdict = "Optional: one window for many agent CLIs across your machines; needs a Google or Apple sign-in to their backend, and usage data sharing is on by default"
+stars = "1.4k, 142 forks (GitHub page); 5423 commits since 2026-08-04, mostly two authors; desktop v1.4.9"
+pros = "Runs Claude Code, Codex, OpenCode, Hermes and about 14 other agent CLIs unmodified in tmux panes, on this and your other machines, side by side; one daemon per machine dials out, so no open ports, SSH keys or Tailscale; traffic sealed end to end (X25519, ChaCha20-Poly1305), direct WebRTC first, Cloudflare TURN or their relay only forward ciphertext; a git worktree per harness; Claude Code and Codex can start and read other harnesses through its skill; local models via Ollama, MLX-LM or vLLM; Windows desktop builds and installer in the release workflow; documents its usage metrics field by field; MIT"
+cons = "Needs an account on their backend (Google, Apple or QR sign-in) for machine discovery and shared tabs; product usage sharing defaults to on for new accounts: switch off with harness privacy off or Settings, Privacy; operational records stay on regardless; no isolation, agents run with your user's rights; README download offers macOS and Linux, Windows builds are new and unverified here; huge, fast-moving codebase (a custom OS, devices and a store in the same repo); skill is about 10k characters when loaded; install pipes a script to bash"
+overlaps = "harness-peerspan"
+
+[[entry]]
+id = "wr-academic-humanizer"
+category = "writing-and-research"
+name = "AIScientists-Dev/academic-humanizer"
+url = "https://github.com/AIScientists-Dev/academic-humanizer"
+type = "skill"
+fit = 1
+effectiveness = 1
+cost = 3
+reliability = 1
+quality = 3
+composability = 4
+evidence = "E1"
+reviewed = "2026-11-17"
+created = "2026-06-20"
+review = "readme"
+verdict = "Skip: for papers, theses and grant proposals (NSF, NIH), which you don't write"
+stars = "4.8k, 361 forks (GitHub page); 14 commits 2026-06-20 to 2026-07-03, one author; skill v0.3.3"
+pros = "Trims generic AI phrasing in academic drafts while leaving numbers, citations, definitions and evidence-tied hedging alone; keeps verbs no stronger than the data; separate mode for grant proposals; calibrated by the authors against their own accepted papers and funded proposals; states plainly that it is not for evading AI detection; MIT"
+cons = "Academic and grant writing only; about 17k characters when loaded; before and after examples are its only evaluation; quiet since July"
+overlaps = "wr-humanizer"
+
+[[entry]]
+id = "llm-tontaube"
+category = "local-models"
+name = "TontaubeAI/TontaubeV1.1-int4"
+url = "https://huggingface.co/TontaubeAI/TontaubeV1.1-int4"
+type = "text-to-speech model (4-bit) + inference server"
+fit = 1
+effectiveness = 1
+cost = 4
+reliability = 1
+quality = 3
+composability = 3
+evidence = "E0"
+reviewed = "2026-11-17"
+created = "2026-08-26"
+review = "readme"
+verdict = "Skip: a local voice-cloning text-to-speech model; no speech job in your stack"
+stars = "22 likes on Hugging Face; downloads not tracked; inference code at github.com/craitech/tontaube (6 commits, v1.1.0)"
+pros = "Local expressive TTS with zero-shot voice cloning, English and German first plus five more languages; style sliders for rate, pauses and pitch; 1.8 GB download, about 4 GiB GPU memory loaded (Ampere or newer), or roughly real time on a 12-core CPU; streaming, 192 ms to first audio on an RTX 5090; Docker image; inference code Apache-2.0; no telemetry found in the server code"
+cons = "Weights under the Tontaube Community Model License 1.0, which the card says is not open source; its terms are unverified (the license file could not be fetched); headline benchmark measured on the previous TontaubeV1, judged by one model, run by the developers; 4-bit quality claim has no numbers; Linux and NVIDIA only, Windows via WSL2; voice cloning raises consent questions for any real voice"
+overlaps = "none"

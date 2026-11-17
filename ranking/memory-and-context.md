@@ -7,6 +7,8 @@ Tiers, not a ranking; see the [legend](README.md). Compare per job in [by-job.md
 | ID | Entry | Type | Tier | F | E | C | R | Q | Cmp | Evidence | Review | Score | Reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | mem-optmem | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | CLI + AGENTS.md snippet | Candidate | 3 | ? | 1 | ? | 3 | 3 | E1 | readme | untested | no license yet, rated as if licensed |
+| mem-obelisk | [tommy0103/obelisk](https://github.com/tommy0103/obelisk) | CLI + skill + Electron app (TypeScript) | Candidate | 2 | ? | 3 | ? | 3 | 3 | E1 | search | untested | lets agents search past sessions of Claude Code, Codex, Hermes, OpenCode, Pi and others from one local index |
+| mem-deadweight | [msertdev/deadweight](https://github.com/msertdev/deadweight) | CLI (Rust) + Claude Code plugin | Watch | 3 | ? | 4 | ? | 3 | 4 | E0 | search | untested | five days old; measures and trims what your Claude Code setup adds to every request, worth a run after 2026-12-12 |
 | mem-tokeneconomizer | [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | plugin: hooks + CLI (Python) | Watch | 3 | ? | 3 | ? | 4 | 4 | E1 | search | untested | under 30 days old at review; trial on a repo you work in daily once it settles |
 | mem-1ctx | [stefanprodan/1ctx](https://github.com/stefanprodan/1ctx) | self-hosted server + MCP | Watch | 2 | ? | 2 | ? | 4 | 2 | E0 | readme | untested | alpha, two weeks old |
 | mem-context-mode | [mksglu/context-mode](https://github.com/mksglu/context-mode) | MCP + hooks + skills | Watch | 2 | ? | 4 | ? | 3 | 1 | E1 | search | untested | invasive routing hooks, open Windows bugs |
